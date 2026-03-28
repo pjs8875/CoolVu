@@ -61,7 +61,7 @@ export default function Hero() {
               <Phone size={18} />
               <span className="hidden sm:inline">516-535-9555</span>
             </a>
-            <button className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-3 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-none whitespace-nowrap">
+            <button className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-3 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-lg whitespace-nowrap">
               Free Estimate
             </button>
           </div>
@@ -89,7 +89,7 @@ export default function Hero() {
             <p className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-center mb-6 md:mb-8 drop-shadow-sm font-medium">
               Enhance Security, Comfort & Lower Energy Costs
             </p>
-            <button className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-none shadow-lg">
+            <button className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg">
               Get Your Free Estimate
             </button>
           </div>
@@ -117,7 +117,7 @@ export default function Hero() {
             <p className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-center mb-6 md:mb-8 drop-shadow-sm font-medium">
               Keep Your Home Cooler Without Replacing Your Windows
             </p>
-            <button className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-none shadow-lg">
+            <button className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg">
               Schedule a Free Consultation
             </button>
           </div>
