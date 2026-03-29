@@ -7,11 +7,24 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { Send, MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name is required"),
-  phone: z.string().min(10, "Valid phone number is required"),
+  firstName: z.string().min(2, "First Name is required"),
+  lastName: z.string().min(2, "Last Name is required"),
   email: z.string().email("Valid email is required"),
-  zip: z.string().min(5, "Zip code is required"),
-  project: z.string().min(5, "Please tell us a bit about your project"),
+  phone: z.string().min(10, "Valid phone number is required"),
+  companyName: z.string().optional(),
+  streetAddress: z.string().optional(),
+  city: z.string().min(2, "City is required"),
+  state: z.string().min(2, "State is required"),
+  zipCode: z.string().min(5, "Zip code is required"),
+  role: z.string().min(1, "Role is required"),
+  projectStage: z.string().min(1, "Project stage is required"),
+  propertyType: z.string().min(1, "Property type is required"),
+  problemToSolve: z.string().min(1, "Please select the problem you are trying to solve"),
+  windowsCount: z.string().min(1, "Please select the number of windows"),
+  productsInterested: z.string().min(1, "Please select the products you are interested in"),
+  howDidYouFindUs: z.string().min(1, "Please tell us how you found us"),
+  projectDetails: z.string().min(5, "Please tell us a bit about your project"),
+  smsConsent: z.boolean().refine(val => val === true, "You must agree to the privacy policy"),
 });
 
 export default function ContactForm() {
@@ -52,7 +65,7 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-lg mb-1">Call Us Directly</h4>
-                    <a href="tel:516-535-9555" className="text-coolvu-light-blue hover:text-white transition-colors">516-535-9555</a>
+                    <a href="tel:844-426-6588" className="text-coolvu-light-blue hover:text-white transition-colors">(844) 426-6588</a>
                   </div>
                 </div>
                 
@@ -104,81 +117,281 @@ export default function ContactForm() {
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <h3 className="text-2xl font-bold font-heading text-coolvu-dark-blue mb-8">Request a Free Estimate</h3>
+                <p className="text-sm text-gray-500 mb-6 -mt-6">Fields marked with an <span className="text-red-500">*</span> are required</p>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Full Name</label>
+                    <label htmlFor="firstName" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">First Name *</label>
                     <input 
-                      id="name"
+                      id="firstName"
                       type="text" 
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                      placeholder="John Doe"
-                      {...register("name")}
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.firstName ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                      {...register("firstName")}
                     />
-                    {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
+                    {errors.firstName && <p className="text-red-500 text-xs mt-1">{errors.firstName.message}</p>}
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Phone Number</label>
+                    <label htmlFor="lastName" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Last Name *</label>
                     <input 
-                      id="phone"
-                      type="tel" 
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                      placeholder="(516) 535-9555"
-                      {...register("phone")}
+                      id="lastName"
+                      type="text" 
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.lastName ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                      {...register("lastName")}
                     />
-                    {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
+                    {errors.lastName && <p className="text-red-500 text-xs mt-1">{errors.lastName.message}</p>}
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Email Address</label>
+                    <label htmlFor="email" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Email Address *</label>
                     <input 
                       id="email"
                       type="email" 
                       className={`w-full px-4 py-3 rounded-xl border ${errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                      placeholder="john@example.com"
                       {...register("email")}
                     />
                     {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="zip" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Zip Code</label>
+                    <label htmlFor="phone" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Phone Number *</label>
                     <input 
-                      id="zip"
-                      type="text" 
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.zip ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                      placeholder="11501"
-                      {...register("zip")}
+                      id="phone"
+                      type="tel" 
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                      {...register("phone")}
                     />
-                    {errors.zip && <p className="text-red-500 text-xs mt-1">{errors.zip.message}</p>}
+                    {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="project" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Project Details</label>
-                  <textarea 
-                    id="project"
-                    rows={4}
-                    className={`w-full px-4 py-3 rounded-xl border ${errors.project ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors resize-none`}
-                    placeholder="Tell us what you're looking for (e.g. heat reduction for living room, security film for storefront...)"
-                    {...register("project")}
-                  ></textarea>
-                  {errors.project && <p className="text-red-500 text-xs mt-1">{errors.project.message}</p>}
+                  <label htmlFor="companyName" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Company Name</label>
+                  <input 
+                    id="companyName"
+                    type="text" 
+                    className={`w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors border-gray-200 focus:ring-coolvu-medium-blue`}
+                    {...register("companyName")}
+                  />
                 </div>
 
-                <div className="pt-4">
+                <div className="space-y-2">
+                  <label htmlFor="streetAddress" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Street Address</label>
+                  <input 
+                    id="streetAddress"
+                    type="text" 
+                    className={`w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors border-gray-200 focus:ring-coolvu-medium-blue`}
+                    {...register("streetAddress")}
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="city" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">City *</label>
+                    <input 
+                      id="city"
+                      type="text" 
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.city ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                      {...register("city")}
+                    />
+                    {errors.city && <p className="text-red-500 text-xs mt-1">{errors.city.message}</p>}
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <label htmlFor="state" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">State *</label>
+                    <select 
+                      id="state"
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.state ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                      {...register("state")}
+                    >
+                      <option value="">Select State</option>
+                      <option value="NY">New York</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="CT">Connecticut</option>
+                    </select>
+                    {errors.state && <p className="text-red-500 text-xs mt-1">{errors.state.message}</p>}
+                  </div>
+
+                  <div className="space-y-2">
+                    <label htmlFor="zipCode" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Zip Code *</label>
+                    <input 
+                      id="zipCode"
+                      type="text" 
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.zipCode ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                      {...register("zipCode")}
+                    />
+                    {errors.zipCode && <p className="text-red-500 text-xs mt-1">{errors.zipCode.message}</p>}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="role" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">My Role *</label>
+                  <select 
+                    id="role"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.role ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("role")}
+                  >
+                    <option value="">Select Role</option>
+                    <option value="Homeowner">Homeowner</option>
+                    <option value="Business Owner">Business Owner</option>
+                    <option value="Architect">Architect</option>
+                    <option value="Contractor">Contractor</option>
+                    <option value="Property Manager">Property Manager</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  {errors.role && <p className="text-red-500 text-xs mt-1">{errors.role.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="projectStage" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Stage of Project *</label>
+                  <select 
+                    id="projectStage"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.projectStage ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("projectStage")}
+                  >
+                    <option value="">Select Stage</option>
+                    <option value="Needing Information">Needing Information</option>
+                    <option value="Ready to Buy">Ready to Buy</option>
+                    <option value="Budgeting">Budgeting</option>
+                  </select>
+                  {errors.projectStage && <p className="text-red-500 text-xs mt-1">{errors.projectStage.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="propertyType" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Property Type *</label>
+                  <select 
+                    id="propertyType"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.propertyType ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("propertyType")}
+                  >
+                    <option value="">Select Property Type</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Educational">Educational</option>
+                    <option value="Government">Government</option>
+                  </select>
+                  {errors.propertyType && <p className="text-red-500 text-xs mt-1">{errors.propertyType.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="problemToSolve" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">What Problem Are You Trying to Solve For? *</label>
+                  <select 
+                    id="problemToSolve"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.problemToSolve ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("problemToSolve")}
+                  >
+                    <option value="">Select Problem</option>
+                    <option value="Heat/Glare">Heat / Glare</option>
+                    <option value="Security">Security</option>
+                    <option value="Privacy">Privacy</option>
+                    <option value="Fading">Fading</option>
+                    <option value="Aesthetics">Aesthetics</option>
+                  </select>
+                  {errors.problemToSolve && <p className="text-red-500 text-xs mt-1">{errors.problemToSolve.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="windowsCount" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">How Many Windows Need Treatment? *</label>
+                  <select 
+                    id="windowsCount"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.windowsCount ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("windowsCount")}
+                  >
+                    <option value="">Select Amount</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-25">11-25</option>
+                    <option value="26-50">26-50</option>
+                    <option value="50+">50+</option>
+                  </select>
+                  {errors.windowsCount && <p className="text-red-500 text-xs mt-1">{errors.windowsCount.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="productsInterested" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">What Types of Products Are You Interested In? *</label>
+                  <select 
+                    id="productsInterested"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.productsInterested ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("productsInterested")}
+                  >
+                    <option value="">Select Product</option>
+                    <option value="Solar Film">Solar Film</option>
+                    <option value="Security Film">Security Film</option>
+                    <option value="Decorative Film">Decorative Film</option>
+                    <option value="Surface Finishes">Surface Finishes</option>
+                    <option value="I'm Not Sure">I'm Not Sure</option>
+                  </select>
+                  {errors.productsInterested && <p className="text-red-500 text-xs mt-1">{errors.productsInterested.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="howDidYouFindUs" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">How Did You Find Out About Us? *</label>
+                  <select 
+                    id="howDidYouFindUs"
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.howDidYouFindUs ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
+                    {...register("howDidYouFindUs")}
+                  >
+                    <option value="">Select Source</option>
+                    <option value="Google">Google</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Referral">Referral</option>
+                    <option value="Advertisement">Advertisement</option>
+                  </select>
+                  {errors.howDidYouFindUs && <p className="text-red-500 text-xs mt-1">{errors.howDidYouFindUs.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="projectDetails" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Tell Us About Your Project *</label>
+                  <textarea 
+                    id="projectDetails"
+                    rows={4}
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.projectDetails ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors resize-none`}
+                    {...register("projectDetails")}
+                  ></textarea>
+                  <p className="text-xs text-gray-500 mt-1">Notes, details, open questions, etc.</p>
+                  {errors.projectDetails && <p className="text-red-500 text-xs mt-1">{errors.projectDetails.message}</p>}
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Upload Projects, Files, Images, Etc.</label>
+                  <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 flex flex-col items-center justify-center bg-gray-50/50 hover:bg-gray-50 transition-colors cursor-pointer">
+                    <p className="text-sm text-gray-600 mb-4">Drop files here or</p>
+                    <button type="button" className="bg-gray-700 hover:bg-gray-800 text-white px-6 py-2 rounded-md font-sans text-sm transition-colors">
+                      Select files
+                    </button>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-1">Max. file size: 50 MB.</p>
+                </div>
+
+                <div className="space-y-2 pt-4">
+                  <label className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">SMS Messages *</label>
+                  <div className="flex items-start gap-3">
+                    <input 
+                      type="checkbox" 
+                      id="smsConsent" 
+                      className="mt-1 w-4 h-4 text-coolvu-medium-blue rounded border-gray-300 focus:ring-coolvu-medium-blue"
+                      {...register("smsConsent")}
+                    />
+                    <div className="space-y-2">
+                      <label htmlFor="smsConsent" className="text-sm text-gray-700 cursor-pointer">I agree to the privacy policy.</label>
+                      <p className="text-xs text-gray-500 leading-relaxed border border-gray-200 p-3 rounded-lg bg-gray-50">
+                        By providing a telephone number and submitting this form you are consenting to be contacted by SMS text message. Message & data rates may apply. Message frequency may vary. Privacy Policy — www.coolvu.com/terms/ - Reply HELP for more information. Reply STOP to opt-out.
+                      </p>
+                    </div>
+                  </div>
+                  {errors.smsConsent && <p className="text-red-500 text-xs mt-1">{errors.smsConsent.message}</p>}
+                </div>
+
+                <div className="pt-6">
                   <AnimatedButton 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="w-full bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-md border-none disabled:opacity-70"
+                    className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white px-10 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-md shadow-md border-none disabled:opacity-70"
                   >
-                    {isSubmitting ? "Sending..." : "Submit Request"}
+                    {isSubmitting ? "Sending..." : "Submit"}
                   </AnimatedButton>
                 </div>
-                <p className="text-center text-xs text-gray-400 mt-4">Your information is secure and will never be shared.</p>
               </form>
             )}
           </div>
