@@ -121,31 +121,23 @@ export default function VideoSection() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-coolvu-dark-blue overflow-hidden">
+    <section className="py-20 md:py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-2 h-2 bg-coolvu-light-blue rounded-full"></div>
-              <span className="text-xs md:text-sm font-sans font-bold tracking-[0.2em] text-coolvu-light-blue uppercase">
-                See Our Work
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-white">
-              Watch the Difference
-            </h2>
-          </div>
+        <div className="relative flex flex-col items-center text-center mb-12">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue">
+            Watch the Difference
+          </h2>
           
           {/* Navigation Buttons (Desktop) */}
-          <div className="hidden md:flex gap-3">
+          <div className="hidden md:flex gap-3 absolute right-0 top-1/2 -translate-y-1/2">
             <button 
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}
               className={cn(
-                "w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center transition-all",
-                canScrollLeft ? "text-white hover:bg-coolvu-medium-blue hover:border-coolvu-medium-blue" : "text-gray-600 cursor-not-allowed"
+                "w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all",
+                canScrollLeft ? "text-coolvu-dark-blue hover:bg-coolvu-medium-blue hover:border-coolvu-medium-blue hover:text-white" : "text-gray-300 cursor-not-allowed"
               )}
               aria-label="Previous video"
             >
@@ -155,8 +147,8 @@ export default function VideoSection() {
               onClick={() => scroll("right")}
               disabled={!canScrollRight}
               className={cn(
-                "w-12 h-12 rounded-full border border-gray-600 flex items-center justify-center transition-all",
-                canScrollRight ? "text-white hover:bg-coolvu-medium-blue hover:border-coolvu-medium-blue" : "text-gray-600 cursor-not-allowed"
+                "w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all",
+                canScrollRight ? "text-coolvu-dark-blue hover:bg-coolvu-medium-blue hover:border-coolvu-medium-blue hover:text-white" : "text-gray-300 cursor-not-allowed"
               )}
               aria-label="Next video"
             >
@@ -223,7 +215,7 @@ export default function VideoSection() {
               </div>
               
               {/* Video Info */}
-              <h3 className="text-white font-heading font-bold text-lg md:text-xl group-hover:text-coolvu-light-blue transition-colors line-clamp-2">
+              <h3 className="text-coolvu-dark-blue font-heading font-bold text-lg md:text-xl group-hover:text-coolvu-medium-blue transition-colors line-clamp-2">
                 {video.title}
               </h3>
             </div>
@@ -236,7 +228,7 @@ export default function VideoSection() {
             {videoItems.map((_, i) => (
               <div 
                 key={i} 
-                className="w-2 h-2 rounded-full bg-white/20"
+                className="w-2 h-2 rounded-full bg-gray-200"
               ></div>
             ))}
           </div>

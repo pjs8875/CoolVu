@@ -21,13 +21,13 @@ const processSteps = [
 
 export default function Process() {
   return (
-    <section className="pt-12 md:pt-20 pb-20 md:pb-32 bg-coolvu-dark-blue">
+    <section className="pt-12 md:pt-20 pb-20 md:pb-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
             Our Simple Process
           </h2>
-          <p className="text-base md:text-lg text-coolvu-light-blue font-sans">
+          <p className="text-base md:text-lg text-gray-600 font-sans">
             Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security.
           </p>
         </div>

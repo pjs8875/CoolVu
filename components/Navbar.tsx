@@ -82,7 +82,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           <span>516-535-9555</span>
         </a>
         <Link href="#contact-form">
-          <AnimatedButton className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-6 py-3 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
+          <AnimatedButton className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
             Free Estimate
           </AnimatedButton>
         </Link>
@@ -120,7 +120,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">About Us</Link>
           
           <Link href="#contact-form" onClick={() => setIsMobileMenuOpen(false)} className="mt-4">
-            <AnimatedButton className="w-full bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
+            <AnimatedButton className="w-full bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
               Get Your Free Estimate
             </AnimatedButton>
           </Link>

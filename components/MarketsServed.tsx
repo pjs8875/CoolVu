@@ -61,7 +61,7 @@ export default function MarketsServed() {
 
         <div className="flex justify-center">
           <Link href="#contact-form">
-            <AnimatedButton className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+            <AnimatedButton className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
               Discuss Your Project
             </AnimatedButton>
           </Link>

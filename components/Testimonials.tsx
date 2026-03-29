@@ -41,22 +41,16 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 md:py-32 bg-white relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-coolvu-dark-blue relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-coolvu-dark-blue/5"></div>
+      <div className="absolute top-0 left-0 w-full h-1/2 bg-white/5"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-16 text-center max-w-3xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-2 h-2 bg-coolvu-medium-blue rounded-full"></div>
-            <span className="text-xs md:text-sm font-sans font-bold tracking-[0.2em] text-coolvu-dark-blue uppercase">
-              Testimonials
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
             What Our Customers Are Saying
           </h2>
-          <p className="text-base md:text-lg text-gray-600 font-sans">
+          <p className="text-base md:text-lg text-coolvu-light-blue font-sans">
             Don't just take our word for it. See why home and business owners across the NY Metro area trust CoolVu.
           </p>
         </div>
@@ -89,7 +83,7 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <div className="inline-flex items-center gap-4 bg-coolvu-off-white px-6 py-3 rounded-full border border-gray-200">
+          <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full border border-white/20 shadow-xl">
             <div className="flex -space-x-2">
               <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-600 border-2 border-white">G</div>
               <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-xs font-bold text-red-600 border-2 border-white">O</div>

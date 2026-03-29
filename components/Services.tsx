@@ -56,13 +56,13 @@ export default function Services() {
   };
 
   return (
-    <section id="solutions" className="pt-12 md:pt-16 pb-10 md:pb-16 bg-white">
+    <section id="solutions" className="pt-12 md:pt-16 pb-10 md:pb-16 bg-coolvu-dark-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-col items-center text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
             What we offer?
           </h2>
-          <p className="text-base md:text-lg text-gray-600 font-sans max-w-2xl">
+          <p className="text-base md:text-lg text-coolvu-light-blue font-sans max-w-2xl">
             From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs.
           </p>
         </div>
@@ -106,7 +106,7 @@ export default function Services() {
                     <div className="mt-auto md:mt-0">
                       <Link href={`/services/${service.id}`}>
                         <AnimatedButton 
-                          className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-dark-blue px-4 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-xl border-none w-fit shadow-md"
+                          className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-4 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-xl border-none w-fit shadow-md"
                         >
                           Learn More
                         </AnimatedButton>
