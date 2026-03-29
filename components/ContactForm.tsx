@@ -387,9 +387,9 @@ export default function ContactForm() {
                   <AnimatedButton 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white px-10 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-md shadow-md border-none disabled:opacity-70"
+                    className="w-full md:w-auto bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-10 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-md border-none disabled:opacity-70"
                   >
-                    {isSubmitting ? "Sending..." : "Submit"}
+                    {isSubmitting ? "Sending..." : "Submit Request"}
                   </AnimatedButton>
                 </div>
               </form>
