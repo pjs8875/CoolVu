@@ -37,11 +37,9 @@ export default function Hero() {
             <p className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-center mb-6 md:mb-8 drop-shadow-sm font-medium">
               Enhance Security, Comfort & Lower Energy Costs
             </p>
-            <Link href="/#contact-form">
-              <AnimatedButton className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
-                Get Your Free Estimate
-              </AnimatedButton>
-            </Link>
+            <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+              Get Your Free Estimate
+            </AnimatedButton>
           </div>
         </div>
 

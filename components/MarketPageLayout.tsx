@@ -34,11 +34,9 @@ export default function MarketPageLayout({ title, description, features }: Marke
               {description}
             </p>
             
-            <Link href="/#contact-form">
-              <AnimatedButton className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+              <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
                 Get Your Free Estimate
               </AnimatedButton>
-            </Link>
           </div>
         </div>
       </div>

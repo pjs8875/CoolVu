@@ -104,13 +104,9 @@ export default function Services() {
                       {service.description}
                     </p>
                     <div className="mt-auto md:mt-0">
-                      <Link href={`/services/${service.id}`}>
-                        <AnimatedButton 
-                          className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-4 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-xl border-none w-fit shadow-md"
-                        >
-                          Learn More
-                        </AnimatedButton>
-                      </Link>
+                      <AnimatedButton href={`/services/${service.id}`} className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-4 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-xl border-none w-fit shadow-md">
+                        Learn More
+                      </AnimatedButton>
                     </div>
                   </div>
                   <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-[#f8f9fa] flex items-center justify-center">
