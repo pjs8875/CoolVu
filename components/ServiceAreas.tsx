@@ -91,12 +91,6 @@ export default function ServiceAreas() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-2 h-2 bg-coolvu-medium-blue rounded-full"></div>
-            <span className="text-xs md:text-sm font-sans font-bold tracking-[0.2em] text-coolvu-light-blue uppercase">
-              National Reach, Local Service
-            </span>
-          </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">
             Find a CoolVu Near You
           </h2>

@@ -7,42 +7,52 @@ const markets = [
   {
     title: "Residential",
     description: "Keep your home cool, protect furnishings from fading, and enhance privacy without losing your view.",
+    path: "/markets/residential"
   },
   {
     title: "Commercial",
     description: "Lower HVAC costs, reduce screen glare for employees, and update interiors with architectural finishes.",
+    path: "/markets/commercial"
   },
   {
     title: "Educational",
     description: "Protect students and staff with DefenseLite and ballistic-resistant security films.",
+    path: "/markets/educational"
   },
   {
     title: "Energy",
     description: "Optimize building energy efficiency by rejecting solar heat and insulating against winter heat loss.",
+    path: "/markets/energy"
   },
   {
     title: "FEMA",
     description: "Meet stringent safety requirements with specialized security films designed to mitigate blast and windstorm hazards.",
+    path: "/markets/fema"
   },
   {
     title: "Government",
     description: "Fortify municipal facilities against severe weather, blasts, and forced entry threats.",
+    path: "/markets/government"
   },
   {
     title: "Places of Worship",
     description: "Protect historic stained glass, enhance security, and improve comfort for your congregation.",
+    path: "/markets/places-of-worship"
   },
   {
     title: "Retail",
     description: "Attract customers with custom window graphics while protecting merchandise from UV damage.",
+    path: "/markets/retail"
   },
   {
     title: "Data Centers",
     description: "Maintain critical temperature control and obscure sensitive equipment from outside view with specialized cloaking films.",
+    path: "/markets/data-centers"
   },
   {
     title: "Healthcare",
     description: "Ensure patient privacy and maintain hygienic surfaces with anti-microbial window films.",
+    path: "/markets/healthcare"
   }
 ];
 
@@ -63,14 +73,21 @@ export default function MarketsServed() {
           {markets.map((market, index) => (
             <div 
               key={index} 
-              className="border-t-2 border-coolvu-medium-blue pt-6"
+              className="border-t-2 border-coolvu-medium-blue pt-6 flex flex-col"
             >
               <h3 className="text-2xl font-bold font-heading text-coolvu-dark-blue mb-4">
                 {market.title}
               </h3>
-              <p className="text-gray-600 font-sans text-base leading-relaxed">
+              <p className="text-gray-600 font-sans text-base leading-relaxed mb-6 flex-grow">
                 {market.description}
               </p>
+              <Link 
+                href={market.path} 
+                className="inline-flex items-center text-coolvu-medium-blue font-sans font-bold text-sm uppercase tracking-wider hover:text-coolvu-dark-blue transition-colors group"
+              >
+                Learn More 
+                <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
             </div>
           ))}
         </div>

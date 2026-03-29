@@ -13,6 +13,7 @@ interface NavbarProps {
 
 export default function Navbar({ isTransparent = false }: NavbarProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMarketsOpen, setIsMarketsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const services = [
@@ -21,6 +22,19 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
     { name: "Privacy & Decorative", path: "/services/privacy-and-decorative-film" },
     { name: "Commercial Graphics", path: "/services/commercial-graphics" },
     { name: "Surface Finishes", path: "/services/surface-finishes" },
+  ];
+
+  const markets = [
+    { name: "Residential", path: "/markets/residential" },
+    { name: "Commercial", path: "/markets/commercial" },
+    { name: "Educational", path: "/markets/educational" },
+    { name: "Energy", path: "/markets/energy" },
+    { name: "FEMA", path: "/markets/fema" },
+    { name: "Government", path: "/markets/government" },
+    { name: "Places of Worship", path: "/markets/places-of-worship" },
+    { name: "Retail", path: "/markets/retail" },
+    { name: "Data Centers", path: "/markets/data-centers" },
+    { name: "Healthcare", path: "/markets/healthcare" },
   ];
 
   return (
@@ -36,7 +50,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
             alt="CoolVu Logo" 
             width={180} 
             height={60} 
-            className={cn("object-contain w-full h-auto", !isTransparent && "brightness-0")} // if background is white, logo needs to be visible
+            className="object-contain w-full h-auto"
             priority
           />
         </Link>
@@ -49,8 +63,8 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           onMouseEnter={() => setIsServicesOpen(true)}
           onMouseLeave={() => setIsServicesOpen(false)}
         >
-          <button className="flex items-center gap-1 hover:text-coolvu-medium-blue transition-colors py-2">
-            Services <ChevronDown size={16} className={cn("transition-transform", isServicesOpen && "rotate-180")} />
+          <button className="flex items-center gap-1 hover:text-coolvu-medium-blue transition-colors py-2 uppercase">
+            SERVICES <ChevronDown size={16} className={cn("transition-transform", isServicesOpen && "rotate-180")} />
           </button>
           
           {/* Dropdown */}
@@ -62,7 +76,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
               <Link 
                 key={index}
                 href={service.path}
-                className="block px-6 py-3 text-sm text-coolvu-dark-blue hover:text-coolvu-medium-blue hover:bg-gray-50 transition-colors capitalize tracking-normal font-semibold"
+                className="block px-6 py-3 text-sm text-coolvu-dark-blue hover:text-coolvu-medium-blue hover:bg-gray-50 transition-colors uppercase tracking-wider font-semibold"
               >
                 {service.name}
               </Link>
@@ -71,7 +85,33 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
         </div>
 
         <Link href="/#solutions" className="hover:text-coolvu-medium-blue transition-colors">Solutions</Link>
-        <Link href="/#markets" className="hover:text-coolvu-medium-blue transition-colors">Markets</Link>
+        
+        <div 
+          className="relative group"
+          onMouseEnter={() => setIsMarketsOpen(true)}
+          onMouseLeave={() => setIsMarketsOpen(false)}
+        >
+          <button className="flex items-center gap-1 hover:text-coolvu-medium-blue transition-colors py-2 uppercase">
+            MARKETS <ChevronDown size={16} className={cn("transition-transform", isMarketsOpen && "rotate-180")} />
+          </button>
+          
+          {/* Dropdown */}
+          <div className={cn(
+            "absolute top-full left-0 w-64 bg-white shadow-xl rounded-xl border border-gray-100 py-2 transition-all duration-200 transform origin-top",
+            isMarketsOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+          )}>
+            {markets.map((market, index) => (
+              <Link 
+                key={index}
+                href={market.path}
+                className="block px-6 py-3 text-sm text-coolvu-dark-blue hover:text-coolvu-medium-blue hover:bg-gray-50 transition-colors uppercase tracking-wider font-semibold"
+              >
+                {market.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <Link href="/#process" className="hover:text-coolvu-medium-blue transition-colors">Our Process</Link>
         <Link href="/#locations" className="hover:text-coolvu-medium-blue transition-colors">Locations</Link>
         <Link href="/#videos" className="hover:text-coolvu-medium-blue transition-colors">Videos</Link>
@@ -104,13 +144,13 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-white shadow-2xl p-6 flex flex-col gap-4 text-coolvu-dark-blue lg:hidden rounded-b-2xl border-t border-gray-100">
-          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Services</p>
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">SERVICES</p>
           <div className="flex flex-col gap-3 pl-2 border-l-2 border-coolvu-medium-blue mb-4">
             {services.map((service, index) => (
               <Link 
                 key={index}
                 href={service.path}
-                className="text-base font-semibold hover:text-coolvu-medium-blue transition-colors"
+                className="text-base font-semibold hover:text-coolvu-medium-blue transition-colors uppercase tracking-wider"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {service.name}
@@ -119,7 +159,21 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           </div>
           
           <Link href="/#solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Solutions</Link>
-          <Link href="/#markets" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Markets</Link>
+          
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2 mb-2">MARKETS</p>
+          <div className="flex flex-col gap-3 pl-2 border-l-2 border-coolvu-medium-blue mb-4">
+            {markets.map((market, index) => (
+              <Link 
+                key={index}
+                href={market.path}
+                className="text-base font-semibold hover:text-coolvu-medium-blue transition-colors uppercase tracking-wider"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {market.name}
+              </Link>
+            ))}
+          </div>
+
           <Link href="/#process" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Our Process</Link>
           <Link href="/#locations" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Locations</Link>
           <Link href="/#videos" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Videos</Link>

@@ -6,6 +6,7 @@ import Process from "@/components/Process";
 import ServiceAreas from "@/components/ServiceAreas";
 import VideoSection from "@/components/VideoSection";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <ServiceAreas />
       <VideoSection />
       <Testimonials />
+      <FAQ />
       <ContactForm />
       <Footer />
     </>
