@@ -50,10 +50,10 @@ function StateDropdown({ state, cities }: { state: string, cities: string[] }) {
     <div className="border border-white/10 rounded-xl overflow-hidden bg-white/5 backdrop-blur-sm h-fit">
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-4 text-left hover:bg-white/10 transition-colors"
+        className="w-full flex items-center justify-between p-3 md:p-4 text-left hover:bg-white/10 transition-colors"
       >
-        <span className="font-heading font-bold text-lg text-white">{state}</span>
-        <ChevronDown className={cn("w-5 h-5 text-coolvu-medium-blue transition-transform", isOpen && "rotate-180")} />
+        <span className="font-heading font-bold text-sm md:text-lg text-white">{state}</span>
+        <ChevronDown className={cn("w-4 h-4 md:w-5 md:h-5 shrink-0 text-coolvu-medium-blue transition-transform", isOpen && "rotate-180")} />
       </button>
       
       <div 
@@ -63,11 +63,11 @@ function StateDropdown({ state, cities }: { state: string, cities: string[] }) {
         )}
       >
         <div className="overflow-hidden">
-          <div className="p-4 pt-0 border-t border-white/10 bg-black/20">
-            <ul className="space-y-3 mt-4">
+          <div className="p-3 md:p-4 pt-0 border-t border-white/10 bg-black/20">
+            <ul className="space-y-2 md:space-y-3 mt-3 md:mt-4">
               {cities.map((city, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-gray-300 text-sm font-sans hover:text-white transition-colors cursor-default">
-                  <div className="w-1.5 h-1.5 rounded-full bg-coolvu-medium-blue mt-1.5 shrink-0"></div>
+                <li key={idx} className="flex items-start gap-2 md:gap-3 text-gray-300 text-xs md:text-sm font-sans hover:text-white transition-colors cursor-default">
+                  <div className="w-1 h-1 md:w-1.5 md:h-1.5 rounded-full bg-coolvu-medium-blue mt-1.5 md:mt-1.5 shrink-0"></div>
                   <span>{city}</span>
                 </li>
               ))}
@@ -81,7 +81,7 @@ function StateDropdown({ state, cities }: { state: string, cities: string[] }) {
 
 export default function ServiceAreas() {
   return (
-    <section className="py-20 md:py-32 bg-coolvu-dark-blue text-white relative overflow-hidden">
+    <section id="locations" className="py-20 md:py-32 bg-coolvu-dark-blue text-white relative overflow-hidden">
       {/* Background Graphic */}
       <div className="absolute inset-0 opacity-10 pointer-events-none" style={{
         backgroundImage: "radial-gradient(#60A5FA 1px, transparent 1px)",
@@ -105,7 +105,7 @@ export default function ServiceAreas() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-start">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 items-start pb-8">
           {locationsData.map((data, index) => (
             <StateDropdown key={index} state={data.state} cities={data.cities} />
           ))}

@@ -72,7 +72,10 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
 
         <Link href="/#solutions" className="hover:text-coolvu-medium-blue transition-colors">Solutions</Link>
         <Link href="/#markets" className="hover:text-coolvu-medium-blue transition-colors">Markets</Link>
-        <Link href="/#about" className="hover:text-coolvu-medium-blue transition-colors">About Us</Link>
+        <Link href="/#process" className="hover:text-coolvu-medium-blue transition-colors">Our Process</Link>
+        <Link href="/#locations" className="hover:text-coolvu-medium-blue transition-colors">Locations</Link>
+        <Link href="/#videos" className="hover:text-coolvu-medium-blue transition-colors">Videos</Link>
+        <Link href="/#testimonials" className="hover:text-coolvu-medium-blue transition-colors">Testimonials</Link>
       </div>
 
       {/* Contact & CTA */}
@@ -117,7 +120,10 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           
           <Link href="/#solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Solutions</Link>
           <Link href="/#markets" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Markets</Link>
-          <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">About Us</Link>
+          <Link href="/#process" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Our Process</Link>
+          <Link href="/#locations" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Locations</Link>
+          <Link href="/#videos" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Videos</Link>
+          <Link href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Testimonials</Link>
           
           <Link href="#contact-form" onClick={() => setIsMobileMenuOpen(false)} className="mt-4">
             <AnimatedButton className="w-full bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">

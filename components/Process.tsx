@@ -21,7 +21,7 @@ const processSteps = [
 
 export default function Process() {
   return (
-    <section className="pt-12 md:pt-20 pb-20 md:pb-32 bg-white">
+    <section id="process" className="pt-12 md:pt-20 pb-20 md:pb-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">

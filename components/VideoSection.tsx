@@ -121,12 +121,12 @@ export default function VideoSection() {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-white overflow-hidden">
+    <section id="videos" className="py-20 md:py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <div className="relative flex flex-col items-center text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue px-12">
             Watch the Difference
           </h2>
           
@@ -136,7 +136,7 @@ export default function VideoSection() {
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}
               className={cn(
-                "w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all",
+                "w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all",
                 canScrollLeft ? "text-coolvu-dark-blue hover:bg-coolvu-medium-blue hover:border-coolvu-medium-blue hover:text-white" : "text-gray-300 cursor-not-allowed"
               )}
               aria-label="Previous video"
@@ -147,7 +147,7 @@ export default function VideoSection() {
               onClick={() => scroll("right")}
               disabled={!canScrollRight}
               className={cn(
-                "w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all",
+                "w-10 h-10 md:w-12 md:h-12 rounded-full border border-gray-200 flex items-center justify-center transition-all",
                 canScrollRight ? "text-coolvu-dark-blue hover:bg-coolvu-medium-blue hover:border-coolvu-medium-blue hover:text-white" : "text-gray-300 cursor-not-allowed"
               )}
               aria-label="Next video"
@@ -161,13 +161,13 @@ export default function VideoSection() {
         <div 
           ref={scrollContainerRef}
           onScroll={checkScroll}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 sm:mx-0 sm:px-0"
+          className="flex gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 sm:mx-0 sm:px-0"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {videoItems.map((video) => (
             <div 
               key={video.id} 
-              className="relative flex-none w-[75vw] sm:w-[300px] md:w-[340px] snap-center group cursor-pointer"
+              className="relative flex-none w-[80vw] sm:w-[300px] md:w-[340px] snap-center group cursor-pointer"
             >
               {/* Thumbnail / Video Container */}
               <div 

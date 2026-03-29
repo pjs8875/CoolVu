@@ -41,7 +41,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 md:py-32 bg-coolvu-dark-blue relative overflow-hidden">
+    <section id="testimonials" className="py-20 md:py-32 bg-coolvu-dark-blue relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-1/2 bg-white/5"></div>
       
@@ -55,26 +55,26 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="columns-2 lg:columns-3 gap-3 md:gap-6 space-y-3 md:space-y-6">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="break-inside-avoid bg-white p-8 rounded-2xl shadow-lg border border-gray-100 relative"
+              className="break-inside-avoid bg-white p-4 md:p-8 rounded-xl md:rounded-2xl shadow-lg border border-gray-100 relative"
             >
-              <Quote className="absolute top-6 right-6 w-10 h-10 text-coolvu-medium-blue/10" />
-              <div className="flex gap-1 mb-4">
+              <Quote className="absolute top-4 right-4 md:top-6 md:right-6 w-6 h-6 md:w-10 md:h-10 text-coolvu-medium-blue/10" />
+              <div className="flex gap-0.5 md:gap-1 mb-3 md:mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="w-3 h-3 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-gray-700 font-sans leading-relaxed mb-6 relative z-10">
+              <p className="text-gray-700 font-sans text-xs md:text-base leading-relaxed mb-4 md:mb-6 relative z-10">
                 "{testimonial.text}"
               </p>
               <div>
-                <p className="font-bold font-heading text-coolvu-dark-blue">
+                <p className="font-bold font-heading text-sm md:text-base text-coolvu-dark-blue">
                   {testimonial.name}
                 </p>
-                <p className="text-sm font-sans text-gray-500">
+                <p className="text-xs md:text-sm font-sans text-gray-500">
                   {testimonial.location}
                 </p>
               </div>
