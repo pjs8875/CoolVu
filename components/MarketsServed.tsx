@@ -5,24 +5,40 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 
 const markets = [
   {
-    title: "Residential Homes",
+    title: "Residential",
     description: "Keep your home cool, protect furnishings from fading, and enhance privacy without losing your view.",
   },
   {
-    title: "Commercial Office",
+    title: "Commercial",
     description: "Lower HVAC costs, reduce screen glare for employees, and update interiors with architectural finishes.",
   },
   {
-    title: "Schools & Education",
+    title: "Educational",
     description: "Protect students and staff with DefenseLite and ballistic-resistant security films.",
   },
   {
-    title: "Retail Storefronts",
+    title: "Energy",
+    description: "Optimize building energy efficiency by rejecting solar heat and insulating against winter heat loss.",
+  },
+  {
+    title: "FEMA",
+    description: "Meet stringent safety requirements with specialized security films designed to mitigate blast and windstorm hazards.",
+  },
+  {
+    title: "Government",
+    description: "Fortify municipal facilities against severe weather, blasts, and forced entry threats.",
+  },
+  {
+    title: "Places of Worship",
+    description: "Protect historic stained glass, enhance security, and improve comfort for your congregation.",
+  },
+  {
+    title: "Retail",
     description: "Attract customers with custom window graphics while protecting merchandise from UV damage.",
   },
   {
-    title: "Government Buildings",
-    description: "Fortify municipal facilities against severe weather, blasts, and forced entry threats.",
+    title: "Data Centers",
+    description: "Maintain critical temperature control and obscure sensitive equipment from outside view with specialized cloaking films.",
   },
   {
     title: "Healthcare",
