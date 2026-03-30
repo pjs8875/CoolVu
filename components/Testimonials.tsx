@@ -247,9 +247,9 @@ export default function Testimonials() {
           </p>
         </div>
 
-        {/* Horizontal Stack Grid */}
+        {/* Desktop: Horizontal Stack Grid */}
         <div 
-          className="relative h-[450px] md:h-[500px] w-full flex justify-center mt-10"
+          className="hidden md:flex relative h-[500px] w-full justify-center mt-10"
           onMouseLeave={() => setHoveredIndex(null)} // Failsafe to ensure reset
         >
           {testimonials.map((testimonial, index) => (
@@ -263,6 +263,60 @@ export default function Testimonials() {
               isLoaded={isLoaded}
             />
           ))}
+        </div>
+
+        {/* Mobile: Simple Snap Carousel */}
+        <div className="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 px-4 -mx-4 mt-10 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          {testimonials.map((testimonial, index) => {
+            const isDarkCard = index % 2 !== 0;
+            const bgColor = isDarkCard ? "bg-white" : "bg-[#F8F9FA]";
+            const textColor = "text-gray-900";
+            const subTextColor = "text-gray-500";
+            const iconBg = "bg-blue-50";
+            const iconColor = "text-coolvu-dark-blue";
+
+            return (
+              <div 
+                key={index}
+                className={`snap-center shrink-0 w-[85vw] max-w-[320px] ${bgColor} border border-gray-200 rounded-[24px] p-6 shadow-sm flex flex-col h-[400px]`}
+              >
+                {/* Header: Stars & Contact */}
+                <div className="flex justify-between items-start mb-6">
+                  <div className="flex gap-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-[#F97316] text-[#F97316]" />
+                    ))}
+                  </div>
+                  
+                  {testimonial.showContact && (
+                    <div className="flex items-center gap-2">
+                      <span className={`text-[10px] font-bold uppercase tracking-widest ${textColor}`}>Contact Sales</span>
+                      <div className={`w-6 h-6 rounded-full ${iconBg} flex items-center justify-center ${iconColor}`}>
+                        <Phone className="w-3 h-3" />
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Text Content */}
+                <p className={`text-base font-sans ${textColor} leading-relaxed font-medium mb-8 flex-grow`}>
+                  "{testimonial.text}"
+                </p>
+                
+                {/* Footer: Author Info */}
+                <div className="flex items-center gap-4 mt-auto">
+                  <div className="flex flex-col">
+                    <p className={`font-bold font-sans text-sm ${textColor} leading-tight`}>
+                      {testimonial.name}
+                    </p>
+                    <p className={`text-xs font-sans ${subTextColor} leading-tight mt-0.5`}>
+                      {testimonial.role} @ {testimonial.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
       </motion.div>
