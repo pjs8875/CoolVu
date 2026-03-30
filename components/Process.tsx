@@ -59,9 +59,12 @@ export default function Process() {
             as="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
           />
-          <p className="text-base md:text-lg text-gray-600 font-sans">
-            Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security.
-          </p>
+          <BlurText 
+            text="Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security."
+            as="p"
+            className="text-base md:text-lg text-gray-600 font-sans"
+            delay={100}
+          />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -101,13 +104,19 @@ export default function Process() {
                   </div>
                   
                   <div className="relative z-10 flex-grow">
-                    <h3 className="text-lg md:text-xl font-bold font-heading text-coolvu-dark-blue mb-2">
-                      {step.title}
-                    </h3>
+                    <BlurText 
+                      text={step.title}
+                      as="h3"
+                      className="text-lg md:text-xl font-bold font-heading text-coolvu-dark-blue mb-2"
+                      delay={50}
+                    />
                     <div className="w-8 h-1 bg-coolvu-medium-blue rounded-full mb-3"></div>
-                    <p className="text-xs md:text-sm text-gray-600 font-sans leading-relaxed">
-                      {step.description}
-                    </p>
+                    <BlurText 
+                      text={step.description}
+                      as="p"
+                      className="text-xs md:text-sm text-gray-600 font-sans leading-relaxed"
+                      delay={100}
+                    />
                   </div>
                 </div>
               );

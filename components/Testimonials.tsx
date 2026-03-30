@@ -242,9 +242,12 @@ export default function Testimonials() {
             as="h2"
             className="text-4xl md:text-5xl font-bold font-heading text-white mb-6 sm:whitespace-nowrap"
           />
-          <p className="text-xl text-blue-100 font-sans">
-            Trusted by +400 customers across Long Island and beyond.
-          </p>
+          <BlurText 
+            text="Trusted by +400 customers across Long Island and beyond."
+            as="p"
+            className="text-xl text-blue-100 font-sans"
+            delay={100}
+          />
         </div>
 
         {/* Desktop: Horizontal Stack Grid */}

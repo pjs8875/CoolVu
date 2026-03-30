@@ -38,9 +38,12 @@ export default function Hero() {
               as="h1"
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-3 md:mb-4 text-white drop-shadow-md uppercase tracking-wide max-w-4xl"
             />
-            <p className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-left mb-6 md:mb-8 drop-shadow-sm font-medium">
-              Enhance Security, Comfort & Lower Energy Costs for Residential, Commercial, Educational, Healthcare & Government Facilities
-            </p>
+            <BlurText 
+              text="Enhance Security, Comfort & Lower Energy Costs for Residential, Commercial, Educational, Healthcare & Government Facilities"
+              as="p"
+              className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-left mb-6 md:mb-8 drop-shadow-sm font-medium"
+              delay={100}
+            />
             <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
               Get Your Free Estimate
             </AnimatedButton>

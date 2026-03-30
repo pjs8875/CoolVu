@@ -96,9 +96,12 @@ export default function ServiceAreas() {
               as="h2"
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4 md:mb-6 justify-center"
             />
-            <p className="text-sm md:text-lg text-coolvu-light-blue font-sans leading-relaxed">
-              CoolVu of Long Island proudly serves the greater NY Metro area. Scroll to explore our service regions.
-            </p>
+            <BlurText 
+              text="CoolVu of Long Island proudly serves the greater NY Metro area. Scroll to explore our service regions."
+              as="p"
+              className="text-sm md:text-lg text-coolvu-light-blue font-sans leading-relaxed"
+              delay={100}
+            />
           </div>
 
           {/* Map Container */}

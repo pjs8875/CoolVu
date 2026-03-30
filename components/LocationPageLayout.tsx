@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft, ShieldCheck, Sun, Eye, Building } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
+import { BlurText } from "@/components/ui/blur-text";
 
 interface LocationPageLayoutProps {
   city: string;
@@ -24,12 +25,17 @@ export default function LocationPageLayout({ city }: LocationPageLayoutProps) {
           </Link>
 
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 leading-tight">
-              Premium Window Film & Surface Solutions in {city}
-            </h1>
-            <p className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed">
-              CoolVu is proud to serve the {city} community with top-rated residential and commercial window tinting, security films, and architectural surface finishes. Enhance your property&apos;s comfort, security, and energy efficiency today.
-            </p>
+            <BlurText 
+              text={`Premium Window Film & Surface Solutions in ${city}`}
+              as="h1"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 leading-tight justify-center"
+            />
+            <BlurText 
+              text={`CoolVu is proud to serve the ${city} community with top-rated residential and commercial window tinting, security films, and architectural surface finishes. Enhance your property's comfort, security, and energy efficiency today.`}
+              as="p"
+              className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed"
+              delay={50}
+            />
             
             <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
               Get Your Free Estimate in {city}
@@ -42,12 +48,17 @@ export default function LocationPageLayout({ city }: LocationPageLayoutProps) {
       <div className="py-20 md:py-32 bg-coolvu-dark-blue flex-grow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-6">
-              Our Services in {city}
-            </h2>
-            <p className="text-coolvu-light-blue font-sans max-w-2xl mx-auto">
-              We provide a comprehensive range of 3M™ window film and surface solutions tailored to the unique climate and security needs of {city} properties.
-            </p>
+            <BlurText 
+              text={`Our Services in ${city}`}
+              as="h2"
+              className="text-3xl md:text-4xl font-bold font-heading text-white mb-6 justify-center"
+            />
+            <BlurText 
+              text={`We provide a comprehensive range of 3M™ window film and surface solutions tailored to the unique climate and security needs of ${city} properties.`}
+              as="p"
+              className="text-coolvu-light-blue font-sans max-w-2xl mx-auto"
+              delay={50}
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-stretch">
@@ -89,12 +100,17 @@ export default function LocationPageLayout({ city }: LocationPageLayoutProps) {
       {/* Why Choose Us Section */}
       <div className="py-20 md:py-32 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading text-coolvu-dark-blue mb-6">
-            Why {city} Chooses CoolVu
-          </h2>
-          <p className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed">
-            As a local business, we understand the specific needs of properties in {city} and the surrounding Long Island area. Our certified technicians provide flawless installations backed by comprehensive lifetime warranties. We pride ourselves on honest pricing, punctual service, and treating your property with the utmost respect.
-          </p>
+          <BlurText 
+            text={`Why ${city} Chooses CoolVu`}
+            as="h2"
+            className="text-3xl md:text-4xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
+          />
+          <BlurText 
+            text={`As a local business, we understand the specific needs of properties in ${city} and the surrounding Long Island area. Our certified technicians provide flawless installations backed by comprehensive lifetime warranties. We pride ourselves on honest pricing, punctual service, and treating your property with the utmost respect.`}
+            as="p"
+            className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed"
+            delay={50}
+          />
           <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
             Schedule Your Consultation
           </AnimatedButton>

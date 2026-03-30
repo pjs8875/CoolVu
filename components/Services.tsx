@@ -66,9 +66,12 @@ export default function Services() {
             as="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
           />
-          <p className="text-base md:text-lg text-gray-600 font-sans max-w-2xl">
-            From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs.
-          </p>
+          <BlurText 
+            text="From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs."
+            as="p"
+            className="text-base md:text-lg text-gray-600 font-sans max-w-2xl"
+            delay={100}
+          />
         </div>
 
         <StackingCards 

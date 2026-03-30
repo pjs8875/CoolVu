@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
+import { BlurText } from "@/components/ui/blur-text";
 
 interface MarketPageLayoutProps {
   title: string;
@@ -27,12 +28,17 @@ export default function MarketPageLayout({ title, description, features }: Marke
 
           {/* Header Section */}
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 leading-tight">
-              {title}
-            </h1>
-            <p className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed whitespace-pre-line">
-              {description}
-            </p>
+            <BlurText 
+              text={title}
+              as="h1"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 leading-tight justify-center"
+            />
+            <BlurText 
+              text={description}
+              as="p"
+              className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed whitespace-pre-line"
+              delay={50}
+            />
             
               <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
                 Get Your Free Estimate
@@ -45,9 +51,11 @@ export default function MarketPageLayout({ title, description, features }: Marke
       {features.length > 0 && (
         <div className="py-20 md:py-32 bg-coolvu-dark-blue flex-grow">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-10 text-center">
-              Our Solutions
-            </h2>
+            <BlurText 
+              text="Our Solutions"
+              as="h2"
+              className="text-3xl md:text-4xl font-bold font-heading text-white mb-10 text-center justify-center"
+            />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-stretch">
               {features.map((feature, index) => (
                 <div key={index} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col">

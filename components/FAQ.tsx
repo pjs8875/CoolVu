@@ -44,9 +44,12 @@ export default function FAQ() {
             as="h2"
             className="text-4xl md:text-5xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
           />
-          <p className="text-base md:text-lg text-gray-600 font-sans">
-            Everything you need to know about our products, process, and guarantees.
-          </p>
+          <BlurText 
+            text="Everything you need to know about our products, process, and guarantees."
+            as="p"
+            className="text-base md:text-lg text-gray-600 font-sans"
+            delay={100}
+          />
         </div>
 
         <div className="space-y-4">
