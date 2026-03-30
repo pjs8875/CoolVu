@@ -45,7 +45,7 @@ export default function SurfaceFinishesPage() {
                 Choose from hundreds of premium textures including authentic wood grains, sleek metals, natural stone, and leather. These durable, sustainable films are perfect for breathing new life into dated commercial interiors and residential spaces at a fraction of the cost of replacement.
               </p>
               
-              <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+              <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
                 Get Your Free Estimate
               </AnimatedButton>
             </div>

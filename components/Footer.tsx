@@ -77,12 +77,12 @@ export default function Footer() {
               <div>
                 <h4 className="font-heading font-bold text-lg mb-4 text-coolvu-dark-blue uppercase tracking-wider">Company</h4>
                 <nav className="flex flex-col gap-3 font-sans text-sm text-gray-600">
-                  <Link href="/#solutions" className="hover:text-coolvu-medium-blue transition-colors">Solutions</Link>
                   <Link href="/#process" className="hover:text-coolvu-medium-blue transition-colors">Our Process</Link>
                   <Link href="/#locations" className="hover:text-coolvu-medium-blue transition-colors">Locations</Link>
                   <Link href="/#videos" className="hover:text-coolvu-medium-blue transition-colors">Videos</Link>
                   <Link href="/#testimonials" className="hover:text-coolvu-medium-blue transition-colors">Testimonials</Link>
-                  <Link href="/#contact-form" className="hover:text-coolvu-medium-blue transition-colors">Contact</Link>
+                  <Link href="/#faq" className="hover:text-coolvu-medium-blue transition-colors">FAQ</Link>
+                  <Link href="?contact=true" className="hover:text-coolvu-medium-blue transition-colors">Contact</Link>
                 </nav>
               </div>
             </div>

@@ -45,7 +45,7 @@ export default function SecurityFilmPage() {
                 Whether you need to secure a retail storefront, a school, or your home, our certified installers provide solutions that delay intruders and mitigate damage. Trust the experts to fortify your glass without compromising visibility.
               </p>
               
-              <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+              <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
                 Get Your Free Estimate
               </AnimatedButton>
             </div>

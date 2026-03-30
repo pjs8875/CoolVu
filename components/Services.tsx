@@ -56,13 +56,13 @@ export default function Services() {
   };
 
   return (
-    <section id="solutions" className="pt-12 md:pt-16 pb-10 md:pb-16 bg-coolvu-dark-blue">
+    <section id="solutions" className="pt-12 md:pt-16 pb-10 md:pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-col items-center text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
             What we offer?
           </h2>
-          <p className="text-base md:text-lg text-coolvu-light-blue font-sans max-w-2xl">
+          <p className="text-base md:text-lg text-gray-600 font-sans max-w-2xl">
             From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs.
           </p>
         </div>

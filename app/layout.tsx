@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
+import ContactModalWrapper from "@/components/ContactModalWrapper";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -29,6 +30,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans text-coolvu-dark-blue bg-coolvu-off-white">
         {children}
+        <ContactModalWrapper />
       </body>
     </html>
   );

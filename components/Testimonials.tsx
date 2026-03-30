@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Star, Quote } from "lucide-react";
 
 const testimonials = [
@@ -37,6 +38,24 @@ const testimonials = [
     text: "You can tell Paul really cares about his customers. He didn't try to upsell us on things we didn't need. Honest, local business doing great work.",
     rating: 5,
   },
+  {
+    name: "Jessica B.",
+    location: "Huntington, NY",
+    text: "The architectural finishes they applied to our old office doors completely transformed the space. It looks like real wood but cost a fraction of replacing them. Amazing work!",
+    rating: 5,
+  },
+  {
+    name: "Thomas G.",
+    location: "Smithtown, NY",
+    text: "CoolVu installed safety film on all our ground-floor windows. The crew was fast, respectful of our home, and the peace of mind knowing our family is safer is priceless.",
+    rating: 5,
+  },
+  {
+    name: "Emily C.",
+    location: "Oyster Bay, NY",
+    text: "We had a terrible glare issue in our living room every evening. CoolVu's solar film fixed it instantly without ruining our view of the backyard. Very happy with the results.",
+    rating: 5,
+  }
 ];
 
 export default function Testimonials() {
@@ -83,15 +102,13 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full border border-white/20 shadow-xl">
-            <div className="flex -space-x-2">
-              <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-600 border-2 border-white">G</div>
-              <div className="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-xs font-bold text-red-600 border-2 border-white">O</div>
-              <div className="w-8 h-8 rounded-full bg-yellow-100 flex items-center justify-center text-xs font-bold text-yellow-600 border-2 border-white">O</div>
-            </div>
-            <p className="text-sm font-sans font-medium text-coolvu-dark-blue">
-              Based on <span className="font-bold">25+ Google Reviews</span>
-            </p>
+          <div className="relative h-16 w-64 md:h-20 md:w-80 hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <Image 
+              src="/google-reviews-pill.png" 
+              alt="Based on 25+ Google Reviews" 
+              fill
+              className="object-contain drop-shadow-xl"
+            />
           </div>
         </div>
       </div>

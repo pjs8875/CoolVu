@@ -8,86 +8,68 @@ import { cn } from "@/lib/utils";
 const videoItems = [
   {
     id: "1",
-    title: "Project Showcase 1",
+    title: "IMG_7112",
     category: "Installation",
-    thumbnail: "/commercial-graphics/1.png",
     videoUrl: "/videos/IMG_7112.webm",
   },
   {
     id: "2",
-    title: "Project Showcase 2",
+    title: "IMG_7116",
     category: "Installation",
-    thumbnail: "/commercial-graphics/2.png",
     videoUrl: "/videos/IMG_7116.webm",
   },
   {
     id: "3",
-    title: "Project Showcase 3",
+    title: "IMG_7159",
     category: "Installation",
-    thumbnail: "/commercial-graphics/3.png",
     videoUrl: "/videos/IMG_7159.webm",
   },
   {
     id: "4",
-    title: "Project Showcase 4",
+    title: "IMG_7160",
     category: "Installation",
-    thumbnail: "/commercial-graphics/4.png",
     videoUrl: "/videos/IMG_7160.webm",
   },
   {
     id: "5",
-    title: "Project Showcase 5",
+    title: "IMG_7253",
     category: "Installation",
-    thumbnail: "/commercial-graphics/5.png",
     videoUrl: "/videos/IMG_7253.webm",
   },
   {
     id: "6",
-    title: "Project Showcase 6",
+    title: "IMG_7256",
     category: "Installation",
-    thumbnail: "/commercial-graphics/6.png",
     videoUrl: "/videos/IMG_7256.webm",
   },
   {
     id: "7",
-    title: "Project Showcase 7",
+    title: "IMG_7264",
     category: "Installation",
-    thumbnail: "/commercial-graphics/7.png",
     videoUrl: "/videos/IMG_7264.webm",
   },
   {
     id: "8",
-    title: "Project Showcase 8",
+    title: "IMG_7348",
     category: "Installation",
-    thumbnail: "/commercial-graphics/8.png",
     videoUrl: "/videos/IMG_7348.webm",
-  },
-  {
-    id: "9",
-    title: "Project Showcase 9",
-    category: "Installation",
-    thumbnail: "/commercial-graphics/9.png",
-    videoUrl: "/videos/IMG_8449.MOV",
   },
   {
     id: "10",
     title: "Stopping the heat!",
     category: "Solar & Heat",
-    thumbnail: "/solar-heat/1.png",
     videoUrl: "/videos/Stopping the heat!.webm",
   },
   {
     id: "11",
-    title: "Demo 1",
+    title: "19700121_0745_69bc06c0a090819193bec37240ee3124",
     category: "Demo",
-    thumbnail: "/security-film/8.png",
     videoUrl: "/videos/19700121_0745_69bc06c0a090819193bec37240ee3124.webm",
   },
   {
     id: "12",
-    title: "Demo 2",
+    title: "download",
     category: "Demo",
-    thumbnail: "/security-film/9.png",
     videoUrl: "/videos/download.webm",
   },
 ];
@@ -169,55 +151,24 @@ export default function VideoSection() {
               key={video.id} 
               className="relative flex-none w-[80vw] sm:w-[300px] md:w-[340px] snap-center group cursor-pointer"
             >
-              {/* Thumbnail / Video Container */}
+              {/* Video Container */}
               <div 
                 className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4 bg-gray-900 shadow-lg"
-                onClick={() => {
-                  if (video.videoUrl) setActiveVideoId(video.id);
-                  else alert("Video coming soon!");
-                }}
               >
-                {activeVideoId === video.id && video.videoUrl ? (
-                  <video 
-                    src={video.videoUrl}
-                    controls
-                    autoPlay
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-contain z-20 bg-black"
-                    onEnded={() => setActiveVideoId(null)}
-                  />
-                ) : (
-                  <>
-                    {/* Fallback image until video is played */}
-                    <div 
-                      className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                      style={{ backgroundImage: `url(${video.thumbnail})` }}
-                    ></div>
-                    
-                    {/* Dark overlay */}
-                    <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300"></div>
-                    
-                    {/* Play Button */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30 group-hover:bg-coolvu-medium-blue group-hover:border-coolvu-medium-blue transition-all duration-300 transform group-hover:scale-110">
-                        <Play className="w-6 h-6 text-white fill-white ml-1" />
-                      </div>
-                    </div>
-                    
-                    {/* Category Badge */}
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-black/60 backdrop-blur-md text-white text-xs font-sans font-medium px-3 py-1.5 rounded-full border border-white/10">
-                        {video.category}
-                      </span>
-                    </div>
-                  </>
-                )}
+                <video 
+                  src={video.videoUrl}
+                  controls
+                  preload="metadata"
+                  className="absolute inset-0 w-full h-full object-contain z-20 bg-black"
+                />
+                
+                {/* Category Badge */}
+                <div className="absolute top-4 left-4 z-30 pointer-events-none">
+                  <span className="bg-black/60 backdrop-blur-md text-white text-xs font-sans font-medium px-3 py-1.5 rounded-full border border-white/10">
+                    {video.category}
+                  </span>
+                </div>
               </div>
-              
-              {/* Video Info */}
-              <h3 className="text-coolvu-dark-blue font-heading font-bold text-lg md:text-xl group-hover:text-coolvu-medium-blue transition-colors line-clamp-2">
-                {video.title}
-              </h3>
             </div>
           ))}
         </div>

@@ -15,8 +15,8 @@ export default function Home() {
     <>
       <Hero />
       <TrustBar />
-      <MarketsServed />
       <Services />
+      <MarketsServed />
       <Process />
       <ServiceAreas />
       <VideoSection />

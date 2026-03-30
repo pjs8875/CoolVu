@@ -39,9 +39,9 @@ export default function Process() {
               src="/paul-owner.png" 
               alt="Paul Silverman, Owner"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-coolvu-dark-blue/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-coolvu-dark-blue/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-8 left-8 right-8">
               <p className="text-white font-heading font-bold text-xl md:text-2xl">
                 "We treat your home like our own."

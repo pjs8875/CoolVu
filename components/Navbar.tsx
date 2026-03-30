@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Phone, ChevronDown, Menu, X } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 import { cn } from "@/lib/utils";
+import { locationsData } from "@/lib/locations";
 
 interface NavbarProps {
   isTransparent?: boolean;
@@ -14,7 +15,9 @@ interface NavbarProps {
 export default function Navbar({ isTransparent = false }: NavbarProps) {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMarketsOpen, setIsMarketsOpen] = useState(false);
+  const [isLocationsOpen, setIsLocationsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedState, setExpandedState] = useState<string | null>(null);
 
   const services = [
     { name: "Solar & Heat Reduction", path: "/services/solar-and-heat-reduction" },
@@ -84,8 +87,6 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           </div>
         </div>
 
-        <Link href="/#solutions" className="hover:text-coolvu-medium-blue transition-colors">Solutions</Link>
-        
         <div 
           className="relative group"
           onMouseEnter={() => setIsMarketsOpen(true)}
@@ -113,9 +114,59 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
         </div>
 
         <Link href="/#process" className="hover:text-coolvu-medium-blue transition-colors">Our Process</Link>
-        <Link href="/#locations" className="hover:text-coolvu-medium-blue transition-colors">Locations</Link>
+        
+        <div 
+          className="relative group"
+          onMouseEnter={() => setIsLocationsOpen(true)}
+          onMouseLeave={() => { setIsLocationsOpen(false); setExpandedState(null); }}
+        >
+          <button className="flex items-center gap-1 hover:text-coolvu-medium-blue transition-colors py-2 uppercase">
+            LOCATIONS <ChevronDown size={16} className={cn("transition-transform", isLocationsOpen && "rotate-180")} />
+          </button>
+          
+          {/* Dropdown */}
+          <div className={cn(
+            "absolute top-full left-1/2 -translate-x-1/2 w-[600px] bg-white shadow-xl rounded-xl border border-gray-100 py-4 transition-all duration-200 transform origin-top",
+            isLocationsOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
+          )}>
+            <div className="px-6 pb-2 mb-2 border-b border-gray-100">
+              <h3 className="text-sm font-bold text-coolvu-dark-blue uppercase tracking-wider">National Reach</h3>
+              <p className="text-xs text-gray-500 font-normal normal-case mt-1">Select a state to view our service areas</p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-x-4 px-4 max-h-[400px] overflow-y-auto custom-scrollbar">
+              {locationsData.map((data, index) => (
+                <div key={index} className="mb-1">
+                  <button 
+                    onClick={() => setExpandedState(expandedState === data.state ? null : data.state)}
+                    className="w-full flex items-center justify-between px-3 py-2 text-sm text-coolvu-dark-blue hover:text-coolvu-medium-blue hover:bg-gray-50 rounded-lg transition-colors uppercase tracking-wider font-semibold"
+                  >
+                    {data.state}
+                    <ChevronDown size={14} className={cn("transition-transform text-gray-400", expandedState === data.state && "rotate-180")} />
+                  </button>
+                  
+                  <div className={cn(
+                    "overflow-hidden transition-all duration-200",
+                    expandedState === data.state ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  )}>
+                    <div className="pl-6 py-1 pr-2 space-y-1">
+                      {data.cities.map((city, idx) => (
+                        <div key={idx} className="text-xs text-gray-600 font-normal normal-case py-1 flex items-center gap-2">
+                          <div className="w-1 h-1 rounded-full bg-coolvu-medium-blue shrink-0"></div>
+                          {city}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         <Link href="/#videos" className="hover:text-coolvu-medium-blue transition-colors">Videos</Link>
         <Link href="/#testimonials" className="hover:text-coolvu-medium-blue transition-colors">Testimonials</Link>
+        <Link href="/#faq" className="hover:text-coolvu-medium-blue transition-colors">FAQ</Link>
       </div>
 
       {/* Contact & CTA */}
@@ -124,7 +175,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           <Phone size={18} />
           <span>(844) 426-6588</span>
         </a>
-          <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
+          <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
             Free Estimate
           </AnimatedButton>
       </div>
@@ -156,8 +207,6 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
             ))}
           </div>
           
-          <Link href="/#solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Solutions</Link>
-          
           <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-2 mb-2">MARKETS</p>
           <div className="flex flex-col gap-3 pl-2 border-l-2 border-coolvu-medium-blue mb-4">
             {markets.map((market, index) => (
@@ -173,11 +222,55 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
           </div>
 
           <Link href="/#process" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Our Process</Link>
-          <Link href="/#locations" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Locations</Link>
+          
+          <div className="flex flex-col gap-2">
+            <button 
+              onClick={() => setIsLocationsOpen(!isLocationsOpen)}
+              className="flex items-center justify-between text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue w-full text-left"
+            >
+              LOCATIONS
+              <ChevronDown size={20} className={cn("transition-transform", isLocationsOpen && "rotate-180")} />
+            </button>
+            
+            <div className={cn(
+              "overflow-hidden transition-all duration-300",
+              isLocationsOpen ? "max-h-[300px] opacity-100 overflow-y-auto custom-scrollbar" : "max-h-0 opacity-0"
+            )}>
+              <div className="flex flex-col gap-2 pl-2 border-l-2 border-coolvu-medium-blue mt-2 mb-2">
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">National Reach</p>
+                {locationsData.map((data, index) => (
+                  <div key={index} className="flex flex-col">
+                    <button 
+                      onClick={() => setExpandedState(expandedState === data.state ? null : data.state)}
+                      className="text-sm font-semibold hover:text-coolvu-medium-blue transition-colors uppercase tracking-wider text-left py-1 flex items-center justify-between pr-2"
+                    >
+                      {data.state}
+                      <ChevronDown size={14} className={cn("transition-transform text-gray-400", expandedState === data.state && "rotate-180")} />
+                    </button>
+                    <div className={cn(
+                      "overflow-hidden transition-all duration-200",
+                      expandedState === data.state ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                    )}>
+                      <div className="pl-3 py-1 space-y-1">
+                        {data.cities.map((city, idx) => (
+                          <div key={idx} className="text-xs text-gray-600 font-normal normal-case py-1 flex items-center gap-2">
+                            <div className="w-1 h-1 rounded-full bg-coolvu-medium-blue shrink-0"></div>
+                            {city}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           <Link href="/#videos" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Videos</Link>
           <Link href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">Testimonials</Link>
+          <Link href="/#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-bold uppercase tracking-widest hover:text-coolvu-medium-blue">FAQ</Link>
           
-          <AnimatedButton href="/#contact-form" onClick={() => setIsMobileMenuOpen(false)} className="w-full bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md mt-4">
+          <AnimatedButton href="?contact=true" onClick={() => setIsMobileMenuOpen(false)} className="w-full bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md mt-4">
             Get Your Free Estimate
           </AnimatedButton>
         </div>

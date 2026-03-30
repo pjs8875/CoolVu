@@ -34,7 +34,7 @@ export default function MarketPageLayout({ title, description, features }: Marke
               {description}
             </p>
             
-              <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+              <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
                 Get Your Free Estimate
               </AnimatedButton>
           </div>
@@ -48,11 +48,11 @@ export default function MarketPageLayout({ title, description, features }: Marke
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-white mb-10 text-center">
               Our Solutions
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-stretch">
               {features.map((feature, index) => (
-                <div key={index} className="bg-white/5 p-8 rounded-2xl border border-white/10 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold font-heading text-white mb-4">{feature.title}</h3>
-                  <p className="text-coolvu-light-blue font-sans text-sm leading-relaxed">
+                <div key={index} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col">
+                  <h3 className="text-xl font-bold font-heading text-coolvu-dark-blue mb-4">{feature.title}</h3>
+                  <p className="text-gray-600 font-sans text-sm md:text-base leading-relaxed flex-grow">
                     {feature.description}
                   </p>
                 </div>

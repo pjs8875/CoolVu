@@ -30,8 +30,8 @@ const markets = [
     path: "/markets/fema"
   },
   {
-    title: "Government",
-    description: "Fortify municipal facilities against severe weather, blasts, and forced entry threats.",
+    title: "Government & Healthcare",
+    description: "Fortify municipal facilities and ensure patient privacy with specialized security and anti-microbial window films.",
     path: "/markets/government"
   },
   {
@@ -48,23 +48,18 @@ const markets = [
     title: "Data Centers",
     description: "Maintain critical temperature control and obscure sensitive equipment from outside view with specialized cloaking films.",
     path: "/markets/data-centers"
-  },
-  {
-    title: "Healthcare",
-    description: "Ensure patient privacy and maintain hygienic surfaces with anti-microbial window films.",
-    path: "/markets/healthcare"
   }
 ];
 
 export default function MarketsServed() {
   return (
-    <section id="markets" className="py-16 md:py-24 bg-white">
+    <section id="markets" className="py-16 md:py-24 bg-coolvu-dark-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
             Solutions For Every Industry
           </h2>
-          <p className="text-base md:text-lg text-gray-600 font-sans">
+          <p className="text-base md:text-lg text-coolvu-light-blue font-sans">
             From single-family homes to massive corporate campuses, CoolVu provides tailored window and surface solutions that solve your specific challenges.
           </p>
         </div>
@@ -75,15 +70,15 @@ export default function MarketsServed() {
               key={index} 
               className="border-t-2 border-coolvu-medium-blue pt-6 flex flex-col"
             >
-              <h3 className="text-2xl font-bold font-heading text-coolvu-dark-blue mb-4">
+              <h3 className="text-2xl font-bold font-heading text-white mb-4">
                 {market.title}
               </h3>
-              <p className="text-gray-600 font-sans text-base leading-relaxed mb-6 flex-grow">
+              <p className="text-gray-300 font-sans text-base leading-relaxed mb-6 flex-grow">
                 {market.description}
               </p>
               <Link 
                 href={market.path} 
-                className="inline-flex items-center text-coolvu-medium-blue font-sans font-bold text-sm uppercase tracking-wider hover:text-coolvu-dark-blue transition-colors group"
+                className="inline-flex items-center text-coolvu-light-blue font-sans font-bold text-sm uppercase tracking-wider hover:text-white transition-colors group"
               >
                 Learn More 
                 <span className="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
@@ -93,7 +88,7 @@ export default function MarketsServed() {
         </div>
 
         <div className="flex justify-center">
-          <AnimatedButton href="/#contact-form" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
+          <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
             Discuss Your Project
           </AnimatedButton>
         </div>
