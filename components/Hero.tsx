@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="absolute inset-0 z-20 flex flex-col items-start justify-center p-6 md:p-16 text-left">
           {/* Background Image with Overlay */}
           <div 
-            className="absolute inset-0 z-[-1] bg-cover bg-[75%_center] md:bg-center"
+            className="absolute inset-0 z-[-1] bg-cover bg-right md:bg-center"
             style={{ 
               backgroundImage: "url('/hero-bg.png')",
             }}
