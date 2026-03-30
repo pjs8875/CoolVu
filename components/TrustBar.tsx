@@ -68,7 +68,9 @@ export default function TrustBar() {
           {trustItems.map((item, index) => (
             <motion.div 
               key={index} 
-              className="flex flex-col items-center text-center"
+              className={`flex flex-col items-center text-center ${
+                index === trustItems.length - 1 ? "col-span-2 md:col-span-1 lg:col-span-1" : ""
+              }`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
