@@ -37,7 +37,7 @@ export function BlurText({
   const defaultTo = { filter: 'blur(0px)', opacity: 1, y: 0 };
 
   return (
-    <Component ref={ref} className={cn('inline-flex flex-wrap', className)}>
+    <Component ref={ref} className={cn('flex flex-wrap', className)}>
       {elements.map((element, index) => (
         <motion.span
           key={index}
