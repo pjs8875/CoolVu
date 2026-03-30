@@ -1,4 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+
+import { BlurText } from "@/components/ui/blur-text";
 
 const processSteps = [
   {
@@ -20,13 +26,39 @@ const processSteps = [
 ];
 
 export default function Process() {
+  const sectionRef = useRef<HTMLElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start 80%", "end 20%"]
+  });
+
+  // Calculate positions for the single squeegee
+  // Squeegee wipes diagonally from Top-Left to Bottom-Right across the section
+  const sqLeft = useTransform(scrollYProgress, [0, 1], ["-20%", "120%"]);
+  const sqTop = useTransform(scrollYProgress, [0, 1], ["-20%", "120%"]);
+  
+  // Squeegee visibility (fade in at start, fade out at end)
+  const sqOpacity = useTransform(scrollYProgress, [0, 0.1, 0.9, 1], [0, 1, 1, 0]);
+
   return (
-    <section id="process" className="pt-12 md:pt-20 pb-20 md:pb-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={sectionRef} id="process" className="pt-12 md:pt-20 pb-20 md:pb-32 bg-white relative overflow-hidden">
+      
+      {/* Animated Squeegee - Moved to z-0 so it's behind the content */}
+      <motion.div 
+        className="absolute w-64 h-64 md:w-96 md:h-96 lg:w-[600px] lg:h-[600px] z-0 pointer-events-none -translate-x-1/2 -translate-y-1/2"
+        style={{ left: sqLeft, top: sqTop, rotate: -45, opacity: sqOpacity }}
+      >
+        <Image src="/squeegee.png" alt="Squeegee" fill className="object-contain opacity-20" />
+      </motion.div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-16 text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
-            Our Simple Process
-          </h2>
+          <BlurText 
+            text="Our Simple Process"
+            as="h2"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
+          />
           <p className="text-base md:text-lg text-gray-600 font-sans">
             Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security.
           </p>

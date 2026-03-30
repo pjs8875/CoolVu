@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { AnimatedButton } from "@/components/ui/animated-button";
+import { BlurText } from "@/components/ui/blur-text";
 
 const markets = [
   {
@@ -56,9 +57,11 @@ export default function MarketsServed() {
     <section id="markets" className="py-16 md:py-24 bg-coolvu-dark-blue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
-            Solutions For Every Industry
-          </h2>
+          <BlurText 
+            text="Solutions For Every Industry"
+            as="h2"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6 justify-center"
+          />
           <p className="text-base md:text-lg text-coolvu-light-blue font-sans">
             From single-family homes to massive corporate campuses, CoolVu provides tailored window and surface solutions that solve your specific challenges.
           </p>

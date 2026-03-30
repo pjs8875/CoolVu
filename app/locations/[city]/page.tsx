@@ -9,13 +9,6 @@ const cities = [
   { slug: "babylon", name: "Babylon" },
   { slug: "smithtown", name: "Smithtown" },
   { slug: "islip", name: "Islip" },
-  { slug: "brookhaven", name: "Brookhaven" },
-  { slug: "riverhead", name: "Riverhead" },
-  { slug: "long-beach", name: "Long Beach" },
-  { slug: "glen-cove", name: "Glen Cove" },
-  { slug: "massapequa", name: "Massapequa" },
-  { slug: "levittown", name: "Levittown" },
-  { slug: "southampton", name: "Southampton" },
   { slug: "queens", name: "Queens" },
   { slug: "brooklyn", name: "Brooklyn" },
 ];

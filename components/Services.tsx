@@ -5,6 +5,8 @@ import Link from "next/link";
 import { AnimatedButton } from "@/components/ui/animated-button";
 import StackingCards, { StackingCardItem } from "@/components/fancy/blocks/stacking-cards";
 
+import { BlurText } from "@/components/ui/blur-text";
+
 const services = [
   {
     id: "solar-and-heat-reduction",
@@ -59,9 +61,11 @@ export default function Services() {
     <section id="solutions" className="pt-12 md:pt-16 pb-10 md:pb-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-col items-center text-center">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6">
-            What we offer?
-          </h2>
+          <BlurText 
+            text="What we offer?"
+            as="h2"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
+          />
           <p className="text-base md:text-lg text-gray-600 font-sans max-w-2xl">
             From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs.
           </p>

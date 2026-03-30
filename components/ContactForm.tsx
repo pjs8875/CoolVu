@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatedButton } from "@/components/ui/animated-button";
+import { BlurText } from "@/components/ui/blur-text";
 import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
 
 export default function ContactForm() {
@@ -15,7 +16,11 @@ export default function ContactForm() {
             <div className="absolute inset-0 bg-coolvu-dark-blue/90"></div>
             
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Let's Discuss Your Project</h2>
+              <BlurText 
+                text="Let's Discuss Your Project"
+                as="h2"
+                className="text-3xl md:text-4xl font-bold font-heading mb-6"
+              />
               <p className="text-coolvu-light-blue font-sans mb-12 text-lg">
                 Ready to enhance your property? Reach out to us directly or request a free, no-obligation estimate online.
               </p>

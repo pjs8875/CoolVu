@@ -5,6 +5,8 @@ import Image from "next/image";
 import { Phone } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 
+import { BlurText } from "@/components/ui/blur-text";
+
 import Navbar from "./Navbar";
 
 export default function Hero() {
@@ -31,9 +33,11 @@ export default function Hero() {
           </div>
           
           <div className="max-w-7xl w-full mx-auto flex flex-col items-start mt-20 md:mt-0 px-4">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-3 md:mb-4 text-white drop-shadow-md uppercase tracking-wide max-w-4xl">
-              Premium Window Film & Surface Solutions
-            </h1>
+            <BlurText 
+              text="Premium Window Film & Surface Solutions"
+              as="h1"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-3 md:mb-4 text-white drop-shadow-md uppercase tracking-wide max-w-4xl"
+            />
             <p className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-left mb-6 md:mb-8 drop-shadow-sm font-medium">
               Enhance Security, Comfort & Lower Energy Costs for Residential, Commercial, Educational, Healthcare & Government Facilities
             </p>

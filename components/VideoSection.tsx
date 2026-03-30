@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { BlurText } from "@/components/ui/blur-text";
 
 // Placeholder data for videos
 const videoItems = [
@@ -108,9 +109,11 @@ export default function VideoSection() {
         
         {/* Header */}
         <div className="relative flex flex-col items-center text-center mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue px-12">
-            Watch the Difference
-          </h2>
+          <BlurText 
+            text="Watch the Difference"
+            as="h2"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue px-12 justify-center"
+          />
           
           {/* Navigation Buttons (Desktop) */}
           <div className="hidden md:flex gap-3 absolute right-0 top-1/2 -translate-y-1/2">
