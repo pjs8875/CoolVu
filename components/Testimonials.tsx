@@ -61,9 +61,6 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="testimonials" className="py-20 md:py-32 bg-coolvu-dark-blue relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-white/5"></div>
-      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6">
@@ -102,13 +99,18 @@ export default function Testimonials() {
         </div>
 
         <div className="mt-16 flex justify-center">
-          <div className="relative h-16 w-64 md:h-20 md:w-80 hover:scale-105 transition-transform duration-300 cursor-pointer">
-            <Image 
-              src="/google-reviews-pill.png" 
-              alt="Based on 25+ Google Reviews" 
-              fill
-              className="object-contain drop-shadow-xl"
-            />
+          <div className="inline-flex items-center gap-4 bg-white px-6 py-3 rounded-full border border-white/20 shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <div className="relative w-8 h-8 md:w-10 md:h-10">
+              <Image 
+                src="/google-logo.png" 
+                alt="Google Logo" 
+                fill
+                className="object-contain"
+              />
+            </div>
+            <p className="text-sm md:text-base font-sans font-medium text-coolvu-dark-blue">
+              Based on <span className="font-bold">25+ Google Reviews</span>
+            </p>
           </div>
         </div>
       </div>
