@@ -112,7 +112,7 @@ export default function VideoSection() {
           <BlurText 
             text="Watch the Difference"
             as="h2"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue px-12 justify-center"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue justify-center"
           />
           
           {/* Navigation Buttons (Desktop) */}

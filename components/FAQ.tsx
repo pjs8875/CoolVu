@@ -47,7 +47,7 @@ export default function FAQ() {
           <BlurText 
             text="Everything you need to know about our products, process, and guarantees."
             as="p"
-            className="text-base md:text-lg text-gray-600 font-sans"
+            className="text-base md:text-lg text-gray-600 font-sans justify-center"
             delay={80}
           />
         </div>

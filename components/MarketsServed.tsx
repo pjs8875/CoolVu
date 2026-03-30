@@ -65,7 +65,7 @@ export default function MarketsServed() {
           <BlurText 
             text="From single-family homes to massive corporate campuses, CoolVu provides tailored window and surface solutions that solve your specific challenges."
             as="p"
-            className="text-base md:text-lg text-coolvu-light-blue font-sans"
+            className="text-base md:text-lg text-coolvu-light-blue font-sans justify-center"
             delay={80}
           />
         </div>

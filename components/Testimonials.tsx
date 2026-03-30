@@ -240,12 +240,12 @@ export default function Testimonials() {
           <BlurText 
             text="What Our Customers Are Saying"
             as="h2"
-            className="text-4xl md:text-5xl font-bold font-heading text-white mb-6 sm:whitespace-nowrap"
+            className="text-4xl md:text-5xl font-bold font-heading text-white mb-6 sm:whitespace-nowrap justify-center"
           />
           <BlurText 
             text="Trusted by +400 customers across Long Island and beyond."
             as="p"
-            className="text-xl text-blue-100 font-sans"
+            className="text-xl text-blue-100 font-sans justify-center"
             delay={80}
           />
         </div>

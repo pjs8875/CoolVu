@@ -35,7 +35,7 @@ export default function ServiceAreas() {
           <BlurText 
             text="CoolVu of Long Island proudly serves the greater NY Metro area."
             as="p"
-            className="text-sm md:text-lg text-coolvu-light-blue font-sans leading-relaxed"
+            className="text-sm md:text-lg text-coolvu-light-blue font-sans leading-relaxed justify-center"
             delay={80}
           />
         </div>

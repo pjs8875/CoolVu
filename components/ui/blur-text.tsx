@@ -31,8 +31,8 @@ export function BlurText({
 
   const defaultFrom =
     direction === 'top'
-      ? { filter: 'blur(6px)', opacity: 0, y: -20 }
-      : { filter: 'blur(6px)', opacity: 0, y: 20 };
+      ? { filter: 'blur(4px)', opacity: 0, y: -10 }
+      : { filter: 'blur(4px)', opacity: 0, y: 10 };
 
   const defaultTo = { filter: 'blur(0px)', opacity: 1, y: 0 };
 
@@ -44,8 +44,8 @@ export function BlurText({
           initial={defaultFrom}
           animate={isInView ? defaultTo : defaultFrom}
           transition={{
-            duration: 0.25,
-            delay: index * (delay / 2500),
+            duration: 0.15,
+            delay: index * (delay / 4000),
             ease: "easeOut",
           }}
           className={cn(

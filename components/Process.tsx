@@ -62,7 +62,7 @@ export default function Process() {
           <BlurText 
             text="Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security."
             as="p"
-            className="text-base md:text-lg text-gray-600 font-sans"
+            className="text-base md:text-lg text-gray-600 font-sans justify-center"
             delay={80}
           />
         </div>
