@@ -21,9 +21,12 @@ export default function ContactForm() {
                 as="h2"
                 className="text-3xl md:text-4xl font-bold font-heading mb-6"
               />
-              <p className="text-coolvu-light-blue font-sans mb-12 text-lg">
-                Ready to enhance your property? Reach out to us directly or request a free, no-obligation estimate online.
-              </p>
+              <BlurText 
+                text="Ready to enhance your property? Reach out to us directly or request a free, no-obligation estimate online."
+                as="p"
+                className="text-coolvu-light-blue font-sans mb-12 text-lg"
+                delay={80}
+              />
               
               <div className="flex flex-col gap-8">
                 <div className="flex items-start gap-4">

@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from "react";
 import { motion, useInView, animate } from "framer-motion";
-import { BlurText } from "@/components/ui/blur-text";
 
 const trustItems = [
   {
@@ -87,18 +86,12 @@ export default function TrustBar() {
                   item.textValue
                 )}
               </span>
-              <BlurText 
-                text={item.title}
-                as="h3"
-                className="text-white font-heading font-bold text-sm md:text-base tracking-wider uppercase mb-1"
-                delay={50}
-              />
-              <BlurText 
-                text={item.subtitle}
-                as="p"
-                className="text-gray-300 font-sans text-xs md:text-sm max-w-[200px]"
-                delay={100}
-              />
+              <h3 className="text-white font-heading font-bold text-sm md:text-base tracking-wider uppercase mb-1">
+                {item.title}
+              </h3>
+              <p className="text-gray-300 font-sans text-xs md:text-sm max-w-[200px]">
+                {item.subtitle}
+              </p>
             </motion.div>
           ))}
         </div>

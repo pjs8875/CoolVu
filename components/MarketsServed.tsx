@@ -66,7 +66,7 @@ export default function MarketsServed() {
             text="From single-family homes to massive corporate campuses, CoolVu provides tailored window and surface solutions that solve your specific challenges."
             as="p"
             className="text-base md:text-lg text-coolvu-light-blue font-sans"
-            delay={100}
+            delay={80}
           />
         </div>
 
@@ -76,18 +76,12 @@ export default function MarketsServed() {
               key={index} 
               className="border-t-2 border-coolvu-medium-blue pt-6 flex flex-col"
             >
-              <BlurText 
-                text={market.title}
-                as="h3"
-                className="text-2xl font-bold font-heading text-white mb-4"
-                delay={50}
-              />
-              <BlurText 
-                text={market.description}
-                as="p"
-                className="text-gray-300 font-sans text-base leading-relaxed mb-6 flex-grow"
-                delay={100}
-              />
+              <h3 className="text-2xl font-bold font-heading text-white mb-4">
+                {market.title}
+              </h3>
+              <p className="text-gray-300 font-sans text-base leading-relaxed mb-6 flex-grow">
+                {market.description}
+              </p>
               <Link 
                 href={market.path} 
                 className="inline-flex items-center text-coolvu-light-blue font-sans font-bold text-sm uppercase tracking-wider hover:text-white transition-colors group"

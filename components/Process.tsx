@@ -63,7 +63,7 @@ export default function Process() {
             text="Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security."
             as="p"
             className="text-base md:text-lg text-gray-600 font-sans"
-            delay={100}
+            delay={80}
           />
         </div>
 
@@ -104,19 +104,13 @@ export default function Process() {
                   </div>
                   
                   <div className="relative z-10 flex-grow">
-                    <BlurText 
-                      text={step.title}
-                      as="h3"
-                      className="text-lg md:text-xl font-bold font-heading text-coolvu-dark-blue mb-2"
-                      delay={50}
-                    />
+                    <h3 className="text-lg md:text-xl font-bold font-heading text-coolvu-dark-blue mb-2">
+                      {step.title}
+                    </h3>
                     <div className="w-8 h-1 bg-coolvu-medium-blue rounded-full mb-3"></div>
-                    <BlurText 
-                      text={step.description}
-                      as="p"
-                      className="text-xs md:text-sm text-gray-600 font-sans leading-relaxed"
-                      delay={100}
-                    />
+                    <p className="text-xs md:text-sm text-gray-600 font-sans leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </div>
               );

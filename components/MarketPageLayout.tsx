@@ -33,12 +33,9 @@ export default function MarketPageLayout({ title, description, features }: Marke
               as="h1"
               className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 leading-tight justify-center"
             />
-            <BlurText 
-              text={description}
-              as="p"
-              className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed whitespace-pre-line"
-              delay={50}
-            />
+            <p className="text-base md:text-lg text-gray-600 font-sans mb-10 leading-relaxed whitespace-pre-line">
+              {description}
+            </p>
             
               <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-8 py-4 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none">
                 Get Your Free Estimate

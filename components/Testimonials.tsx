@@ -246,7 +246,7 @@ export default function Testimonials() {
             text="Trusted by +400 customers across Long Island and beyond."
             as="p"
             className="text-xl text-blue-100 font-sans"
-            delay={100}
+            delay={80}
           />
         </div>
 

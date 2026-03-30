@@ -70,7 +70,7 @@ export default function Services() {
             text="From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs."
             as="p"
             className="text-base md:text-lg text-gray-600 font-sans max-w-2xl"
-            delay={100}
+            delay={80}
           />
         </div>
 

@@ -100,7 +100,7 @@ export default function ServiceAreas() {
               text="CoolVu of Long Island proudly serves the greater NY Metro area. Scroll to explore our service regions."
               as="p"
               className="text-sm md:text-lg text-coolvu-light-blue font-sans leading-relaxed"
-              delay={100}
+              delay={80}
             />
           </div>
 

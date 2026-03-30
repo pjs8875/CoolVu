@@ -48,7 +48,7 @@ export default function FAQ() {
             text="Everything you need to know about our products, process, and guarantees."
             as="p"
             className="text-base md:text-lg text-gray-600 font-sans"
-            delay={100}
+            delay={80}
           />
         </div>
 
