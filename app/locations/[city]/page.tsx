@@ -26,9 +26,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { city: string } }): Promise<Metadata> {
-  const cityData = cities.find((c) => c.slug === params.city);
-  const cityName = cityData ? cityData.name : params.city.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+export async function generateMetadata({ params }: { params: Promise<{ city: string }> | { city: string } }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const city = resolvedParams?.city || "";
+  const cityData = cities.find((c) => c.slug === city);
+  const cityName = cityData ? cityData.name : city.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
 
   return {
     title: `Window Tinting & Surface Solutions in ${cityName}, NY | CoolVu`,
@@ -36,9 +38,11 @@ export async function generateMetadata({ params }: { params: { city: string } })
   };
 }
 
-export default function LocationPage({ params }: { params: { city: string } }) {
-  const cityData = cities.find((c) => c.slug === params.city);
-  const cityName = cityData ? cityData.name : params.city.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+export default async function LocationPage({ params }: { params: Promise<{ city: string }> | { city: string } }) {
+  const resolvedParams = await params;
+  const city = resolvedParams?.city || "";
+  const cityData = cities.find((c) => c.slug === city);
+  const cityName = cityData ? cityData.name : city.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
 
   return <LocationPageLayout city={cityName} />;
 }
