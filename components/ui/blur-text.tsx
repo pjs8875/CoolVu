@@ -34,14 +34,7 @@ export function BlurText({
       ? { filter: 'blur(10px)', opacity: 0, y: -50 }
       : { filter: 'blur(10px)', opacity: 0, y: 50 };
 
-  const defaultTo = [
-    {
-      filter: 'blur(5px)',
-      opacity: 0.5,
-      y: direction === 'top' ? 5 : -5,
-    },
-    { filter: 'blur(0px)', opacity: 1, y: 0 },
-  ];
+  const defaultTo = { filter: 'blur(0px)', opacity: 1, y: 0 };
 
   return (
     <Component ref={ref} className={cn('inline-flex flex-wrap', className)}>
