@@ -15,7 +15,7 @@ Client Snapshot
 Field Details
 Business CoolVu Glass & Surface Solutions — franchise location
 Owners Paul & Claire Silverman
-Phone (844) 426-6588
+Phone (516) 535-9555
 Office Hours Monday–Friday, 9AM–5PM
 Franchise Since September 2025
 Stage Early-stage local franchise; building pipeline & brand recognition

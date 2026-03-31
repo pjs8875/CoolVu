@@ -35,7 +35,7 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-lg mb-1">Call Us Directly</h4>
-                    <a href="tel:844-426-6588" className="text-coolvu-light-blue hover:text-white transition-colors">(844) 426-6588</a>
+                    <a href="tel:516-535-9555" className="text-coolvu-light-blue hover:text-white transition-colors">(516) 535-9555</a>
                   </div>
                 </div>
                 

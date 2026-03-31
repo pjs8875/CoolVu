@@ -171,9 +171,9 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
 
       {/* Contact & CTA */}
       <div className="hidden md:flex items-center gap-4">
-        <a href="tel:844-426-6588" className="flex items-center gap-2 font-sans font-medium hover:text-coolvu-medium-blue transition-colors">
+        <a href="tel:516-535-9555" className="flex items-center gap-2 font-sans font-medium hover:text-coolvu-medium-blue transition-colors">
           <Phone size={18} />
-          <span>(844) 426-6588</span>
+          <span>(516) 535-9555</span>
         </a>
           <AnimatedButton href="?contact=true" className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 font-sans font-bold text-sm tracking-wider uppercase transition-colors rounded-lg border-none shadow-md">
             Free Estimate
@@ -182,7 +182,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
 
       {/* Mobile Menu Button */}
       <div className="lg:hidden flex items-center gap-4">
-        <a href="tel:844-426-6588" className="flex items-center text-coolvu-medium-blue md:hidden">
+        <a href="tel:516-535-9555" className="flex items-center text-coolvu-medium-blue md:hidden">
           <Phone size={24} />
         </a>
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
