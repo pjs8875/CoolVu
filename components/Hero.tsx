@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Phone } from "lucide-react";
+import { Phone, Star } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 
 import { BlurText } from "@/components/ui/blur-text";
@@ -32,7 +32,27 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/40"></div>
           </div>
           
-          <div className="max-w-7xl w-full mx-auto flex flex-col items-start mt-20 md:mt-0 px-4">
+          <div className="max-w-7xl w-full mx-auto flex flex-col items-start mt-32 md:mt-0 px-4">
+            
+            {/* Google Reviews Badge */}
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 shadow-lg">
+              <Image 
+                src="/google-logo.png" 
+                alt="Google" 
+                width={20} 
+                height={20} 
+                className="w-5 h-5 object-contain"
+              />
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-[#F97316] text-[#F97316]" />
+                ))}
+              </div>
+              <span className="text-white font-sans text-sm font-medium tracking-wide">
+                5.0 Stars
+              </span>
+            </div>
+
             <BlurText 
               text="Premium Window Film & Surface Solutions"
               as="h1"
