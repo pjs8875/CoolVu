@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BlurText } from "@/components/ui/blur-text";
@@ -158,12 +159,42 @@ export default function VideoSection() {
               <div 
                 className="relative aspect-[9/16] rounded-2xl overflow-hidden mb-4 bg-gray-900 shadow-lg"
               >
-                <video 
-                  src={video.videoUrl}
-                  controls
-                  preload="metadata"
-                  className="absolute inset-0 w-full h-full object-contain z-20 bg-black"
-                />
+                {activeVideoId !== video.id ? (
+                  <div 
+                    className="absolute inset-0 w-full h-full z-20 bg-black flex flex-col items-center justify-center cursor-pointer group"
+                    onClick={() => setActiveVideoId(video.id)}
+                  >
+                    {/* Logo as Thumbnail */}
+                    <div className="relative w-48 h-24 mb-6 transition-transform duration-300 group-hover:scale-105">
+                      <Image 
+                        src="/logo.png" 
+                        alt="CoolVu Logo" 
+                        fill 
+                        className="object-contain opacity-80"
+                      />
+                    </div>
+                    
+                    {/* Play Button Overlay */}
+                    <div className="w-16 h-16 bg-coolvu-medium-blue/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,123,255,0.4)] transition-transform duration-300 group-hover:scale-110">
+                      <Play className="w-8 h-8 text-white ml-1" fill="currentColor" />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="absolute inset-0 w-full h-full z-20 bg-black overflow-hidden">
+                    <video 
+                      src={video.videoUrl}
+                      controls
+                      autoPlay
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ 
+                        // Increased scale to 1.25 to aggressively crop out the Sora watermark
+                        // which is usually in the bottom right corner.
+                        transform: "scale(1.25)",
+                        transformOrigin: "center center"
+                      }}
+                    />
+                  </div>
+                )}
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4 z-30 pointer-events-none">

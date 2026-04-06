@@ -65,6 +65,7 @@ export default function MultiStepContactModal() {
     trigger,
     watch,
     setValue,
+    getValues,
     formState: { errors },
     reset
   } = useForm<FormData>({
@@ -131,11 +132,24 @@ export default function MultiStepContactModal() {
     const isStepValid = await trigger(fieldsToValidate);
     if (isStepValid) {
       setStep((prev) => prev + 1);
+      // Scroll to top of the modal body when advancing
+      setTimeout(() => {
+        const modalBody = document.getElementById("modal-form-body");
+        if (modalBody) {
+          modalBody.scrollTo({ top: 0, behavior: "instant" });
+        }
+      }, 10);
     }
   };
 
   const prevStep = () => {
     setStep((prev) => prev - 1);
+    setTimeout(() => {
+      const modalBody = document.getElementById("modal-form-body");
+      if (modalBody) {
+        modalBody.scrollTo({ top: 0, behavior: "instant" });
+      }
+    }, 10);
   };
 
   const onSubmit = async (data: FormData) => {
@@ -234,7 +248,7 @@ export default function MultiStepContactModal() {
         )}
 
         {/* Form Body */}
-        <div className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar">
+        <div id="modal-form-body" className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar">
           {isSuccess ? (
             <div className="flex flex-col items-center justify-center text-center py-12 space-y-6">
               <div className="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
@@ -268,7 +282,16 @@ export default function MultiStepContactModal() {
                         return (
                           <div 
                             key={type.id}
-                            onClick={() => setValue("propertyType", type.id, { shouldValidate: true })}
+                            onClick={() => {
+                              setValue("propertyType", type.id, { shouldValidate: true });
+                              setTimeout(() => {
+                                const nextEl = document.getElementById("problemToSolve");
+                                if (nextEl) {
+                                  nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                                  nextEl.focus();
+                                }
+                              }, 150);
+                            }}
                             className={`cursor-pointer border-2 rounded-xl p-4 flex flex-col items-center justify-center text-center gap-2 transition-all ${
                               isSelected 
                                 ? "border-coolvu-medium-blue bg-blue-50 text-coolvu-medium-blue" 
@@ -290,6 +313,16 @@ export default function MultiStepContactModal() {
                       id="problemToSolve"
                       className={`w-full px-4 py-3 rounded-xl border ${errors.problemToSolve ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
                       {...register("problemToSolve")}
+                      onChange={(e) => {
+                        setValue("problemToSolve", e.target.value, { shouldValidate: true });
+                        setTimeout(() => {
+                          const nextEl = document.getElementById("productsInterested");
+                          if (nextEl) {
+                            nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                            nextEl.focus();
+                          }
+                        }, 150);
+                      }}
                     >
                       <option value="">Select Problem</option>
                       <option value="Heat/Glare">Heat / Glare</option>
@@ -307,6 +340,16 @@ export default function MultiStepContactModal() {
                       id="productsInterested"
                       className={`w-full px-4 py-3 rounded-xl border ${errors.productsInterested ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
                       {...register("productsInterested")}
+                      onChange={(e) => {
+                        setValue("productsInterested", e.target.value, { shouldValidate: true });
+                        setTimeout(() => {
+                          const nextEl = document.getElementById("next-step-btn");
+                          if (nextEl) {
+                            nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                            nextEl.focus();
+                          }
+                        }, 150);
+                      }}
                     >
                       <option value="">Select Product</option>
                       <option value="Solar Film">Solar Film</option>
@@ -330,6 +373,16 @@ export default function MultiStepContactModal() {
                         id="windowsCount"
                         className={`w-full px-4 py-3 rounded-xl border ${errors.windowsCount ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
                         {...register("windowsCount")}
+                        onChange={(e) => {
+                          setValue("windowsCount", e.target.value, { shouldValidate: true });
+                          setTimeout(() => {
+                            const nextEl = document.getElementById("projectStage");
+                            if (nextEl) {
+                              nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                              nextEl.focus();
+                            }
+                          }, 150);
+                        }}
                       >
                         <option value="">Select Amount</option>
                         <option value="1-10">1-10</option>
@@ -346,6 +399,16 @@ export default function MultiStepContactModal() {
                         id="projectStage"
                         className={`w-full px-4 py-3 rounded-xl border ${errors.projectStage ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
                         {...register("projectStage")}
+                        onChange={(e) => {
+                          setValue("projectStage", e.target.value, { shouldValidate: true });
+                          setTimeout(() => {
+                            const nextEl = document.getElementById("role");
+                            if (nextEl) {
+                              nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                              nextEl.focus();
+                            }
+                          }, 150);
+                        }}
                       >
                         <option value="">Select Stage</option>
                         <option value="Needing Information">Needing Information</option>
@@ -362,6 +425,16 @@ export default function MultiStepContactModal() {
                       id="role"
                       className={`w-full px-4 py-3 rounded-xl border ${errors.role ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
                       {...register("role")}
+                      onChange={(e) => {
+                        setValue("role", e.target.value, { shouldValidate: true });
+                        setTimeout(() => {
+                          const nextEl = document.getElementById("projectDetails");
+                          if (nextEl) {
+                            nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                            nextEl.focus();
+                          }
+                        }, 150);
+                      }}
                     >
                       <option value="">Select Role</option>
                       <option value="Homeowner">Homeowner</option>
@@ -557,6 +630,7 @@ export default function MultiStepContactModal() {
 
             {step < 3 ? (
               <AnimatedButton 
+                id="next-step-btn"
                 type="button"
                 onClick={nextStep}
                 className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap"
