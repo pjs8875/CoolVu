@@ -45,7 +45,7 @@ export default function ContactForm() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-lg mb-1">Email Us</h4>
-                    <a href="mailto:info@coolvu.com" className="text-coolvu-light-blue hover:text-white transition-colors">info@coolvu.com</a>
+                    <a href="mailto:paul.silverman@coolvu.com" className="text-coolvu-light-blue hover:text-white transition-colors">paul.silverman@coolvu.com</a>
                   </div>
                 </div>
 

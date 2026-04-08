@@ -153,12 +153,35 @@ export default function MultiStepContactModal() {
   };
 
   const onSubmit = async (data: FormData) => {
+    console.log("Submitting form data:", data);
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form submitted:", data);
-    setIsSubmitting(false);
-    setIsSuccess(true);
+    try {
+      const response = await fetch("https://formspree.io/f/xaqlkbdg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          ...data,
+          _replyto: data.email,
+          _subject: `New Lead from ${data.firstName} ${data.lastName}`,
+        })
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+      } else {
+        const errorData = await response.json();
+        console.error("Formspree error:", errorData);
+        alert("There was a problem submitting your form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was a problem submitting your form. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isOpen) return null;
@@ -266,7 +289,7 @@ export default function MultiStepContactModal() {
               </AnimatedButton>
             </div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+            <form id="contact-form" onSubmit={handleSubmit(onSubmit)} className="space-y-8">
               
               {/* STEP 1 */}
               <div className={step === 1 ? "block" : "hidden"}>
@@ -639,8 +662,8 @@ export default function MultiStepContactModal() {
               </AnimatedButton>
             ) : (
               <AnimatedButton 
-                type="button"
-                onClick={handleSubmit(onSubmit)}
+                type="submit"
+                form="contact-form"
                 disabled={isSubmitting}
                 className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap disabled:opacity-70"
               >
