@@ -131,9 +131,7 @@ export default function MultiStepContactModal() {
   }, [formspreeState.succeeded, formspreeState.errors]);
 
   const closeModal = () => {
-    const params = new URLSearchParams(searchParams.toString());
-    params.delete("contact");
-    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    router.push("/");
   };
 
   const nextStep = async () => {
@@ -289,10 +287,7 @@ export default function MultiStepContactModal() {
             </AnimatedButton>
           </div>
         ) : (
-          <form id="contact-form" onSubmit={handleSubmit(onSubmit, (errors) => {
-            console.error("Form validation failed:", errors);
-            alert("Please check the following fields: " + Object.keys(errors).join(", "));
-          })} className="flex flex-col flex-1 overflow-hidden">
+          <form id="contact-form" onSubmit={handleSubmit(onSubmit)} className="flex flex-col flex-1 overflow-hidden">
             
             <div id="modal-form-body" className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar space-y-8">
               {/* STEP 1 */}

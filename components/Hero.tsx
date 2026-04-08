@@ -22,13 +22,17 @@ export default function Hero() {
 
         {/* Hero Content */}
         <div className="absolute inset-0 z-20 flex flex-col items-start justify-center p-6 md:p-16 text-left">
-          {/* Background Image with Overlay */}
-          <div 
-            className="absolute inset-0 z-[-1] bg-cover bg-right md:bg-center"
-            style={{ 
-              backgroundImage: "url('/hero-bg.png')",
-            }}
-          >
+          {/* Background Video with Overlay */}
+          <div className="absolute inset-0 z-[-1] overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover object-[75%_center] md:object-center"
+            >
+              <source src="/Waves_crashing_shore,_202604090117.mp4" type="video/mp4" />
+            </video>
             <div className="absolute inset-0 bg-black/40"></div>
           </div>
           
