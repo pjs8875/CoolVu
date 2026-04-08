@@ -123,7 +123,7 @@ export default function MultiStepContactModal() {
       setIsSuccess(true);
       setIsSubmitting(false);
     }
-    if (formspreeState.errors && formspreeState.errors.length > 0) {
+    if (formspreeState.errors) {
       console.error("Formspree errors:", formspreeState.errors);
       alert("There was a problem submitting your form. Please check the fields and try again.");
       setIsSubmitting(false);
@@ -271,27 +271,30 @@ export default function MultiStepContactModal() {
           </div>
         )}
 
-        {/* Form Body */}
-        <div id="modal-form-body" className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar">
-          {isSuccess ? (
-            <div className="flex flex-col items-center justify-center text-center py-12 space-y-6">
-              <div className="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
-                <CheckCircle2 size={48} />
-              </div>
-              <h3 className="text-3xl font-bold font-heading text-coolvu-dark-blue">Thank You!</h3>
-              <p className="text-lg text-gray-600 font-sans max-w-md">
-                Your request has been successfully submitted. Paul or Claire will contact you shortly to schedule your free estimate.
-              </p>
-              <AnimatedButton 
-                onClick={closeModal}
-                className="mt-8 bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap"
-              >
-                Close Window
-              </AnimatedButton>
+        {/* Form Body & Footer */}
+        {isSuccess ? (
+          <div id="modal-form-body" className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar flex flex-col items-center justify-center text-center py-12 space-y-6">
+            <div className="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+              <CheckCircle2 size={48} />
             </div>
-          ) : (
-            <form id="contact-form" onSubmit={handleSubmit(onSubmit)} className="space-y-8">
-              
+            <h3 className="text-3xl font-bold font-heading text-coolvu-dark-blue">Thank You!</h3>
+            <p className="text-lg text-gray-600 font-sans max-w-md">
+              Your request has been successfully submitted. Paul or Claire will contact you shortly to schedule your free estimate.
+            </p>
+            <AnimatedButton 
+              onClick={closeModal}
+              className="mt-8 bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap"
+            >
+              Close Window
+            </AnimatedButton>
+          </div>
+        ) : (
+          <form id="contact-form" onSubmit={handleSubmit(onSubmit, (errors) => {
+            console.error("Form validation failed:", errors);
+            alert("Please check the following fields: " + Object.keys(errors).join(", "));
+          })} className="flex flex-col flex-1 overflow-hidden">
+            
+            <div id="modal-form-body" className="flex-1 overflow-y-auto p-6 md:p-8 custom-scrollbar space-y-8">
               {/* STEP 1 */}
               <div className={step === 1 ? "block" : "hidden"}>
                 <div className="space-y-6">
@@ -633,48 +636,42 @@ export default function MultiStepContactModal() {
                 </div>
               </div>
 
-            </form>
-          )}
-        </div>
+            </div>
 
-        {/* Footer Actions (Moved inside the form if not success to ensure submit works) */}
-        {!isSuccess && (
-          <div className="p-6 border-t border-gray-100 bg-gray-50/50 flex items-center justify-between mt-auto">
-            {step > 1 ? (
-              <button 
-                type="button"
-                onClick={prevStep}
-                className="flex items-center gap-2 text-gray-600 hover:text-coolvu-medium-blue font-bold text-sm uppercase tracking-wider transition-colors"
-              >
-                <ArrowLeft size={16} /> Back
-              </button>
-            ) : (
-              <div></div> // Empty div to keep 'Next' button on the right
-            )}
+            {/* Footer Actions */}
+            <div className="p-6 border-t border-gray-100 bg-gray-50/50 flex items-center justify-between mt-auto">
+              {step > 1 ? (
+                <button 
+                  type="button"
+                  onClick={prevStep}
+                  className="flex items-center gap-2 text-gray-600 hover:text-coolvu-medium-blue font-bold text-sm uppercase tracking-wider transition-colors"
+                >
+                  <ArrowLeft size={16} /> Back
+                </button>
+              ) : (
+                <div></div> // Empty div to keep 'Next' button on the right
+              )}
 
-            {step < 3 ? (
-              <AnimatedButton 
-                id="next-step-btn"
-                type="button"
-                onClick={nextStep}
-                className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap"
-              >
-                Next Step
-              </AnimatedButton>
-            ) : (
-              <AnimatedButton 
-                type="button"
-                onClick={() => {
-                  // Manually trigger the form submission via react-hook-form
-                  handleSubmit(onSubmit)();
-                }}
-                disabled={isSubmitting}
-                className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap disabled:opacity-70"
-              >
-                {isSubmitting ? "Sending..." : "Submit Request"}
-              </AnimatedButton>
-            )}
-          </div>
+              {step < 3 ? (
+                <AnimatedButton 
+                  id="next-step-btn"
+                  type="button"
+                  onClick={nextStep}
+                  className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap"
+                >
+                  Next Step
+                </AnimatedButton>
+              ) : (
+                <AnimatedButton 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap disabled:opacity-70"
+                >
+                  {isSubmitting ? "Sending..." : "Submit Request"}
+                </AnimatedButton>
+              )}
+            </div>
+          </form>
         )}
       </motion.div>
     </div>
