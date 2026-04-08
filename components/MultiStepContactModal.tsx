@@ -9,6 +9,7 @@ import * as z from "zod";
 import { X, ArrowRight, ArrowLeft, CheckCircle2, Home, Building2, GraduationCap, Landmark, HeartPulse, Church, Store, Server } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 import { motion, AnimatePresence } from "framer-motion";
+import { useForm as useFormspree } from "@formspree/react";
 
 const formSchema = z.object({
   // Step 1
@@ -58,6 +59,8 @@ export default function MultiStepContactModal() {
   const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+
+  const [formspreeState, handleSubmitFormspree] = useFormspree("xaqlkbdg");
 
   const {
     register,
@@ -115,6 +118,18 @@ export default function MultiStepContactModal() {
     };
   }, [isOpen, reset]);
 
+  useEffect(() => {
+    if (formspreeState.succeeded) {
+      setIsSuccess(true);
+      setIsSubmitting(false);
+    }
+    if (formspreeState.errors && formspreeState.errors.length > 0) {
+      console.error("Formspree errors:", formspreeState.errors);
+      alert("There was a problem submitting your form. Please check the fields and try again.");
+      setIsSubmitting(false);
+    }
+  }, [formspreeState.succeeded, formspreeState.errors]);
+
   const closeModal = () => {
     const params = new URLSearchParams(searchParams.toString());
     params.delete("contact");
@@ -155,31 +170,17 @@ export default function MultiStepContactModal() {
   const onSubmit = async (data: FormData) => {
     console.log("Submitting form data:", data);
     setIsSubmitting(true);
+    
     try {
-      const response = await fetch("https://formspree.io/f/xaqlkbdg", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json"
-        },
-        body: JSON.stringify({
-          ...data,
-          _replyto: data.email,
-          _subject: `New Lead from ${data.firstName} ${data.lastName}`,
-        })
+      // Pass the validated data directly to Formspree's handler
+      await handleSubmitFormspree({
+        ...data,
+        _replyto: data.email,
+        _subject: `New Lead from ${data.firstName} ${data.lastName}`,
       });
-
-      if (response.ok) {
-        setIsSuccess(true);
-      } else {
-        const errorData = await response.json();
-        console.error("Formspree error:", errorData);
-        alert("There was a problem submitting your form. Please try again.");
-      }
     } catch (error) {
       console.error("Form submission error:", error);
       alert("There was a problem submitting your form. Please try again.");
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -636,7 +637,7 @@ export default function MultiStepContactModal() {
           )}
         </div>
 
-        {/* Footer Actions */}
+        {/* Footer Actions (Moved inside the form if not success to ensure submit works) */}
         {!isSuccess && (
           <div className="p-6 border-t border-gray-100 bg-gray-50/50 flex items-center justify-between mt-auto">
             {step > 1 ? (
@@ -662,8 +663,11 @@ export default function MultiStepContactModal() {
               </AnimatedButton>
             ) : (
               <AnimatedButton 
-                type="submit"
-                form="contact-form"
+                type="button"
+                onClick={() => {
+                  // Manually trigger the form submission via react-hook-form
+                  handleSubmit(onSubmit)();
+                }}
                 disabled={isSubmitting}
                 className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-6 py-3 md:px-8 md:py-4 font-sans font-bold text-xs md:text-sm tracking-wider uppercase transition-colors rounded-xl shadow-lg border-none whitespace-nowrap disabled:opacity-70"
               >
