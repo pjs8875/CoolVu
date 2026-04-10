@@ -121,6 +121,7 @@ export default function Services() {
                       src={service.image} 
                       alt={service.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>

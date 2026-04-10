@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { BlurText } from "@/components/ui/blur-text";
 import { GoogleMap, Marker, useJsApiLoader, type Libraries } from "@react-google-maps/api";
 
-const MAP_LIBRARIES: Libraries = ["maps"];
+const MAP_LIBRARIES: Libraries = ["maps", "marker"];
 
 const localAreas = [
   { name: "Brooklyn", slug: "brooklyn", lat: 40.6782, lng: -73.9442 },
@@ -33,6 +33,7 @@ const center = {
 const mapOptions = {
   disableDefaultUI: false,
   scrollwheel: false,
+  mapId: "DEMO_MAP_ID",
   styles: [
     { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
     { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -115,6 +116,38 @@ const mapOptions = {
   ],
 };
 
+import { useEffect, useRef } from "react";
+import { useGoogleMap } from "@react-google-maps/api";
+
+const AdvancedMarker = ({ position, title, onClick }: { position: google.maps.LatLngLiteral, title: string, onClick: () => void }) => {
+  const map = useGoogleMap();
+  const markerRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (!map) return;
+    
+    if (window.google?.maps?.marker?.AdvancedMarkerElement) {
+      markerRef.current = new window.google.maps.marker.AdvancedMarkerElement({
+        map,
+        position,
+        title,
+      });
+      markerRef.current.addListener('click', onClick);
+    }
+
+    return () => {
+      if (markerRef.current) {
+        markerRef.current.map = null;
+        if (window.google?.maps?.event) {
+          window.google.maps.event.clearInstanceListeners(markerRef.current);
+        }
+      }
+    };
+  }, [map, position, title, onClick]);
+
+  return null;
+};
+
 export default function ServiceAreas() {
   const router = useRouter();
   
@@ -157,7 +190,7 @@ export default function ServiceAreas() {
               options={mapOptions}
             >
               {localAreas.map((area) => (
-                <Marker
+                <AdvancedMarker
                   key={area.slug}
                   position={{ lat: area.lat, lng: area.lng }}
                   title={area.name}

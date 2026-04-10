@@ -53,7 +53,8 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
             alt="CoolVu Logo" 
             width={180} 
             height={60} 
-            className="object-contain w-full h-auto"
+            className="object-contain"
+            style={{ width: "100%", height: "auto" }}
             priority
           />
         </Link>

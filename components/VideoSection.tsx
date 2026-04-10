@@ -170,6 +170,7 @@ export default function VideoSection() {
                         src="/logo.png" 
                         alt="CoolVu Logo" 
                         fill 
+                        sizes="(max-width: 768px) 200px, 300px"
                         className="object-contain opacity-80"
                       />
                     </div>
