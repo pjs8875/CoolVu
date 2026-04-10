@@ -122,6 +122,14 @@ export default function MultiStepContactModal() {
     if (formspreeState.succeeded) {
       setIsSuccess(true);
       setIsSubmitting(false);
+      
+      if (typeof window !== "undefined") {
+        if (typeof (window as any).gtag === "function") {
+          (window as any).gtag('event', 'thank_you_page');
+        } else if (Array.isArray((window as any).dataLayer)) {
+          (window as any).dataLayer.push({ event: 'thank_you_page' });
+        }
+      }
     }
     if (formspreeState.errors) {
       console.error("Formspree errors:", formspreeState.errors);
