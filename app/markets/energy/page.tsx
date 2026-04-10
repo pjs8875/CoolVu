@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Energy-Saving Low-E Window Film",
+  description:
+    "Year-round comfort and efficiency with CoolVu Low-E and solar control films for homes, offices, schools, hospitals, and retail. Reduce HVAC load across Long Island and the tri-state area.",
+  path: "/markets/energy",
+});
 
 export default function EnergyMarketPage() {
   return (

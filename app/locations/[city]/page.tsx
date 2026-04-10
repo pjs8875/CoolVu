@@ -1,41 +1,44 @@
 import LocationPageLayout from "@/components/LocationPageLayout";
-import { Metadata } from "next";
-
-// List of targeted local cities for SEO
-const cities = [
-  { slug: "hempstead", name: "Hempstead" },
-  { slug: "huntington", name: "Huntington" },
-  { slug: "oyster-bay", name: "Oyster Bay" },
-  { slug: "babylon", name: "Babylon" },
-  { slug: "smithtown", name: "Smithtown" },
-  { slug: "islip", name: "Islip" },
-  { slug: "queens", name: "Queens" },
-  { slug: "brooklyn", name: "Brooklyn" },
-];
+import { SERVICE_AREA_CITIES } from "@/lib/data/locations";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
-  return cities.map((city) => ({
+  return SERVICE_AREA_CITIES.map((city) => ({
     city: city.slug,
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ city: string }> | { city: string } }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ city: string }> | { city: string };
+}): Promise<Metadata> {
   const resolvedParams = await params;
   const city = resolvedParams?.city || "";
-  const cityData = cities.find((c) => c.slug === city);
-  const cityName = cityData ? cityData.name : city.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+  const cityData = SERVICE_AREA_CITIES.find((c) => c.slug === city);
+  const cityName = cityData
+    ? cityData.name
+    : city.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
-  return {
-    title: `Window Tinting & Surface Solutions in ${cityName}, NY | CoolVu`,
-    description: `CoolVu provides top-rated residential and commercial window tinting, security film, and surface finishes in ${cityName}, NY. Enhance your property's comfort and security today.`,
-  };
+  return buildPageMetadata({
+    title: `Window Tinting & Surface Solutions in ${cityName}, NY`,
+    description: `CoolVu installs residential and commercial window tinting, security film, and surface finishes in ${cityName}, NY. Free estimates. Serving Long Island, NYC, NJ & CT.`,
+    path: `/locations/${city}`,
+  });
 }
 
-export default async function LocationPage({ params }: { params: Promise<{ city: string }> | { city: string } }) {
+export default async function LocationPage({
+  params,
+}: {
+  params: Promise<{ city: string }> | { city: string };
+}) {
   const resolvedParams = await params;
   const city = resolvedParams?.city || "";
-  const cityData = cities.find((c) => c.slug === city);
-  const cityName = cityData ? cityData.name : city.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+  const cityData = SERVICE_AREA_CITIES.find((c) => c.slug === city);
+  const cityName = cityData
+    ? cityData.name
+    : city.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase());
 
   return <LocationPageLayout city={cityName} />;
 }

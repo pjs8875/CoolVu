@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Residential Window Film & Tinting",
+  description:
+    "Solar control, privacy, decorative, and security window film for Long Island homes. CoolVu improves comfort, UV protection, and curb appeal with professional residential installation.",
+  path: "/markets/residential",
+});
 
 export default function ResidentialMarketPage() {
   return (

@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "FEMA Nonprofit Security Grant & Window Security",
+  description:
+    "Learn how nonprofits can use federal funding toward physical security upgrades. CoolVu provides glass security solutions for eligible organizations on Long Island and in the tri-state region.",
+  path: "/markets/fema",
+});
 
 export default function FemaMarketPage() {
   return (

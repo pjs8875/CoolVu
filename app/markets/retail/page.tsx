@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Retail Store Window Film & Graphics",
+  description:
+    "Solar control, security, UV protection, and branded storefront graphics for retail. CoolVu helps Long Island and NYC retailers improve comfort, protect merchandise, and stand out.",
+  path: "/markets/retail",
+});
 
 export default function RetailMarketPage() {
   return (

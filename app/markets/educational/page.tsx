@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Window Film for Schools & Campuses",
+  description:
+    "Glare reduction, temperature control, security, and privacy for classrooms and campus buildings. CoolVu supports safer, more comfortable learning environments on Long Island and nearby regions.",
+  path: "/markets/educational",
+});
 
 export default function EducationalMarketPage() {
   return (

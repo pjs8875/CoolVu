@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Security Film for Churches & Places of Worship",
+  description:
+    "Reinforced glass and security film to help protect sanctuaries, congregations, and staff. CoolVu serves churches, synagogues, mosques, and temples across Long Island and the tri-state area.",
+  path: "/markets/places-of-worship",
+});
 
 export default function PlacesOfWorshipMarketPage() {
   return (

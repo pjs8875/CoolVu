@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { Phone, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 
 import { BlurText } from "@/components/ui/blur-text";
@@ -39,20 +38,23 @@ export default function Hero() {
           <div className="max-w-7xl w-full mx-auto flex flex-col items-start mt-32 md:mt-0 px-4">
             
             {/* Google Reviews Badge */}
-            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6 shadow-lg">
+            <div className="flex items-center gap-3 md:gap-3.5 rounded-full mb-6 px-4 py-2.5 md:px-6 md:py-3 bg-black/55 backdrop-blur-md border-2 border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.45)] ring-2 ring-white/25">
               <Image 
                 src="/google-logo.png" 
                 alt="Google" 
-                width={20} 
-                height={20} 
-                className="w-5 h-5 object-contain"
+                width={24} 
+                height={24} 
+                className="w-6 h-6 md:w-7 md:h-7 object-contain drop-shadow-sm"
               />
-              <div className="flex gap-0.5">
+              <div className="flex gap-0.5 md:gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-[#F97316] text-[#F97316]" />
+                  <Star
+                    key={i}
+                    className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400 drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]"
+                  />
                 ))}
               </div>
-              <span className="text-white font-sans text-sm font-medium tracking-wide">
+              <span className="text-white font-sans text-sm md:text-base font-semibold tracking-wide drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)]">
                 5.0 Stars
               </span>
             </div>

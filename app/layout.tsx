@@ -3,6 +3,8 @@ import { Montserrat, Open_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
+import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/seo/site";
+import { getSchemaGraph } from "@/lib/seo/schema-graph";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -14,9 +16,40 @@ const openSans = Open_Sans({
   subsets: ["latin"],
 });
 
+const siteUrl = getSiteUrl();
+
 export const metadata: Metadata = {
-  title: "CoolVu of Long Island | Window Film & Surface Solutions",
-  description: "CoolVu of Long Island, Brooklyn, Queens, CT & NJ. Professional window tinting, security film, and surface solutions for residential and commercial properties.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${SITE_NAME} | Window Film & Surface Solutions`,
+    template: "%s | CoolVu",
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: "CoolVu",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "CoolVu",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +57,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = getSchemaGraph();
+
   return (
     <html
       lang="en"
@@ -45,6 +80,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="min-h-full flex flex-col font-sans text-coolvu-dark-blue bg-coolvu-off-white">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <Script id="scroll-restoration" strategy="beforeInteractive">
           {`if (typeof window !== "undefined") { window.history.scrollRestoration = "manual"; }`}
         </Script>

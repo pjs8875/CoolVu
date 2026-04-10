@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Commercial Window Film Solutions",
+  description:
+    "Energy savings, security, privacy, and branded glass for offices and commercial buildings. CoolVu partners with property managers and designers across Long Island and the tri-state area.",
+  path: "/markets/commercial",
+});
 
 export default function CommercialMarketPage() {
   return (

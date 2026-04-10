@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Data Center Window Film & Climate Control",
+  description:
+    "Support stable temperatures, cut glare, and add security layers for mission-critical facilities. CoolVu films help protect equipment and reduce solar load for data centers in the tri-state region.",
+  path: "/markets/data-centers",
+});
 
 export default function DataCentersMarketPage() {
   return (
