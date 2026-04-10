@@ -65,7 +65,7 @@ export default function Hero() {
               className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold font-heading leading-tight mb-3 md:mb-4 text-white drop-shadow-md uppercase tracking-wide max-w-4xl"
             />
           <BlurText 
-            text="Enhance Security, Comfort & Lower Energy Costs for Residential, Commercial, Educational, Healthcare & Government Facilities"
+            text="Enhance Security, Comfort & Lower Energy Costs on Long Island for Residential, Commercial, Educational, Healthcare & Government Facilities"
             as="p"
             className="text-base sm:text-lg md:text-2xl font-sans text-coolvu-light-blue max-w-3xl text-left mb-6 md:mb-8 drop-shadow-sm font-medium"
             delay={80}

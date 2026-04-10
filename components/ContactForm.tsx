@@ -17,12 +17,12 @@ export default function ContactForm() {
             
             <div className="relative z-10">
               <BlurText 
-                text="Let's Discuss Your Project"
+                text="Let's Discuss Your Long Island Project"
                 as="h2"
                 className="text-3xl md:text-4xl font-bold font-heading mb-6"
               />
               <BlurText 
-                text="Ready to enhance your property? Reach out to us directly or request a free, no-obligation estimate online."
+                text="Ready to enhance your Long Island home or business? Reach out directly or request a free, no-obligation estimate online."
                 as="p"
                 className="text-coolvu-light-blue font-sans mb-12 text-lg"
                 delay={80}

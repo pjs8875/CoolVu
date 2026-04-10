@@ -55,12 +55,12 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <BlurText 
-            text="Our Simple Process"
+            text="Our Simple Long Island Process"
             as="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
           />
           <BlurText 
-            text="Getting premium window film installed shouldn't be complicated. Follow these easy steps to upgrade your comfort and security."
+            text="Getting premium window film installed shouldn't be complicated. Follow these easy steps—we come to you across Long Island and the tri-state area."
             as="p"
             className="text-base md:text-lg text-gray-600 font-sans justify-center"
             delay={80}

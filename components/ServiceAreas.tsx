@@ -83,9 +83,9 @@ export default function ServiceAreas() {
         
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <BlurText 
-            text="Local Service Areas"
+            text="Long Island & Metro NY Service Areas"
             as="h2"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4 md:mb-6 justify-center"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4 md:mb-6 justify-center max-w-4xl mx-auto leading-tight"
           />
           <BlurText 
             text="CoolVu of Long Island proudly serves the greater NY Metro area."

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "./site";
 
-const OG_IMAGE_PATH = "/hero-bg.png";
+const OG_IMAGE_PATH = "/og-image.png";
 
 const ogImage = {
   url: OG_IMAGE_PATH,
-  alt: "CoolVu window film and architectural surface solutions",
+  width: 1200,
+  height: 630,
+  type: "image/png",
+  alt: "CoolVu of Long Island — window film, tint, and surface solutions",
 };
 
 export function buildHomeMetadata(): Metadata {
@@ -20,7 +23,7 @@ export function buildHomeMetadata(): Metadata {
       title,
       description: DEFAULT_DESCRIPTION,
       url: base,
-      siteName: "CoolVu",
+      siteName: SITE_NAME,
       type: "website",
       locale: "en_US",
       images: [ogImage],
@@ -29,7 +32,7 @@ export function buildHomeMetadata(): Metadata {
       card: "summary_large_image",
       title,
       description: DEFAULT_DESCRIPTION,
-      images: [OG_IMAGE_PATH],
+      images: [ogImage],
     },
   };
 }
@@ -55,7 +58,7 @@ export function buildPageMetadata({
       title,
       description,
       url,
-      siteName: "CoolVu",
+      siteName: SITE_NAME,
       type: "website",
       locale: "en_US",
       images: [ogImage],
@@ -64,7 +67,7 @@ export function buildPageMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [OG_IMAGE_PATH],
+      images: [ogImage],
     },
   };
 }

@@ -111,9 +111,9 @@ export default function VideoSection() {
         {/* Header */}
         <div className="relative flex flex-col items-center text-center mb-12">
           <BlurText 
-            text="Watch the Difference"
+            text="See Our Work Across Long Island"
             as="h2"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue justify-center"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue justify-center max-w-4xl mx-auto leading-tight"
           />
           
           {/* Navigation Buttons (Desktop) */}

@@ -62,12 +62,12 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-col items-center text-center">
           <BlurText 
-            text="What we offer?"
+            text="What We Offer on Long Island"
             as="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
           />
           <BlurText 
-            text="From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your needs."
+            text="From residential heat reduction to commercial security systems, we provide premium 3M™ solutions tailored to your Long Island home or business."
             as="p"
             className="text-base md:text-lg text-gray-600 font-sans max-w-2xl justify-center"
             delay={80}
