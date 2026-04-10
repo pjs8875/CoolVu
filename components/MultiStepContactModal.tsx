@@ -124,10 +124,17 @@ export default function MultiStepContactModal() {
       setIsSubmitting(false);
       
       if (typeof window !== "undefined") {
+        console.log("GA4 Event Triggered: thank_you_page");
+        
+        // Ensure dataLayer exists
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        
+        // Call global gtag if it exists
         if (typeof (window as any).gtag === "function") {
           (window as any).gtag('event', 'thank_you_page');
-        } else if (Array.isArray((window as any).dataLayer)) {
-          (window as any).dataLayer.push({ event: 'thank_you_page' });
+        } else {
+          // Absolute fallback manually pushing the arguments structure Google expects
+          (window as any).dataLayer.push(['event', 'thank_you_page']);
         }
       }
     }
