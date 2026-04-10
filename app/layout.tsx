@@ -29,6 +29,11 @@ export default function RootLayout({
       className={`${montserrat.variable} ${openSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans text-coolvu-dark-blue bg-coolvu-off-white">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if (typeof window !== "undefined") { window.history.scrollRestoration = "manual"; }`,
+          }}
+        />
         {children}
         <ContactModalWrapper />
       </body>

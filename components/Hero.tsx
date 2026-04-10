@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className="relative bg-coolvu-off-white">
       {/* Container */}
-      <div className="h-[100dvh] w-full p-2 md:p-3 lg:p-4 flex flex-col">
+      <div className="h-screen h-[100dvh] w-full p-2 md:p-3 lg:p-4 flex flex-col">
         {/* Frame Container */}
         <div className="relative w-full h-full rounded-2xl md:rounded-3xl overflow-hidden bg-coolvu-dark-blue text-white shadow-2xl">
         
