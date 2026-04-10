@@ -56,6 +56,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
             className="object-contain"
             style={{ width: "100%", height: "auto" }}
             priority
+            loading="eager"
           />
         </Link>
       </div>

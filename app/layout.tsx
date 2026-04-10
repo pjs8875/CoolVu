@@ -30,25 +30,24 @@ export default function RootLayout({
       className={`${montserrat.variable} ${openSans.variable} h-full antialiased`}
     >
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSX9WMGTHC"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments);}
-              window.gtag = gtag;
-              gtag('js', new Date());
-              gtag('config', 'G-SSX9WMGTHC', { debug_mode: true });
-            `
-          }}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-SSX9WMGTHC" 
+          strategy="afterInteractive" 
         />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-SSX9WMGTHC', { debug_mode: true });
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col font-sans text-coolvu-dark-blue bg-coolvu-off-white">
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `if (typeof window !== "undefined") { window.history.scrollRestoration = "manual"; }`,
-          }}
-        />
+        <Script id="scroll-restoration" strategy="beforeInteractive">
+          {`if (typeof window !== "undefined") { window.history.scrollRestoration = "manual"; }`}
+        </Script>
         {children}
         <ContactModalWrapper />
       </body>
