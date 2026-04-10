@@ -11,28 +11,19 @@ import { AnimatedButton } from "@/components/ui/animated-button";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm as useFormspree } from "@formspree/react";
 
+const TOTAL_STEPS = 2;
+
 const formSchema = z.object({
-  // Step 1
+  // Step 1 — Needs
   propertyType: z.string().min(1, "Please select a property type"),
   problemToSolve: z.string().min(1, "Please select the problem you are trying to solve"),
   productsInterested: z.string().min(1, "Please select the products you are interested in"),
-  
-  // Step 2
-  windowsCount: z.string().min(1, "Please select the number of windows"),
-  projectStage: z.string().min(1, "Project stage is required"),
-  role: z.string().min(1, "Role is required"),
-  projectDetails: z.string().min(5, "Please tell us a bit about your project"),
-  
-  // Step 3
+
+  // Step 2 — Contact
   firstName: z.string().min(2, "First Name is required"),
   lastName: z.string().min(2, "Last Name is required"),
   email: z.string().email("Valid email is required"),
   phone: z.string().min(10, "Valid phone number is required"),
-  companyName: z.string().optional(),
-  streetAddress: z.string().optional(),
-  city: z.string().min(2, "City is required"),
-  state: z.string().min(2, "State is required"),
-  zipCode: z.string().min(5, "Zip code is required"),
   howDidYouFindUs: z.string().min(1, "Please tell us how you found us"),
   smsConsent: z.boolean().refine(val => val === true, "You must agree to the privacy policy"),
 });
@@ -78,19 +69,10 @@ export default function MultiStepContactModal() {
       propertyType: "",
       problemToSolve: "",
       productsInterested: "",
-      windowsCount: "",
-      projectStage: "",
-      role: "",
-      projectDetails: "",
       firstName: "",
       lastName: "",
       email: "",
       phone: "",
-      companyName: "",
-      streetAddress: "",
-      city: "",
-      state: "",
-      zipCode: "",
       howDidYouFindUs: "",
       smsConsent: false,
     }
@@ -122,19 +104,24 @@ export default function MultiStepContactModal() {
     if (formspreeState.succeeded) {
       setIsSuccess(true);
       setIsSubmitting(false);
-      
+
       if (typeof window !== "undefined") {
-        console.log("GA4 Event Triggered: thank_you_page");
-        
-        // Ensure dataLayer exists
-        (window as any).dataLayer = (window as any).dataLayer || [];
-        
-        // Call global gtag if it exists
-        if (typeof (window as any).gtag === "function") {
-          (window as any).gtag('event', 'thank_you_page');
+        const values = getValues();
+        const leadParams = {
+          form_id: "booking_modal",
+          how_did_you_find_us: values.howDidYouFindUs,
+          property_type: values.propertyType,
+          problem_to_solve: values.problemToSolve,
+          products_interested: values.productsInterested,
+        };
+
+        const w = window as Window & { dataLayer?: Record<string, unknown>[]; gtag?: (...args: unknown[]) => void };
+        w.dataLayer = w.dataLayer || [];
+
+        if (typeof w.gtag === "function") {
+          w.gtag("event", "generate_lead", leadParams);
         } else {
-          // Absolute fallback manually pushing the arguments structure Google expects
-          (window as any).dataLayer.push(['event', 'thank_you_page']);
+          w.dataLayer.push({ event: "generate_lead", ...leadParams });
         }
       }
     }
@@ -143,7 +130,7 @@ export default function MultiStepContactModal() {
       alert("There was a problem submitting your form. Please check the fields and try again.");
       setIsSubmitting(false);
     }
-  }, [formspreeState.succeeded, formspreeState.errors]);
+  }, [formspreeState.succeeded, formspreeState.errors, getValues]);
 
   const closeModal = () => {
     router.push("/");
@@ -153,8 +140,6 @@ export default function MultiStepContactModal() {
     let fieldsToValidate: (keyof FormData)[] = [];
     if (step === 1) {
       fieldsToValidate = ["propertyType", "problemToSolve", "productsInterested"];
-    } else if (step === 2) {
-      fieldsToValidate = ["windowsCount", "projectStage", "role", "projectDetails"];
     }
 
     const isStepValid = await trigger(fieldsToValidate);
@@ -241,12 +226,12 @@ export default function MultiStepContactModal() {
               {/* Active Line */}
               <div 
                 className="absolute top-1/2 left-0 h-3 bg-[#007bff] -translate-y-1/2 rounded-full transition-all duration-700 ease-in-out"
-                style={{ width: `${((step - 1) / 2) * 100}%` }}
+                style={{ width: `${((step - 1) / (TOTAL_STEPS - 1)) * 100}%` }}
               />
 
               {/* Step Indicators */}
               <div className="relative flex justify-between z-0">
-                {[1, 2, 3].map((i) => (
+                {[1, 2].map((i) => (
                   <div key={i} className="flex flex-col items-center justify-center relative">
                     <div 
                       className={`w-6 h-6 rounded-full border-[3px] transition-colors duration-700 z-10 ${
@@ -256,7 +241,7 @@ export default function MultiStepContactModal() {
                     <span className={`text-sm font-bold absolute top-8 whitespace-nowrap transition-colors duration-700 ${
                       step >= i ? "text-[#007bff]" : "text-gray-500"
                     }`}>
-                      {i === 1 ? "Needs" : i === 2 ? "Details" : "Contact"}
+                      {i === 1 ? "Needs" : "Contact"}
                     </span>
                   </div>
                 ))}
@@ -266,7 +251,7 @@ export default function MultiStepContactModal() {
               <div 
                 className="absolute top-1/2 transition-all duration-700 ease-in-out z-20"
                 style={{ 
-                  left: `${((step - 1) / 2) * 100}%`,
+                  left: `${((step - 1) / (TOTAL_STEPS - 1)) * 100}%`,
                   transform: `translate(-50%, -50%)`
                 }}
               >
@@ -400,106 +385,8 @@ export default function MultiStepContactModal() {
                 </div>
               </div>
 
-              {/* STEP 2 */}
+              {/* STEP 2 — Contact */}
               <div className={step === 2 ? "block" : "hidden"}>
-                <div className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="windowsCount" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Number of Windows? *</label>
-                      <select 
-                        id="windowsCount"
-                        className={`w-full px-4 py-3 rounded-xl border ${errors.windowsCount ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                        {...register("windowsCount")}
-                        onChange={(e) => {
-                          setValue("windowsCount", e.target.value, { shouldValidate: true });
-                          setTimeout(() => {
-                            const nextEl = document.getElementById("projectStage");
-                            if (nextEl) {
-                              nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
-                              nextEl.focus();
-                            }
-                          }, 150);
-                        }}
-                      >
-                        <option value="">Select Amount</option>
-                        <option value="1-10">1-10</option>
-                        <option value="11-25">11-25</option>
-                        <option value="26-50">26-50</option>
-                        <option value="50+">50+</option>
-                      </select>
-                      {errors.windowsCount && <p className="text-red-500 text-sm mt-1">{errors.windowsCount.message}</p>}
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="projectStage" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Stage of Project *</label>
-                      <select 
-                        id="projectStage"
-                        className={`w-full px-4 py-3 rounded-xl border ${errors.projectStage ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                        {...register("projectStage")}
-                        onChange={(e) => {
-                          setValue("projectStage", e.target.value, { shouldValidate: true });
-                          setTimeout(() => {
-                            const nextEl = document.getElementById("role");
-                            if (nextEl) {
-                              nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
-                              nextEl.focus();
-                            }
-                          }, 150);
-                        }}
-                      >
-                        <option value="">Select Stage</option>
-                        <option value="Needing Information">Needing Information</option>
-                        <option value="Ready to Buy">Ready to Buy</option>
-                        <option value="Budgeting">Budgeting</option>
-                      </select>
-                      {errors.projectStage && <p className="text-red-500 text-sm mt-1">{errors.projectStage.message}</p>}
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="role" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Your Role *</label>
-                    <select 
-                      id="role"
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.role ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                      {...register("role")}
-                      onChange={(e) => {
-                        setValue("role", e.target.value, { shouldValidate: true });
-                        setTimeout(() => {
-                          const nextEl = document.getElementById("projectDetails");
-                          if (nextEl) {
-                            nextEl.scrollIntoView({ behavior: "smooth", block: "center" });
-                            nextEl.focus();
-                          }
-                        }, 150);
-                      }}
-                    >
-                      <option value="">Select Role</option>
-                      <option value="Homeowner">Homeowner</option>
-                      <option value="Business Owner">Business Owner</option>
-                      <option value="Architect">Architect</option>
-                      <option value="Contractor">Contractor</option>
-                      <option value="Property Manager">Property Manager</option>
-                      <option value="Other">Other</option>
-                    </select>
-                    {errors.role && <p className="text-red-500 text-sm mt-1">{errors.role.message}</p>}
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="projectDetails" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Project Details *</label>
-                    <textarea 
-                      id="projectDetails"
-                      rows={4}
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.projectDetails ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors resize-none`}
-                      {...register("projectDetails")}
-                      placeholder="Please share any notes, specific requirements, or questions..."
-                    ></textarea>
-                    {errors.projectDetails && <p className="text-red-500 text-sm mt-1">{errors.projectDetails.message}</p>}
-                  </div>
-                </div>
-              </div>
-
-              {/* STEP 3 */}
-              <div className={step === 3 ? "block" : "hidden"}>
                 <div className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
@@ -527,7 +414,7 @@ export default function MultiStepContactModal() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Email Address *</label>
+                      <label htmlFor="email" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Email *</label>
                       <input 
                         id="email"
                         type="email" 
@@ -549,69 +436,8 @@ export default function MultiStepContactModal() {
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="companyName" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Company Name</label>
-                      <input 
-                        id="companyName"
-                        type="text" 
-                        className={`w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors border-gray-200 focus:ring-coolvu-medium-blue`}
-                        {...register("companyName")}
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="streetAddress" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Street Address</label>
-                      <input 
-                        id="streetAddress"
-                        type="text" 
-                        className={`w-full px-4 py-3 rounded-xl border focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors border-gray-200 focus:ring-coolvu-medium-blue`}
-                        {...register("streetAddress")}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="city" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">City *</label>
-                      <input 
-                        id="city"
-                        type="text" 
-                        className={`w-full px-4 py-3 rounded-xl border ${errors.city ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                        {...register("city")}
-                      />
-                      {errors.city && <p className="text-red-500 text-sm mt-1">{errors.city.message}</p>}
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="state" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">State *</label>
-                      <select 
-                        id="state"
-                        className={`w-full px-4 py-3 rounded-xl border ${errors.state ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                        {...register("state")}
-                      >
-                        <option value="">Select State</option>
-                        <option value="NY">New York</option>
-                        <option value="NJ">New Jersey</option>
-                        <option value="CT">Connecticut</option>
-                      </select>
-                      {errors.state && <p className="text-red-500 text-sm mt-1">{errors.state.message}</p>}
-                    </div>
-
-                    <div className="space-y-2">
-                      <label htmlFor="zipCode" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">Zip Code *</label>
-                      <input 
-                        id="zipCode"
-                        type="text" 
-                        className={`w-full px-4 py-3 rounded-xl border ${errors.zipCode ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
-                        {...register("zipCode")}
-                      />
-                      {errors.zipCode && <p className="text-red-500 text-sm mt-1">{errors.zipCode.message}</p>}
-                    </div>
-                  </div>
-
                   <div className="space-y-2">
-                    <label htmlFor="howDidYouFindUs" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">How Did You Find Out About Us? *</label>
+                    <label htmlFor="howDidYouFindUs" className="text-sm font-bold text-gray-700 font-sans uppercase tracking-wider">How did you find us? *</label>
                     <select 
                       id="howDidYouFindUs"
                       className={`w-full px-4 py-3 rounded-xl border ${errors.howDidYouFindUs ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-coolvu-medium-blue'} focus:outline-none focus:ring-2 bg-gray-50/50 transition-colors`}
@@ -662,7 +488,7 @@ export default function MultiStepContactModal() {
                 <div></div> // Empty div to keep 'Next' button on the right
               )}
 
-              {step < 3 ? (
+              {step < TOTAL_STEPS ? (
                 <AnimatedButton 
                   id="next-step-btn"
                   type="button"
