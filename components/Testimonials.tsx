@@ -7,50 +7,50 @@ import React, { useRef } from "react";
 
 const testimonials = [
   {
-    name: "Richard S.",
-    role: "Homeowner",
-    location: "Sacramento, CA",
-    text: "Daman is great to work with. I had him install CoolVu Dual Reflective 25 on all the windows in my house here in Sacramento because of the hot summers. I can already feel the difference. He's very responsive and a great person to work with.",
+    name: "Matt Stevens",
+    role: "Local Guide",
+    location: "Long Island, NY",
+    text: "Paul and CoolVu of North Nassau Co. has been excellent in communicating with me, in expectation setting, and with follow up. Love their product offering and will use them again.",
     rating: 5,
     avatarColor: "from-blue-400 to-blue-600",
     showContact: false,
     rotation: -4,
   },
   {
-    name: "Jo Wickline",
-    role: "Google Review",
-    location: "22 days ago",
-    text: "Fabulous! One phone call and a realistic quote to tint garage window, and no long wait for service. Here, done, perfect!",
+    name: "Sharina Straughn",
+    role: "Local Guide",
+    location: "Long Island, NY",
+    text: "I'm glad I chose this company over the other big ones. Paul was very knowledgeable and helpful in going over a security plan based on my goals and needs. The scheduling and payment was as easy as shopping on Amazon.",
     rating: 5,
     avatarColor: "from-indigo-400 to-indigo-600",
     showContact: false,
     rotation: -2,
   },
   {
-    name: "Taylor Ten Napel",
-    role: "Google Review",
-    location: "23 days ago",
-    text: "Really appreciate Casey’s work on our windows. They look great and he has always been very nice and professional.",
+    name: "Carrie Basak",
+    role: "Homeowner",
+    location: "Long Island, NY",
+    text: "CoolVu of North Nassau County is fantastic! They are super responsive, friendly, and work hard to make the experience smooth and easy. You can tell they genuinely care about what they do. Definitely recommend!",
     rating: 5,
     avatarColor: "from-sky-400 to-sky-600",
     showContact: false,
     rotation: 0,
   },
   {
-    name: "Cassie Nunnally",
+    name: "Mark Jefferson Cacao",
     role: "Google Review",
-    location: "28 days ago",
-    text: "Casey was professional and efficient in helping frost our windows and preparing a bigger job to install solar tint on our home.",
+    location: "Long Island, NY",
+    text: "CoolVu of Long Island does amazing work! They take their work seriously. Communication is 10/10. You can tell they genuinely care about what they do. Highly recommended! Look for Paul!",
     rating: 5,
     avatarColor: "from-cyan-400 to-cyan-600",
     showContact: false,
     rotation: 2,
   },
   {
-    name: "Michael Liebensohn",
-    role: "Google Review",
-    location: "1 month ago",
-    text: "Casey is so thorough, knowledgeable, and full of integrity, you can't go wrong with these guys! The workmanship is fantastic.",
+    name: "Nicole Fio",
+    role: "Homeowner",
+    location: "Long Island, NY",
+    text: "Paul and the team were extremely welcoming and went above and beyond to make sure everything was perfect. The service was quick without feeling rushed, and the quality exceeded my expectations. Would absolutely recommend!",
     rating: 5,
     avatarColor: "from-blue-500 to-indigo-500",
     showContact: false,
@@ -184,7 +184,7 @@ function TiltCard({
         <div className="flex justify-between items-start mb-6">
           <div className="flex gap-1">
             {[...Array(testimonial.rating)].map((_, i) => (
-              <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-[#F97316] text-[#F97316]" />
+              <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" />
             ))}
           </div>
           
@@ -238,9 +238,9 @@ export default function Testimonials() {
         {/* Header Section */}
         <div className="text-center max-w-5xl mx-auto mb-16 md:mb-24 px-4">
           <BlurText 
-            text="What Our Customers Are Saying"
+            text="What Our Long Island Customers Are Saying"
             as="h2"
-            className="text-4xl md:text-5xl font-bold font-heading text-white mb-6 sm:whitespace-nowrap justify-center"
+            className="text-4xl md:text-5xl font-bold font-heading text-white mb-6 justify-center max-w-4xl mx-auto leading-tight"
           />
           <BlurText 
             text="Trusted by +400 customers across Long Island and beyond."
@@ -287,7 +287,7 @@ export default function Testimonials() {
                 <div className="flex justify-between items-start mb-6">
                   <div className="flex gap-1">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#F97316] text-[#F97316]" />
+                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
                   

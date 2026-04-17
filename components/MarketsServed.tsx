@@ -58,12 +58,12 @@ export default function MarketsServed() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <BlurText 
-            text="Solutions For Every Industry"
+            text="Long Island Solutions for Every Industry"
             as="h2"
             className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6 justify-center"
           />
           <BlurText 
-            text="From single-family homes to massive corporate campuses, CoolVu provides tailored window and surface solutions that solve your specific challenges."
+            text="From single-family homes to corporate campuses, CoolVu of Long Island provides tailored window and surface solutions that solve your specific challenges."
             as="p"
             className="text-base md:text-lg text-coolvu-light-blue font-sans justify-center"
             delay={80}

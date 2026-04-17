@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { BlurText } from "@/components/ui/blur-text";
 import { GoogleMap, Marker, useJsApiLoader, type Libraries } from "@react-google-maps/api";
 
-const MAP_LIBRARIES: Libraries = ["maps"];
+const MAP_LIBRARIES: Libraries = ["maps", "marker"];
 
 const localAreas = [
   { name: "Brooklyn", slug: "brooklyn", lat: 40.6782, lng: -73.9442 },
@@ -33,86 +33,38 @@ const center = {
 const mapOptions = {
   disableDefaultUI: false,
   scrollwheel: false,
-  styles: [
-    { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
-    { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
-    { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
-    {
-      featureType: "administrative.locality",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#d59563" }],
-    },
-    {
-      featureType: "poi",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#d59563" }],
-    },
-    {
-      featureType: "poi.park",
-      elementType: "geometry",
-      stylers: [{ color: "#263c3f" }],
-    },
-    {
-      featureType: "poi.park",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#6b9a76" }],
-    },
-    {
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [{ color: "#38414e" }],
-    },
-    {
-      featureType: "road",
-      elementType: "geometry.stroke",
-      stylers: [{ color: "#212a37" }],
-    },
-    {
-      featureType: "road",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#9ca5b3" }],
-    },
-    {
-      featureType: "road.highway",
-      elementType: "geometry",
-      stylers: [{ color: "#746855" }],
-    },
-    {
-      featureType: "road.highway",
-      elementType: "geometry.stroke",
-      stylers: [{ color: "#1f2835" }],
-    },
-    {
-      featureType: "road.highway",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#f3d19c" }],
-    },
-    {
-      featureType: "transit",
-      elementType: "geometry",
-      stylers: [{ color: "#2f3948" }],
-    },
-    {
-      featureType: "transit.station",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#d59563" }],
-    },
-    {
-      featureType: "water",
-      elementType: "geometry",
-      stylers: [{ color: "#17263c" }],
-    },
-    {
-      featureType: "water",
-      elementType: "labels.text.fill",
-      stylers: [{ color: "#515c6d" }],
-    },
-    {
-      featureType: "water",
-      elementType: "labels.text.stroke",
-      stylers: [{ color: "#17263c" }],
-    },
-  ],
+  mapId: "DEMO_MAP_ID",
+};
+
+import { useEffect, useRef } from "react";
+import { useGoogleMap } from "@react-google-maps/api";
+
+const AdvancedMarker = ({ position, title, onClick }: { position: google.maps.LatLngLiteral, title: string, onClick: () => void }) => {
+  const map = useGoogleMap();
+  const markerRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (!map) return;
+    
+    if (window.google?.maps?.marker?.AdvancedMarkerElement) {
+      markerRef.current = new window.google.maps.marker.AdvancedMarkerElement({
+        map,
+        position,
+        title,
+      });
+      // AdvancedMarkerElement uses addEventListener('gmp-click') rather than addListener('click')
+      markerRef.current.addEventListener('gmp-click', onClick);
+    }
+
+    return () => {
+      if (markerRef.current) {
+        markerRef.current.removeEventListener('gmp-click', onClick);
+        markerRef.current.map = null;
+      }
+    };
+  }, [map, position, title, onClick]);
+
+  return null;
 };
 
 export default function ServiceAreas() {
@@ -131,9 +83,9 @@ export default function ServiceAreas() {
         
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
           <BlurText 
-            text="Local Service Areas"
+            text="Long Island & Metro NY Service Areas"
             as="h2"
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4 md:mb-6 justify-center"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-4 md:mb-6 justify-center max-w-4xl mx-auto leading-tight"
           />
           <BlurText 
             text="CoolVu of Long Island proudly serves the greater NY Metro area."
@@ -157,7 +109,7 @@ export default function ServiceAreas() {
               options={mapOptions}
             >
               {localAreas.map((area) => (
-                <Marker
+                <AdvancedMarker
                   key={area.slug}
                   position={{ lat: area.lat, lng: area.lng }}
                   title={area.name}

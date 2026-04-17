@@ -1,3 +1,4 @@
+import { buildHomeMetadata } from "@/lib/seo/metadata-builders";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import MarketsServed from "@/components/MarketsServed";
@@ -10,6 +11,8 @@ import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+
+export const metadata = buildHomeMetadata();
 
 export default function Home() {
   return (
@@ -29,4 +32,3 @@ export default function Home() {
     </>
   );
 }
-

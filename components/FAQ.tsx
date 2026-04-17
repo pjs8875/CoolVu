@@ -40,12 +40,12 @@ export default function FAQ() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <BlurText 
-            text="Frequently Asked Questions"
+            text="Long Island Window Film FAQs"
             as="h2"
             className="text-4xl md:text-5xl font-bold font-heading text-coolvu-dark-blue mb-6 justify-center"
           />
           <BlurText 
-            text="Everything you need to know about our products, process, and guarantees."
+            text="Everything you need to know about our products, in-home process, and guarantees."
             as="p"
             className="text-base md:text-lg text-gray-600 font-sans justify-center"
             delay={80}

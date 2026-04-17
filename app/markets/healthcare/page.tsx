@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Healthcare & Hospital Window Film",
+  description:
+    "Patient privacy, glare control, hygiene-friendly surfaces, and energy savings for clinics and hospitals. CoolVu healthcare window and surface solutions across Long Island and nearby markets.",
+  path: "/markets/healthcare",
+});
 
 export default function HealthcareMarketPage() {
   return (

@@ -1,6 +1,14 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { buildPageMetadata } from "@/lib/seo/metadata-builders";
+
+export const metadata = buildPageMetadata({
+  title: "Government Building Window Film",
+  description:
+    "Security, energy efficiency, and privacy films for public facilities and municipal buildings. CoolVu delivers compliant, durable installations for government clients in NY, NJ, and CT.",
+  path: "/markets/government",
+});
 
 export default function GovernmentMarketPage() {
   return (
