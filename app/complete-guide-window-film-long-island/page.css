@@ -1,0 +1,59 @@
+
+.seo-guide { font-family: 'Georgia', serif; font-size: 17px; line-height: 1.75; color: #2c2c2c; background: #fff; }
+.seo-guide .page-wrap { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
+.seo-guide .hero { background: linear-gradient(135deg, #0d2f6e 0%, #1a4a8a 60%, #2e75b6 100%); color: #fff; padding: 64px 32px 56px; text-align: center; margin-bottom: 56px; }
+.seo-guide .hero .eyebrow { font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #90c8f0; margin-bottom: 16px; }
+.seo-guide .hero h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.2; margin-bottom: 16px; font-family: Arial, sans-serif; }
+.seo-guide .hero .edition { font-size: 18px; font-style: italic; color: #b8d9f5; margin-bottom: 24px; }
+.seo-guide .hero .subtitle { font-size: 16px; color: #cce4f7; max-width: 600px; margin: 0 auto 32px; font-family: Arial, sans-serif; }
+.seo-guide .hero .cta-bar { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.seo-guide .btn-primary { background: #fff; color: #1a4a8a; font-family: Arial, sans-serif; font-weight: 700; font-size: 15px; padding: 14px 28px; border-radius: 4px; text-decoration: none; transition: background 0.2s; }
+.seo-guide .btn-primary:hover { background: #e8f4ff; }
+.seo-guide .btn-outline { border: 2px solid #90c8f0; color: #fff; font-family: Arial, sans-serif; font-weight: 600; font-size: 15px; padding: 12px 28px; border-radius: 4px; text-decoration: none; transition: border-color 0.2s; }
+.seo-guide .btn-outline:hover { border-color: #fff; }
+.seo-guide .toc { background: #f4f9ff; border-left: 4px solid #2e75b6; border-radius: 0 6px 6px 0; padding: 28px 32px; margin-bottom: 56px; }
+.seo-guide .toc h2 { font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; color: #1a4a8a; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; border: none; padding: 0; }
+.seo-guide .toc ol { margin: 0; padding-left: 20px; }
+.seo-guide .toc li { margin-bottom: 8px; }
+.seo-guide .toc a { color: #1a4a8a; text-decoration: none; font-family: Arial, sans-serif; font-size: 15px; }
+.seo-guide .toc a:hover { text-decoration: underline; }
+.seo-guide h2 { font-family: Arial, sans-serif; font-size: clamp(22px, 3vw, 28px); font-weight: 700; color: #1a4a8a; margin: 56px 0 18px; padding-bottom: 10px; border-bottom: 3px solid #2e75b6; line-height: 1.3; }
+.seo-guide h3 { font-family: Arial, sans-serif; font-size: 20px; font-weight: 700; color: #2e75b6; margin: 36px 0 12px; }
+.seo-guide h4 { font-family: Arial, sans-serif; font-size: 17px; font-weight: 700; color: #1f618d; margin: 28px 0 10px; }
+.seo-guide p { margin-bottom: 18px; color: #2c2c2c; }
+.seo-guide ul, .seo-guide ol { margin: 0 0 20px 24px; }
+.seo-guide li { margin-bottom: 8px; }
+.seo-guide li strong { color: #1a4a8a; }
+.seo-guide .callout { background: #ebf5fb; border-left: 5px solid #2e75b6; border-radius: 0 6px 6px 0; padding: 24px 28px; margin: 32px 0; }
+.seo-guide .callout .callout-title { font-family: Arial, sans-serif; font-weight: 700; color: #1a4a8a; font-size: 16px; margin-bottom: 12px; }
+.seo-guide .callout p, .seo-guide .callout li { font-family: Arial, sans-serif; font-size: 15px; color: #2c3e50; margin-bottom: 6px; }
+.seo-guide .callout-warning { background: #fff8e1; border-left-color: #f39c12; }
+.seo-guide .callout-warning .callout-title { color: #7d5a00; }
+.seo-guide .table-wrap { overflow-x: auto; margin: 28px 0; }
+.seo-guide table { width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; font-size: 15px; }
+.seo-guide thead th { background: #1a4a8a; color: #fff; padding: 12px 16px; text-align: left; font-weight: 700; }
+.seo-guide tbody tr:nth-child(even) { background: #f4f9ff; }
+.seo-guide tbody tr:nth-child(odd) { background: #fff; }
+.seo-guide tbody td { padding: 11px 16px; border-bottom: 1px solid #dde6f0; color: #2c2c2c; vertical-align: top; }
+.seo-guide tbody tr:hover { background: #e8f4ff; }
+.seo-guide .faq-item { border: 1px solid #dde6f0; border-radius: 6px; margin-bottom: 16px; overflow: hidden; }
+.seo-guide .faq-q { background: #f4f9ff; padding: 16px 20px; font-family: Arial, sans-serif; font-weight: 700; color: #1a4a8a; font-size: 16px; }
+.seo-guide .faq-a { padding: 16px 20px; font-family: Arial, sans-serif; font-size: 15px; color: #2c2c2c; line-height: 1.7; margin: 0; }
+.seo-guide .section-divider { border: none; border-top: 2px solid #dde6f0; margin: 56px 0 0; }
+.seo-guide .glossary-term { font-family: Arial, sans-serif; font-weight: 700; color: #1a4a8a; font-size: 16px; margin: 24px 0 6px; }
+.seo-guide .cta-block { background: linear-gradient(135deg, #0d2f6e, #1a4a8a); color: #fff; padding: 48px 40px; border-radius: 8px; text-align: center; margin: 64px 0 0; }
+.seo-guide .cta-block h2 { color: #fff; border: none; font-size: 28px; margin: 0 0 12px; padding: 0; }
+.seo-guide .cta-block p { color: #b8d9f5; font-size: 16px; margin-bottom: 8px; }
+.seo-guide .cta-block .cta-details { font-size: 22px; font-weight: 700; color: #fff; font-family: Arial, sans-serif; margin: 20px 0; }
+.seo-guide .cta-block a { color: #90c8f0; text-decoration: none; }
+.seo-guide .cta-block a:hover { text-decoration: underline; }
+.seo-guide .cta-block .warranty-badge { display: inline-block; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; padding: 8px 20px; font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; color: #fff; margin-top: 20px; }
+.seo-guide .breadcrumb { font-family: Arial, sans-serif; font-size: 13px; color: #888; margin: 24px 0 8px; }
+.seo-guide .breadcrumb a { color: #2e75b6; text-decoration: none; }
+.seo-guide .breadcrumb a:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  .seo-guide .hero { padding: 40px 20px 36px; }
+  .seo-guide .page-wrap { padding: 0 16px 60px; }
+  .seo-guide .cta-block { padding: 36px 24px; }
+  .seo-guide .toc { padding: 20px 20px; }
+}
