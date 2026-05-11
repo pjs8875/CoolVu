@@ -1,11 +1,16 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, ReactNode } from "react";
 import MultiStepContactModal from "./MultiStepContactModal";
 
-export default function ContactModalWrapper() {
+interface ContactModalWrapperProps {
+  children?: ReactNode;
+}
+
+export default function ContactModalWrapper({ children }: ContactModalWrapperProps) {
   return (
     <Suspense fallback={null}>
+      {children}
       <MultiStepContactModal />
     </Suspense>
   );
