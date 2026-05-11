@@ -27,6 +27,9 @@ export const metadata: Metadata = {
   description: DEFAULT_DESCRIPTION,
   applicationName: "CoolVu",
   referrer: "origin-when-cross-origin",
+  verification: {
+    google: "PhWH8xgAvPzt1To9h91cpV4_XUAFQJ2_ODA2YKvaWp8",
+  },
   robots: {
     index: true,
     follow: true,
