@@ -4,6 +4,15 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    slug: "how-long-does-window-film-last-long-island",
+    tag: "Window Film · Long Island Climate",
+    title: "How Long Does Window Film Last? Long Island Heat, Humidity, and What to Expect",
+    excerpt:
+      "Quality window film lasts 15 to 25 years — even on Long Island with salt air, humidity, and intense UV. Learn what affects film lifespan, how to spot failing film, and why a lifetime warranty matters.",
+    date: "May 15, 2026",
+    readTime: "5 min read",
+  },
+  {
     slug: "summer-heat-solar-window-film-long-island",
     tag: "Solar Film · Summer 2026",
     title: "How Solar Window Film Cuts Your AC Bill This Summer on Long Island",
