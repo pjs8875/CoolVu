@@ -4,6 +4,15 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    slug: "commercial-window-film-long-island",
+    tag: "Commercial Film · Business Solutions",
+    title: "Commercial Window Film for Long Island Offices and Retail Stores",
+    excerpt:
+      "Long Island businesses use window film to cut heat, eliminate glare, block UV damage, and protect storefronts — without replacing glass. CoolVu installs commercial film throughout Nassau and Suffolk Counties.",
+    date: "May 16, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "how-long-does-window-film-last-long-island",
     tag: "Window Film · Long Island Climate",
     title: "How Long Does Window Film Last? Long Island Heat, Humidity, and What to Expect",
