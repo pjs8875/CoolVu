@@ -4,6 +4,15 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    slug: "window-film-vs-new-windows-long-island",
+    tag: "Window Film · Home Improvement",
+    title: "Window Film vs. New Windows: Which Is Worth It for Long Island Homeowners?",
+    excerpt:
+      "New windows cost $12,000–$25,000 and only block 25–30% of solar heat. Window film costs 70–80% less, blocks 60% of heat, and installs in a day. Here's how to decide what's right for your home.",
+    date: "May 17, 2026",
+    readTime: "6 min read",
+  },
+  {
     slug: "commercial-window-film-long-island",
     tag: "Commercial Film · Business Solutions",
     title: "Commercial Window Film for Long Island Offices and Retail Stores",
