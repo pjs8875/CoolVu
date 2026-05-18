@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "South Shore vs. North Shore Long Island: Which Windows Need Film Most?",
+    excerpt: "It\'s not about where you live — it\'s about which direction your windows face. Here\'s how to figure out which windows on your Long Island home need film first.",
+    date: "May 2026",
+    slug: "south-shore-vs-north-shore-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     slug: "window-film-vs-new-windows-long-island",
     tag: "Window Film · Home Improvement",
     title: "Window Film vs. New Windows: Which Is Worth It for Long Island Homeowners?",
