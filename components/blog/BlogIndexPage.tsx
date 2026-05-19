@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Privacy Window Film for Long Island Home Offices — Work Without Distractions",
+    excerpt: "Glare on your screen, neighbors seeing in, afternoon heat — privacy window film solves all three for Long Island home offices. Keeps light in, keeps distractions out.",
+    date: "May 19, 2026",
+    slug: "privacy-window-film-home-office-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "South Shore vs. North Shore Long Island: Which Windows Need Film Most?",
     excerpt: "It\'s not about where you live — it\'s about which direction your windows face. Here\'s how to figure out which windows on your Long Island home need film first.",
     date: "May 2026",
