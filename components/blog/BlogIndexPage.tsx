@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Decorative Window Film Ideas for Long Island Homes",
+    excerpt: "Plain glass doesn't have to stay plain. Decorative film turns ordinary windows into frosted, etched, patterned, or stained glass — for 70–85% less than replacing the glass. CoolVu serves all of Long Island.",
+    date: "May 20, 2026",
+    slug: "decorative-window-film-ideas-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Privacy Window Film for Long Island Home Offices — Work Without Distractions",
     excerpt: "Glare on your screen, neighbors seeing in, afternoon heat — privacy window film solves all three for Long Island home offices. Keeps light in, keeps distractions out.",
     date: "May 19, 2026",
