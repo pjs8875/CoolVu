@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "UV Damage to Furniture and Floors: How Window Film Protects Your Long Island Home",
+    excerpt: "UV rays coming through your windows are silently fading your hardwood floors, furniture, and artwork every day. Window film blocks 99% of those rays at the glass — protecting everything inside without changing how your rooms look.",
+    date: "May 20, 2026",
+    slug: "uv-damage-furniture-floors-window-film-long-island",
+    readTime: "5 min read",
+    tag: "UV Protection · Solar Film",
+  },
+  {
     title: "Decorative Window Film Ideas for Long Island Homes",
     excerpt: "Plain glass doesn't have to stay plain. Decorative film turns ordinary windows into frosted, etched, patterned, or stained glass — for 70–85% less than replacing the glass. CoolVu serves all of Long Island.",
     date: "May 20, 2026",
