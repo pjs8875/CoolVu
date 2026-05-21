@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Security Window Film for Long Island Storefronts: Stop Smash-and-Grab in Its Tracks",
+    excerpt: "Security window film holds shattered glass together after impact — slowing smash-and-grab break-ins, protecting against flying glass, and giving your Long Island storefront a critical layer of defense. CoolVu installs throughout Nassau and Suffolk Counties.",
+    date: "May 21, 2026",
+    slug: "security-window-film-long-island-storefronts",
+    readTime: "5 min read",
+    tag: "Safety Film · Commercial",
+  },
+  {
     title: "UV Damage to Furniture and Floors: How Window Film Protects Your Long Island Home",
     excerpt: "UV rays coming through your windows are silently fading your hardwood floors, furniture, and artwork every day. Window film blocks 99% of those rays at the glass — protecting everything inside without changing how your rooms look.",
     date: "May 20, 2026",
