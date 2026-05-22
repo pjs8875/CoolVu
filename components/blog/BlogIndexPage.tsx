@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Condos and Apartments: What Renters and Owners Need to Know",
+    excerpt: "Window film blocks heat, cuts glare, adds privacy, and protects furniture in Long Island condos and apartments — without damaging the glass. Works for renters and owners alike. CoolVu serves Nassau and Suffolk Counties.",
+    date: "May 22, 2026",
+    slug: "window-film-condos-apartments-long-island",
+    readTime: "5 min read",
+    tag: "Solar Film · Privacy Film · Condo Living",
+  },
+  {
     title: "Security Window Film for Long Island Storefronts: Stop Smash-and-Grab in Its Tracks",
     excerpt: "Security window film holds shattered glass together after impact — slowing smash-and-grab break-ins, protecting against flying glass, and giving your Long Island storefront a critical layer of defense. CoolVu installs throughout Nassau and Suffolk Counties.",
     date: "May 21, 2026",
