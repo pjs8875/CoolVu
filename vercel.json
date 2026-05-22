@@ -1,9 +1,15 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/",
       "has": [{"type": "host", "value": "coolvulongisland.com"}],
-      "destination": "https://www.coolvulongisland.com/:path*",
+      "destination": "https://www.coolvulongisland.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path+",
+      "has": [{"type": "host", "value": "coolvulongisland.com"}],
+      "destination": "https://www.coolvulongisland.com/:path+",
       "permanent": true
     }
   ]
