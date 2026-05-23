@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "How to Choose the Right Window Tint Level for Your Long Island Home",
+    excerpt: "Not sure how dark your window film should be? This guide explains tint levels in plain English — and helps you pick the right film for every window in your house.",
+    date: "May 23, 2026",
+    slug: "how-to-choose-window-tint-level-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Condos and Apartments: What Renters and Owners Need to Know",
     excerpt: "Window film blocks heat, cuts glare, adds privacy, and protects furniture in Long Island condos and apartments — without damaging the glass. Works for renters and owners alike. CoolVu serves Nassau and Suffolk Counties.",
     date: "May 22, 2026",
