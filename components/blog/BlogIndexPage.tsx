@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Real Energy Savings from Window Film: A Long Island Homeowner Case Study",
+    excerpt: "Window film typically cuts cooling costs 20-30% in treated rooms. See real before-and-after numbers from a Long Island homeowner, a simple payback calculator, and which windows deliver the biggest savings.",
+    date: "May 24, 2026",
+    slug: "energy-savings-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "How to Choose the Right Window Tint Level for Your Long Island Home",
     excerpt: "Not sure how dark your window film should be? This guide explains tint levels in plain English — and helps you pick the right film for every window in your house.",
     date: "May 23, 2026",
