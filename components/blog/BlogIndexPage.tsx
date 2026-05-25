@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Schools and Daycares: Safety, Glare, and Comfort",
+    excerpt: "Safety film holds broken glass together so it won't shatter across a classroom. Solar film cuts glare on smartboards and lowers energy costs. Privacy film protects offices and nurse stations. CoolVu serves schools and daycares throughout Nassau and Suffolk Counties.",
+    date: "May 25, 2026",
+    slug: "window-film-schools-daycares-long-island",
+    readTime: "5 min read",
+    tag: "Safety Film · Schools & Daycares",
+  },
+    {
     title: "Real Energy Savings from Window Film: A Long Island Homeowner Case Study",
     excerpt: "Window film typically cuts cooling costs 20-30% in treated rooms. See real before-and-after numbers from a Long Island homeowner, a simple payback calculator, and which windows deliver the biggest savings.",
     date: "May 24, 2026",
