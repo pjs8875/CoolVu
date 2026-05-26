@@ -37,6 +37,19 @@ const BLOG_PATHS = [
   "one-way-privacy-window-film-long-island",
   "frosted-bathroom-window-film-long-island",
   "safety-window-film-storms-long-island",
+  "uv-damage-furniture-floors-window-film-long-island",
+  "best-window-film-brands-long-island",
+  "commercial-window-film-long-island",
+  "decorative-window-film-ideas-long-island",
+  "energy-savings-window-film-long-island",
+  "how-long-does-window-film-last-long-island",
+  "how-to-choose-window-tint-level-long-island",
+  "privacy-window-film-home-office-long-island",
+  "security-window-film-long-island-storefronts",
+  "south-shore-vs-north-shore-window-film-long-island",
+  "window-film-condos-apartments-long-island",
+  "window-film-schools-daycares-long-island",
+  "window-film-vs-new-windows-long-island",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
