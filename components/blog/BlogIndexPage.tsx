@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Best Window Film for Long Island's Climate: What to Look For (And What to Avoid)",
+    excerpt: "Not all window film is built for Long Island's heat, humidity, and cold winters. Learn the difference between ceramic, metalized, and cheap dyed films — and why professional-grade matters for long-term performance.",
+    date: "May 26, 2026",
+    slug: "best-window-film-brands-long-island",
+    readTime: "6 min read",
+    tag: "Film Selection · Long Island Guide",
+  },
+  {
     title: "Window Film for Long Island Schools and Daycares: Safety, Glare, and Comfort",
     excerpt: "Safety film holds broken glass together so it won't shatter across a classroom. Solar film cuts glare on smartboards and lowers energy costs. Privacy film protects offices and nurse stations. CoolVu serves schools and daycares throughout Nassau and Suffolk Counties.",
     date: "May 25, 2026",
