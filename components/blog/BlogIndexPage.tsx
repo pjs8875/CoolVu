@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Restaurants: Reduce Glare, Block Heat, and Add Privacy",
+    excerpt: "The same windows that give your restaurant a great look can also bake your dining room, blind customers with glare, and put guests on display. CoolVu explains how window film fixes all four problems at once — with one install and no monthly cost.",
+    date: "May 27, 2026",
+    slug: "window-film-restaurants-long-island",
+    readTime: "5 min read",
+    tag: "Commercial Film · Restaurants",
+  },
+  {
     title: "Best Window Film for Long Island's Climate: What to Look For (And What to Avoid)",
     excerpt: "Not all window film is built for Long Island's heat, humidity, and cold winters. Learn the difference between ceramic, metalized, and cheap dyed films — and why professional-grade matters for long-term performance.",
     date: "May 26, 2026",
@@ -247,3 +255,4 @@ export default function BlogIndexPage() {
     </div>
   );
 }
+
