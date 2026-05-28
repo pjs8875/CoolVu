@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film Installation: What to Expect on Install Day on Long Island",
+    excerpt: "Most Long Island homes are done in 2-4 hours — no mess, no demolition. Here's exactly what happens from the initial walkthrough to the final curing period.",
+    date: "May 28, 2026",
+    slug: "window-film-installation-process-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Restaurants: Reduce Glare, Block Heat, and Add Privacy",
     excerpt: "The same windows that give your restaurant a great look can also bake your dining room, blind customers with glare, and put guests on display. CoolVu explains how window film fixes all four problems at once — with one install and no monthly cost.",
     date: "May 27, 2026",
