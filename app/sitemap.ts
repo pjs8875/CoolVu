@@ -51,6 +51,8 @@ const BLOG_PATHS = [
   "window-film-schools-daycares-long-island",
   "window-film-vs-new-windows-long-island",
   "window-film-restaurants-long-island",
+  "window-film-installation-process-long-island",
+  "window-film-medical-offices-long-island",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
