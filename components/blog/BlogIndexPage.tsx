@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Medical Offices and Clinics",
+    excerpt: "Window film cuts heat and glare, adds patient privacy, and blocks UV damage in medical offices — with zero installation downtime.",
+    date: "May 29, 2026",
+    slug: "window-film-medical-offices-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film Installation: What to Expect on Install Day on Long Island",
     excerpt: "Most Long Island homes are done in 2-4 hours — no mess, no demolition. Here's exactly what happens from the initial walkthrough to the final curing period.",
     date: "May 28, 2026",
