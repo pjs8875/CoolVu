@@ -2,14 +2,39 @@
   "redirects": [
     {
       "source": "/",
-      "has": [{"type": "host", "value": "coolvulongisland.com"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "coolvulongisland.com"
+        }
+      ],
       "destination": "https://www.coolvulongisland.com/",
       "permanent": true
     },
     {
       "source": "/:path+",
-      "has": [{"type": "host", "value": "coolvulongisland.com"}],
+      "has": [
+        {
+          "type": "host",
+          "value": "coolvulongisland.com"
+        }
+      ],
       "destination": "https://www.coolvulongisland.com/:path+",
+      "permanent": true
+    },
+    {
+      "source": "/security-window-film-long-island-break-ins-storm-protection",
+      "destination": "/safety-security-window-film-long-island",
+      "permanent": true
+    },
+    {
+      "source": "/security-window-film-long-island-break-ins-storm-protection/",
+      "destination": "/safety-security-window-film-long-island",
+      "permanent": true
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/",
       "permanent": true
     }
   ]
