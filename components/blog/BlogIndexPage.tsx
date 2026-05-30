@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Sliding Glass Doors and Sunrooms on Long Island",
+    excerpt: "Sunrooms and sliding glass doors are the biggest heat and UV problem in most Long Island homes. Window film blocks 60% of solar heat and makes your sunroom usable all summer.",
+    date: "May 30, 2026",
+    slug: "window-film-sliding-glass-doors-sunrooms-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Medical Offices and Clinics",
     excerpt: "Window film cuts heat and glare, adds patient privacy, and blocks UV damage in medical offices — with zero installation downtime.",
     date: "May 29, 2026",
