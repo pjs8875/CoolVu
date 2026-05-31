@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film and Home Resale Value: What Long Island Buyers and Sellers Need to Know",
+    excerpt: "Window film improves energy efficiency, UV protection, and home comfort — three things Long Island buyers notice. Solar film with a transferable lifetime warranty can tip a home sale in your favor.",
+    date: "May 31, 2026",
+    slug: "window-film-home-resale-value-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Sliding Glass Doors and Sunrooms on Long Island",
     excerpt: "Sunrooms and sliding glass doors are the biggest heat and UV problem in most Long Island homes. Window film blocks 60% of solar heat and makes your sunroom usable all summer.",
     date: "May 30, 2026",
