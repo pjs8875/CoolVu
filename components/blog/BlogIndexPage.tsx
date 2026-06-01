@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Rental Properties: What Landlords Need to Know",
+    excerpt: "Solar film lowers cooling costs, privacy film solves ground-floor exposure, and safety film protects street-level glass — here's the landlord's guide to window film across Nassau and Suffolk County.",
+    date: "June 1, 2026",
+    slug: "window-film-long-island-rental-properties",
+    readTime: "5 min read",
+  },
+
+  {
     title: "Hurricane Season Window Film for Long Island Homes: What You Need to Know",
     excerpt: "Safety window film holds shattered glass together during storms — so broken windows don\'t become flying hazards. Here\'s what Long Island homeowners need to know before hurricane season hits.",
     date: "June 1, 2026",
