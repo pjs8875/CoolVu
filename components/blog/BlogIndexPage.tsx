@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Hurricane Season Window Film for Long Island Homes: What You Need to Know",
+    excerpt: "Safety window film holds shattered glass together during storms — so broken windows don\'t become flying hazards. Here\'s what Long Island homeowners need to know before hurricane season hits.",
+    date: "June 1, 2026",
+    slug: "hurricane-season-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film and Home Resale Value: What Long Island Buyers and Sellers Need to Know",
     excerpt: "Window film improves energy efficiency, UV protection, and home comfort — three things Long Island buyers notice. Solar film with a transferable lifetime warranty can tip a home sale in your favor.",
     date: "May 31, 2026",
