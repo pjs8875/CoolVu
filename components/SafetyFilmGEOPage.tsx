@@ -85,6 +85,27 @@ export default function SafetyFilmGEOPage() {
           </div>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Does safety film stop a window from breaking?", "acceptedAnswer": { "@type": "Answer", "text": "Safety film does not prevent glass from cracking, but it holds the broken pieces together so they do not shatter into dangerous shards. Think of it like a car windshield — it cracks but stays in one piece, protecting people inside from flying glass." } },
+          { "@type": "Question", "name": "How thick is safety window film?", "acceptedAnswer": { "@type": "Answer", "text": "Safety film comes in various thicknesses — typically 4 mil, 8 mil, or 12 mil. Thicker film provides more protection. CoolVu will recommend the right thickness based on your security goals and window type." } },
+          { "@type": "Question", "name": "Is safety window film worth it for Long Island homes?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. With nor&apos;easters, tropical storms, and the occasional hurricane affecting Long Island, safety film is one of the most practical upgrades a homeowner can make. It also deters break-ins and holds glass together during accidental impacts." } },
+          { "@type": "Question", "name": "Can safety film be combined with solar or privacy film?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many CoolVu clients combine safety film properties with solar heat reduction or privacy. CoolVu carries combination films that provide multiple benefits in a single installation." } },
+          { "@type": "Question", "name": "How is safety window film installed on Long Island?", "acceptedAnswer": { "@type": "Answer", "text": "CoolVu&apos;s certified installers apply the film to the interior surface of your glass using a precision process. The film bonds to the glass and dries completely clear. Most Nassau and Suffolk County homes are completed in a single day." } },
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "CoolVu of Long Island",
+        "description": "Safety and security window film installer serving Nassau and Suffolk County, Long Island. Protects against storms, break-ins, and accidental impacts. Lifetime residential warranty.",
+        "telephone": "+15165359555",
+        "url": "https://www.coolvulongisland.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
+        "areaServed": "Nassau County, Suffolk County, Long Island, NY"
+      })}} />
     </main>
   );
 }
