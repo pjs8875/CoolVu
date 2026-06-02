@@ -85,6 +85,27 @@ export default function DecorativeFilmGEOPage() {
           </div>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Can decorative window film be custom designed?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. CoolVu can work with custom designs, logos, and patterns. For businesses especially, we can match your branding exactly. Bring us your logo or design concept and we will make it happen." } },
+          { "@type": "Question", "name": "Does decorative window film look cheap or fake?", "acceptedAnswer": { "@type": "Answer", "text": "Not when professionally installed. The key difference between DIY and professional film is installation quality — clean edges, no bubbles, precision cut to your exact window size. CoolVu installations are indistinguishable from etched glass." } },
+          { "@type": "Question", "name": "How long does decorative window film last?", "acceptedAnswer": { "@type": "Answer", "text": "With professional installation, decorative film typically lasts 7 to 15 years. CoolVu residential installations come with a lifetime warranty." } },
+          { "@type": "Question", "name": "Can decorative window film be removed or changed later?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — decorative film can be removed without damaging the glass. This is ideal for businesses that want to update their look or run seasonal promotions." } },
+          { "@type": "Question", "name": "How much does decorative window film cost on Long Island?", "acceptedAnswer": { "@type": "Answer", "text": "Decorative window film typically costs a fraction of replacing glass with etched or frosted glass. CoolVu offers free in-home estimates for all decorative film projects throughout Nassau and Suffolk County. Call 516-535-9555." } },
+        ]
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "CoolVu of Long Island",
+        "description": "Decorative window film installer serving Nassau and Suffolk County, Long Island. Custom designs, frosted patterns, and branded graphics. Lifetime residential warranty.",
+        "telephone": "+15165359555",
+        "url": "https://www.coolvulongisland.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
+        "areaServed": "Nassau County, Suffolk County, Long Island, NY"
+      })}} />
     </main>
   );
 }
