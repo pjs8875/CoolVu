@@ -10,6 +10,7 @@ const LONG_ISLAND_TOWNS = new Set([
   "Garden City","Great Neck","Manhasset","Rockville Centre","Massapequa",
   "Levittown","Commack","East Meadow","Plainview","Syosset",
   "Hempstead","Huntington","Oyster Bay","Babylon","Smithtown","Islip",
+  "Southampton","East Hampton","Westhampton Beach","Montauk",
 ]);
 
 export async function generateStaticParams() {
