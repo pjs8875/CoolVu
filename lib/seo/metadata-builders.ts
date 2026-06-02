@@ -51,7 +51,7 @@ export function buildPageMetadata({
   const url = `${base}${normalizedPath}`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {
