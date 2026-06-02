@@ -3,6 +3,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+    {
+      title: "Window Film for Long Island Sunrooms: Turn a Greenhouse Into a Year-Round Room",
+      excerpt: "Solar window film blocks up to 60% of heat and 99% of UV rays — making your Long Island sunroom comfortable all summer without darkening the space.",
+      date: "June 2, 2026",
+      slug: "window-film-sunrooms-long-island",
+      readTime: "5 min read",
+    },
   {
     title: "Window Film for Long Island Rental Properties: What Landlords Need to Know",
     excerpt: "Solar film lowers cooling costs, privacy film solves ground-floor exposure, and safety film protects street-level glass — here's the landlord's guide to window film across Nassau and Suffolk County.",
