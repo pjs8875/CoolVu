@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Glare Reduction Window Film for Long Island Homes — Stop the Squint",
+      excerpt: "Blinding sunlight washing out your TV, your monitor, or your morning coffee? Glare-reduction window film cuts harsh sun without blocking your view — and it also blocks heat and UV rays.",
+      date: "June 3, 2026",
+      slug: "glare-reduction-window-film-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "Window Film for Long Island Sunrooms: Turn a Greenhouse Into a Year-Round Room",
       excerpt: "Solar window film blocks up to 60% of heat and 99% of UV rays — making your Long Island sunroom comfortable all summer without darkening the space.",
       date: "June 2, 2026",
