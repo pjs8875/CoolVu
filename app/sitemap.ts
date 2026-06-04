@@ -58,6 +58,7 @@ const BLOG_PATHS = [
   "window-film-long-island-rental-properties",
   "window-film-sliding-glass-doors-sunrooms-long-island",
   "window-film-sunrooms-long-island",
+  "waterfront-homes-window-film-long-island",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
