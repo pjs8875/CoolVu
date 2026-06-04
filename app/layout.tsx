@@ -3,6 +3,7 @@ import { Montserrat, Open_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
+import SiteFooter from "@/components/SiteFooter";
 import { DEFAULT_DESCRIPTION, SITE_NAME, getSiteUrl } from "@/lib/seo/site";
 import { getSchemaGraph } from "@/lib/seo/schema-graph";
 
@@ -109,6 +110,7 @@ export default function RootLayout({
           {`if (typeof window !== "undefined") { window.history.scrollRestoration = "manual"; }`}
         </Script>
         {children}
+        <SiteFooter />
         <ContactModalWrapper />
       </body>
     </html>
