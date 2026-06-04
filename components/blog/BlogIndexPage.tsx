@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Window Film for Long Island Waterfront Homes and Beach Houses",
+      excerpt: "Water glare, intense UV, and privacy from neighbors and passing boats — window film solves all three without blocking your view. CoolVu serves Long Beach, Bay Shore, Northport, Cold Spring Harbor, and all of Long Island\'s waterfront communities.",
+      date: "June 4, 2026",
+      slug: "waterfront-homes-window-film-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "Glare Reduction Window Film for Long Island Homes — Stop the Squint",
       excerpt: "Blinding sunlight washing out your TV, your monitor, or your morning coffee? Glare-reduction window film cuts harsh sun without blocking your view — and it also blocks heat and UV rays.",
       date: "June 3, 2026",
