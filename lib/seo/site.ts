@@ -10,4 +10,4 @@ export function getSiteUrl(): string {
 export const SITE_NAME = "CoolVu of Long Island";
 
 export const DEFAULT_DESCRIPTION =
-  "CoolVu serves Long Island, Brooklyn, Queens, NJ & CT with professional window tinting, solar and security film, privacy film, commercial graphics, and architectural surface finishes. Request a free estimate.";
+  "CoolVu of Long Island installs solar, privacy, safety & decorative window film for homes and businesses in Nassau & Suffolk County. Blocks 99% of UV rays. Lifetime warranty. Free estimates. Call 516-535-9555.";
