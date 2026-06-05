@@ -8,12 +8,12 @@ const ogImage = {
   width: 1200,
   height: 630,
   type: "image/png",
-  alt: "CoolVu of Long Island — window film, tint, and surface solutions",
+  alt: "CoolVu of Long Island — window film installer Nassau & Suffolk County",
 };
 
 export function buildHomeMetadata(): Metadata {
   const base = getSiteUrl();
-  const title = `${SITE_NAME} | Window Film, Tint & Surface Solutions`;
+  const title = "Window Film Installer Long Island | CoolVu of Long Island";
 
   return {
     title: { absolute: title },
