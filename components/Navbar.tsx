@@ -136,24 +136,24 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
   const [expandedState, setExpandedState] = useState<string | null>(null);
 
   const services = [
-    { name: "Solar & Heat Reduction", path: "/services/solar-and-heat-reduction" },
-    { name: "Safety & Security Film", path: "/services/safety-and-security-film" },
-    { name: "Privacy & Decorative", path: "/services/privacy-and-decorative-film" },
-    { name: "Commercial Graphics", path: "/services/commercial-graphics" },
-    { name: "Surface Finishes", path: "/services/surface-finishes" },
+    { name: "Solar Window Film", path: "/solar-window-film-long-island" },
+    { name: "Privacy Window Film", path: "/privacy-window-film-long-island" },
+    { name: "Safety & Security Film", path: "/safety-security-window-film-long-island" },
+    { name: "Decorative Film", path: "/decorative-window-film-long-island" },
+    { name: "Why CoolVu of Long Island?", path: "/best-window-film-installer-long-island" },
   ];
 
   const markets = [
-    { name: "Residential", path: "/markets/residential" },
-    { name: "Commercial", path: "/markets/commercial" },
-    { name: "Educational", path: "/markets/educational" },
-    { name: "Energy", path: "/markets/energy" },
-    { name: "FEMA", path: "/markets/fema" },
-    { name: "Government", path: "/markets/government" },
-    { name: "Places of Worship", path: "/markets/places-of-worship" },
-    { name: "Retail", path: "/markets/retail" },
-    { name: "Data Centers", path: "/markets/data-centers" },
-    { name: "Healthcare", path: "/markets/healthcare" },
+    { name: "Garden City", path: "/locations/garden-city" },
+    { name: "Great Neck", path: "/locations/great-neck" },
+    { name: "Syosset", path: "/locations/syosset" },
+    { name: "Commack", path: "/locations/commack" },
+    { name: "Southampton", path: "/locations/southampton" },
+    { name: "East Hampton", path: "/locations/east-hampton" },
+    { name: "Massapequa", path: "/locations/massapequa" },
+    { name: "Levittown", path: "/locations/levittown" },
+    { name: "Huntington", path: "/locations/huntington" },
+    { name: "Smithtown", path: "/locations/smithtown" },
   ];
 
   return (
