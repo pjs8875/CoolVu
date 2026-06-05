@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Window Film for Long Island Beach Houses: Sun, Salt Air, and UV Protection",
+      excerpt: "Beach houses face intense sun, salt air, and UV damage that inland homes don't. Window film blocks 99% of UV rays, cuts cooling costs, and adds storm protection — without touching your ocean view.",
+      date: "June 5, 2026",
+      slug: "window-film-beach-houses-long-island",
+      readTime: "5 min read",
+    },
+        {
       title: "Window Film for Long Island Waterfront Homes and Beach Houses",
       excerpt: "Water glare, intense UV, and privacy from neighbors and passing boats — window film solves all three without blocking your view. CoolVu serves Long Beach, Bay Shore, Northport, Cold Spring Harbor, and all of Long Island\'s waterfront communities.",
       date: "June 4, 2026",
