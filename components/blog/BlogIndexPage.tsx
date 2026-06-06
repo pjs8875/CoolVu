@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+
+    {
+      title: "Window Film Tax Credits and Energy Rebates for Long Island Homeowners: The Full Picture",
+      excerpt: "PSEG LI, LIPA, and NYSERDA all offer energy efficiency programs — and window film pays back in as little as two summers through direct energy savings. Here's the complete financial picture for Long Island homeowners.",
+      date: "June 6, 2026",
+      slug: "window-film-tax-credits-energy-rebates-long-island",
+      readTime: "6 min read",
+    },
     {
       title: "Window Film for Long Island Beach Houses: Sun, Salt Air, and UV Protection",
       excerpt: "Beach houses face intense sun, salt air, and UV damage that inland homes don't. Window film blocks 99% of UV rays, cuts cooling costs, and adds storm protection — without touching your ocean view.",
