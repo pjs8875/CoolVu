@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
+import RelatedContent from "@/components/RelatedContent";
 
 export default function SolarFilmGEOPage() {
   return (
@@ -193,6 +194,7 @@ export default function SolarFilmGEOPage() {
           }),
         }}
       />
+      <RelatedContent showArticles={true} />
     </main>
   );
 }
