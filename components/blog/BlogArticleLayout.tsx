@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RelatedContent from "@/components/RelatedContent";
 
 interface BlogArticleLayoutProps {
   tag: string;
@@ -75,6 +76,9 @@ export default function BlogArticleLayout({
         prose-strong:text-gray-900">
         {children}
       </article>
+
+      {/* Internal Link Hub — signals Google to crawl related pages */}
+      <RelatedContent />
 
       {/* FAQ */}
       <div className="bg-gray-50 border-t-2 border-[#EBF3FB] mt-4">
