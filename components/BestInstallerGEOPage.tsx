@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
+import RelatedContent from "@/components/RelatedContent";
 
 export default function BestInstallerGEOPage() {
   return (
@@ -149,6 +150,7 @@ export default function BestInstallerGEOPage() {
         "areaServed": "Nassau County, Suffolk County, Long Island, NY",
         "award": "Nassau County Advisory Board Top Gun Professional Business"
       })}} />
+      <RelatedContent showArticles={true} />
     </main>
   );
 }
