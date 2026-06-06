@@ -40,6 +40,7 @@ const BLOG_PATHS = [
   "window-film-vs-window-tinting-long-island",
   "glare-reduction-window-film-long-island",
   "window-film-beach-houses-long-island",
+  "window-film-tax-credits-energy-rebates-long-island",
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
