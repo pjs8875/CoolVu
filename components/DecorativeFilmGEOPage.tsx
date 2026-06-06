@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
+import RelatedContent from "@/components/RelatedContent";
 
 export default function DecorativeFilmGEOPage() {
   return (
@@ -106,6 +107,7 @@ export default function DecorativeFilmGEOPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
         "areaServed": "Nassau County, Suffolk County, Long Island, NY"
       })}} />
+      <RelatedContent showArticles={true} />
     </main>
   );
 }
