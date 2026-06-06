@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
+import RelatedContent from "@/components/RelatedContent";
 
 export default function PrivacyFilmGEOPage() {
   return (
@@ -129,6 +130,7 @@ export default function PrivacyFilmGEOPage() {
           { "@type": "Question", name: "How much does privacy window film cost?", acceptedAnswer: { "@type": "Answer", text: "Privacy film typically ranges from $8–$18 per square foot installed. CoolVu offers free in-home estimates." } },
         ]
       })}} />
+      <RelatedContent showArticles={true} />
     </main>
   );
 }
