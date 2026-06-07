@@ -3,6 +3,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+    {
+      title: "Window Film for Long Island Pet Owners: Cooler Rooms, UV Protection, and Calmer Dogs",
+      excerpt: "Solar film blocks up to 60% of heat and 99% of UV rays — keeping pets cooler and safer all summer. Privacy film also reduces reactive barking. CoolVu serves all of Nassau and Suffolk Counties.",
+      date: "June 7, 2026",
+      slug: "window-film-pet-owners-long-island",
+      readTime: "5 min read",
+    },
 
     {
       title: "Window Film Tax Credits and Energy Rebates for Long Island Homeowners: The Full Picture",
