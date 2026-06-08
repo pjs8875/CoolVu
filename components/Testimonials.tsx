@@ -248,6 +248,14 @@ export default function Testimonials() {
             className="text-xl text-blue-100 font-sans justify-center"
             delay={80}
           />
+          <div className="mt-8 flex justify-center">
+            <a
+              href="/reviews"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 py-3 rounded-xl font-bold uppercase tracking-wider text-sm transition-colors"
+            >
+              Read all 31 reviews &rarr;
+            </a>
+          </div>
         </div>
 
         {/* Desktop: Horizontal Stack Grid */}
