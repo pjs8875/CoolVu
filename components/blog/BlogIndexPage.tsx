@@ -2,7 +2,37 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 const posts = [
+  {
+    title: "How Much Can Window Film Save You on Your PSEG Long Island Electric Bill? Real Numbers.",
+    excerpt: "PSEG LI rates run $0.20–$0.25/kWh — nearly double the national average. Solar window film cuts cooling costs 20–35% in filmed rooms. Most Long Island homes save $70–$150/month in peak summer.",
+    date: "June 8, 2026",
+    slug: "pseg-long-island-window-film-energy-savings",
+    readTime: "6 min read",
+    tag: "Energy Savings · PSEG LI",
+    featured: true,
+    stat: "$150",
+    statLabel: "avg monthly savings in peak summer",
+  },
+  {
+    title: "5 Signs Your Long Island Home Needs Window Film This Summer",
+    excerpt: "Hot rooms, high PSEG bills, fading floors, closed blinds, AC that never wins — any one of these is a sign your windows are the problem. Here's how to know for sure.",
+    date: "June 8, 2026",
+    slug: "signs-your-long-island-home-needs-window-film",
+    readTime: "5 min read",
+    tag: "Solar Film · Summer 2026",
+  },
+  {
+    title: "Window Film for Your Long Island Home Gym: Privacy, Glare, and Comfort",
+    excerpt: "Heat, glare, and nosy neighbors make home gyms uncomfortable. Window film solves all three — blocks 60% of heat, kills screen glare, and adds daytime privacy without darkening your workout space.",
+    date: "June 8, 2026",
+    slug: "window-film-home-gym-long-island",
+    readTime: "5 min read",
+  },
   {
     title: "Window Film for Your Long Island Home Gym: Privacy, Glare, and Comfort",
     excerpt: "Heat, glare, and nosy neighbors make home gyms uncomfortable. Window film solves all three — blocks 60% of heat, kills screen glare, and adds daytime privacy without darkening your workout space.",
