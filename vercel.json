@@ -2,23 +2,13 @@
   "redirects": [
     {
       "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "coolvulongisland.com"
-        }
-      ],
+      "has": [{"type": "host", "value": "coolvulongisland.com"}],
       "destination": "https://www.coolvulongisland.com/",
       "permanent": true
     },
     {
       "source": "/:path+",
-      "has": [
-        {
-          "type": "host",
-          "value": "coolvulongisland.com"
-        }
-      ],
+      "has": [{"type": "host", "value": "coolvulongisland.com"}],
       "destination": "https://www.coolvulongisland.com/:path+",
       "permanent": true
     },
@@ -36,6 +26,36 @@
       "source": "/author/:path*",
       "destination": "/",
       "permanent": true
-    }
+    },
+    {"source": "/services/solar-and-heat-reduction", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/services/solar-and-heat-reduction/", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/services/privacy-and-decorative-film", "destination": "/privacy-window-film-long-island", "permanent": true},
+    {"source": "/services/privacy-and-decorative-film/", "destination": "/privacy-window-film-long-island", "permanent": true},
+    {"source": "/services/safety-and-security-film", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/services/safety-and-security-film/", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/services/commercial-graphics", "destination": "/decorative-window-film-long-island", "permanent": true},
+    {"source": "/services/commercial-graphics/", "destination": "/decorative-window-film-long-island", "permanent": true},
+    {"source": "/services/surface-finishes", "destination": "/decorative-window-film-long-island", "permanent": true},
+    {"source": "/services/surface-finishes/", "destination": "/decorative-window-film-long-island", "permanent": true},
+    {"source": "/markets/commercial", "destination": "/best-window-film-installer-long-island", "permanent": true},
+    {"source": "/markets/commercial/", "destination": "/best-window-film-installer-long-island", "permanent": true},
+    {"source": "/markets/residential", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/markets/residential/", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/markets/retail", "destination": "/best-window-film-installer-long-island", "permanent": true},
+    {"source": "/markets/retail/", "destination": "/best-window-film-installer-long-island", "permanent": true},
+    {"source": "/markets/healthcare", "destination": "/privacy-window-film-long-island", "permanent": true},
+    {"source": "/markets/healthcare/", "destination": "/privacy-window-film-long-island", "permanent": true},
+    {"source": "/markets/educational", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/educational/", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/government", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/government/", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/data-centers", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/markets/data-centers/", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/markets/energy", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/markets/energy/", "destination": "/solar-window-film-long-island", "permanent": true},
+    {"source": "/markets/fema", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/fema/", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/places-of-worship", "destination": "/safety-security-window-film-long-island", "permanent": true},
+    {"source": "/markets/places-of-worship/", "destination": "/safety-security-window-film-long-island", "permanent": true}
   ]
 }
