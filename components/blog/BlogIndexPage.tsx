@@ -3,6 +3,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+  {
+    title: "Window Film for Your Long Island Home Gym: Privacy, Glare, and Comfort",
+    excerpt: "Heat, glare, and nosy neighbors make home gyms uncomfortable. Window film solves all three — blocks 60% of heat, kills screen glare, and adds daytime privacy without darkening your workout space.",
+    date: "June 8, 2026",
+    slug: "window-film-home-gym-long-island",
+    readTime: "5 min read",
+  },
     {
       title: "Window Film for Long Island Pet Owners: Cooler Rooms, UV Protection, and Calmer Dogs",
       excerpt: "Solar film blocks up to 60% of heat and 99% of UV rays — keeping pets cooler and safer all summer. Privacy film also reduces reactive barking. CoolVu serves all of Nassau and Suffolk Counties.",
