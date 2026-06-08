@@ -2,10 +2,6 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
 const posts = [
   {
     title: "How Much Can Window Film Save You on Your PSEG Long Island Electric Bill? Real Numbers.",
@@ -25,13 +21,6 @@ const posts = [
     slug: "signs-your-long-island-home-needs-window-film",
     readTime: "5 min read",
     tag: "Solar Film · Summer 2026",
-  },
-  {
-    title: "Window Film for Your Long Island Home Gym: Privacy, Glare, and Comfort",
-    excerpt: "Heat, glare, and nosy neighbors make home gyms uncomfortable. Window film solves all three — blocks 60% of heat, kills screen glare, and adds daytime privacy without darkening your workout space.",
-    date: "June 8, 2026",
-    slug: "window-film-home-gym-long-island",
-    readTime: "5 min read",
   },
   {
     title: "Window Film for Your Long Island Home Gym: Privacy, Glare, and Comfort",
