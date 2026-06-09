@@ -10,30 +10,35 @@ import { BlurText } from "@/components/ui/blur-text";
 const services = [
   {
     id: "solar-and-heat-reduction",
+    href: "/solar-window-film-long-island",
     title: "Solar & Heat Reduction",
     description: "Block up to 63% of solar heat, reduce glare, and protect your furnishings from 99% of harmful UV rays.",
     image: "/solar-heat/1.png", 
   },
   {
     id: "safety-and-security-film",
+    href: "/safety-security-window-film-long-island",
     title: "Safety & Security Film",
     description: "Strengthen glass to protect against break-ins, severe weather, and accidents. Includes DefenseLite systems.",
     image: "/security-film/9.png", 
   },
   {
     id: "privacy-and-decorative-film",
+    href: "/privacy-window-film-long-island",
     title: "Privacy & Decorative",
     description: "Enhance aesthetics and add privacy with frosted, patterned, or switchable smart glass films.",
     image: "/privacy-film/4.png", 
   },
   {
     id: "commercial-graphics",
+    href: "/decorative-window-film-long-island",
     title: "Commercial Graphics",
     description: "Custom window graphics, printed wall murals, and storefront lettering to elevate your brand.",
     image: "/commercial-graphics/7.png",
   },
   {
     id: "surface-finishes",
+    href: "/decorative-window-film-long-island",
     title: "Surface Finishes",
     description: "Transform existing surfaces with architectural vinyl, decorative metal, and wood fusion finishes.",
     image: "/surface-finishes/4.png", // Use the beautiful wood-grain door as the card image
@@ -111,7 +116,7 @@ export default function Services() {
                       {service.description}
                     </p>
                     <div className="mt-auto md:mt-0">
-                      <AnimatedButton href={`/services/${service.id}`} className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-4 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-xl border-none w-fit shadow-md">
+                      <AnimatedButton href={service.href} className="bg-coolvu-medium-blue hover:bg-coolvu-light-blue text-coolvu-off-white px-4 py-2 md:px-6 md:py-3 font-sans font-bold text-[10px] md:text-sm tracking-wider uppercase transition-colors rounded-xl border-none w-fit shadow-md">
                         Learn More
                       </AnimatedButton>
                     </div>

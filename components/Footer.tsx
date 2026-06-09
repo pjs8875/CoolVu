@@ -51,27 +51,27 @@ export default function Footer() {
               <div>
                 <h4 className="font-heading font-bold text-lg mb-4 text-coolvu-dark-blue uppercase tracking-wider">Services</h4>
                 <nav className="flex flex-col gap-3 font-sans text-sm text-gray-600">
-                  <Link href="/services/solar-and-heat-reduction" className="hover:text-coolvu-medium-blue transition-colors">Solar & Heat Reduction</Link>
-                  <Link href="/services/safety-and-security-film" className="hover:text-coolvu-medium-blue transition-colors">Safety & Security Film</Link>
-                  <Link href="/services/privacy-and-decorative-film" className="hover:text-coolvu-medium-blue transition-colors">Privacy & Decorative</Link>
-                  <Link href="/services/commercial-graphics" className="hover:text-coolvu-medium-blue transition-colors">Commercial Graphics</Link>
-                  <Link href="/services/surface-finishes" className="hover:text-coolvu-medium-blue transition-colors">Surface Finishes</Link>
+                  <Link href="/solar-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Solar & Heat Reduction</Link>
+                  <Link href="/safety-security-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Safety & Security Film</Link>
+                  <Link href="/privacy-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Privacy & Decorative</Link>
+                  <Link href="/decorative-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Commercial Graphics</Link>
+                  <Link href="/decorative-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Surface Finishes</Link>
                 </nav>
               </div>
 
               <div>
                 <h4 className="font-heading font-bold text-lg mb-4 text-coolvu-dark-blue uppercase tracking-wider">Markets</h4>
                 <nav className="flex flex-col gap-3 font-sans text-sm text-gray-600">
-                  <Link href="/markets/residential" className="hover:text-coolvu-medium-blue transition-colors">Residential</Link>
-                  <Link href="/markets/commercial" className="hover:text-coolvu-medium-blue transition-colors">Commercial</Link>
-                  <Link href="/markets/educational" className="hover:text-coolvu-medium-blue transition-colors">Educational</Link>
-                  <Link href="/markets/energy" className="hover:text-coolvu-medium-blue transition-colors">Energy</Link>
-                  <Link href="/markets/fema" className="hover:text-coolvu-medium-blue transition-colors">FEMA</Link>
-                  <Link href="/markets/government" className="hover:text-coolvu-medium-blue transition-colors">Government</Link>
-                  <Link href="/markets/places-of-worship" className="hover:text-coolvu-medium-blue transition-colors">Places of Worship</Link>
-                  <Link href="/markets/retail" className="hover:text-coolvu-medium-blue transition-colors">Retail</Link>
-                  <Link href="/markets/data-centers" className="hover:text-coolvu-medium-blue transition-colors">Data Centers</Link>
-                  <Link href="/markets/healthcare" className="hover:text-coolvu-medium-blue transition-colors">Healthcare</Link>
+                  <Link href="/solar-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Residential</Link>
+                  <Link href="/best-window-film-installer-long-island" className="hover:text-coolvu-medium-blue transition-colors">Commercial</Link>
+                  <Link href="/safety-security-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Educational</Link>
+                  <Link href="/solar-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Energy</Link>
+                  <Link href="/safety-security-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">FEMA</Link>
+                  <Link href="/safety-security-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Government</Link>
+                  <Link href="/safety-security-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Places of Worship</Link>
+                  <Link href="/best-window-film-installer-long-island" className="hover:text-coolvu-medium-blue transition-colors">Retail</Link>
+                  <Link href="/solar-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Data Centers</Link>
+                  <Link href="/privacy-window-film-long-island" className="hover:text-coolvu-medium-blue transition-colors">Healthcare</Link>
                 </nav>
               </div>
 
