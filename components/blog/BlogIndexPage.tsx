@@ -10,6 +10,13 @@ const posts = [
       slug: "window-film-pet-owners-long-island",
       readTime: "5 min read",
     },
+    {
+      title: "Window Film for Long Island Pet Owners: Cooler Rooms, UV Protection, and Calmer Dogs",
+      excerpt: "Solar film blocks up to 60% of heat and 99% of UV rays — keeping pets cooler and safer all summer. Privacy film also reduces reactive barking. CoolVu serves all of Nassau and Suffolk Counties.",
+      date: "June 7, 2026",
+      slug: "window-film-pet-owners-long-island",
+      readTime: "5 min read",
+    },
   {
     title: "How Much Can Window Film Save You on Your PSEG Long Island Electric Bill? Real Numbers.",
     excerpt: "PSEG LI rates run $0.20–$0.25/kWh — nearly double the national average. Solar window film cuts cooling costs 20–35% in filmed rooms. Most Long Island homes save $70–$150/month in peak summer.",
