@@ -4,10 +4,10 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
-      title: "Window Film for Long Island Pet Owners: Cooler Rooms, UV Protection, and Calmer Dogs",
-      excerpt: "Solar film blocks up to 60% of heat and 99% of UV rays — keeping pets cooler and safer all summer. Privacy film also reduces reactive barking. CoolVu serves all of Nassau and Suffolk Counties.",
-      date: "June 7, 2026",
-      slug: "window-film-pet-owners-long-island",
+      title: "Window Film vs. Curtains and Blinds: The Smart Choice for Long Island Homes",
+      excerpt: "Curtains block your view and don't stop heat. Window film blocks 60% of solar heat, 99% of UV rays, and gives you daytime privacy — without ever closing a thing. CoolVu explains the honest comparison.",
+      date: "June 10, 2026",
+      slug: "window-film-vs-curtains-blinds-long-island",
       readTime: "5 min read",
     },
     {
