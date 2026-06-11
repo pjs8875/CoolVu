@@ -12,6 +12,9 @@ const GEO_PATHS: { slug: string; lastMod: string }[] = [
 ];
 
 const BLOG_PATHS: { slug: string; lastMod: string }[] = [
+  { slug: "window-film-skylights-long-island",                    lastMod: "2026-06-11" },
+  { slug: "window-film-vs-curtains-blinds-long-island",           lastMod: "2026-06-10" },
+  { slug: "window-film-garage-long-island",                       lastMod: "2026-06-09" },
   { slug: "pseg-long-island-window-film-energy-savings",          lastMod: "2026-06-08" },
   { slug: "signs-your-long-island-home-needs-window-film",        lastMod: "2026-06-08" },
   { slug: "window-film-home-gym-long-island",                     lastMod: "2026-06-08" },
