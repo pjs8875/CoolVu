@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Window Film for Skylights: Stop the Heat Pouring Into Your Long Island Home",
+      excerpt: "Skylights catch sun all day and pump heat and UV straight into your home. Solar film blocks up to 60% of heat and 99% of UV at the glass — without losing the natural light. Here's how skylight film works.",
+      date: "June 11, 2026",
+      slug: "window-film-skylights-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "Window Film vs. Curtains and Blinds: The Smart Choice for Long Island Homes",
       excerpt: "Curtains block your view and don't stop heat. Window film blocks 60% of solar heat, 99% of UV rays, and gives you daytime privacy — without ever closing a thing. CoolVu explains the honest comparison.",
       date: "June 10, 2026",
