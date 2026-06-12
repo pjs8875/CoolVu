@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Does Window Film Make Your House Dark Inside? Here's the Truth",
+      excerpt: "No — modern solar film blocks heat and 99% of UV rays while letting 50–70% of natural light through. Most homeowners can't tell the difference in brightness. Here's how VLT ratings work and why filmed rooms often feel brighter.",
+      date: "June 12, 2026",
+      slug: "does-window-film-make-house-dark-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "Window Film for Skylights: Stop the Heat Pouring Into Your Long Island Home",
       excerpt: "Skylights catch sun all day and pump heat and UV straight into your home. Solar film blocks up to 60% of heat and 99% of UV at the glass — without losing the natural light. Here's how skylight film works.",
       date: "June 11, 2026",
