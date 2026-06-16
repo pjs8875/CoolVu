@@ -4,10 +4,11 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
-      title: "Window Film for Long Island Nurseries and Baby Rooms: UV Protection That Actually Works",
-      excerpt: "Window film blocks 99% of UV rays and up to 60% of summer heat — protecting your baby from sun exposure through the glass, keeping the nursery cooler, and reducing glare. Free estimates throughout Nassau and Suffolk Counties.",
-      date: "June 15, 2026",
-      slug: "window-film-nursery-baby-room-long-island",
+      title: "Window Film for Long Island Car Dealerships and Auto Showrooms",
+      excerpt:
+        "Large showroom windows cost dealerships thousands in cooling bills, glare, and UV damage to display vehicles. Commercial window film solves all four problems in one install.",
+      date: "June 2026",
+      slug: "window-film-car-dealerships-long-island",
       readTime: "5 min read",
     },
     {
@@ -17,6 +18,7 @@ const posts = [
       slug: "window-film-nursery-baby-room-long-island",
       readTime: "5 min read",
     },
+
     {
       title: "Does Window Film Make Your House Dark Inside? Here's the Truth",
       excerpt: "No — modern solar film blocks heat and 99% of UV rays while letting 50–70% of natural light through. Most homeowners can't tell the difference in brightness. Here's how VLT ratings work and why filmed rooms often feel brighter.",
