@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Anti-Graffiti Window Film for Long Island Storefronts and Businesses",
+      excerpt:
+        "Vandals tagging or scratching your storefront glass? Anti-graffiti film takes the damage so your glass doesn't — peel it off and replace it for a fraction of the cost of new glass. CoolVu serves businesses across Nassau and Suffolk Counties.",
+      date: "June 17, 2026",
+      slug: "anti-graffiti-window-film-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "Window Film for Long Island Car Dealerships and Auto Showrooms",
       excerpt:
         "Large showroom windows cost dealerships thousands in cooling bills, glare, and UV damage to display vehicles. Commercial window film solves all four problems in one install.",
