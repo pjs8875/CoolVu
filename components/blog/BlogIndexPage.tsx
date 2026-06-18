@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "How Much Does Window Film Cost on Long Island? (2026 Price Guide)",
+      excerpt:
+        "Straight answers on pricing: most Long Island homeowners pay $12–$25 per square foot. A single room runs $400–$1,200 and a whole home $1,800–$4,500. Full breakdown by film type and project size — free estimates in Nassau and Suffolk.",
+      date: "June 18, 2026",
+      slug: "window-film-cost-long-island",
+      readTime: "6 min read",
+    },
+    {
       title: "Anti-Graffiti Window Film for Long Island Storefronts and Businesses",
       excerpt:
         "Vandals tagging or scratching your storefront glass? Anti-graffiti film takes the damage so your glass doesn't — peel it off and replace it for a fraction of the cost of new glass. CoolVu serves businesses across Nassau and Suffolk Counties.",
