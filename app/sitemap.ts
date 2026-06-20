@@ -12,6 +12,12 @@ const GEO_PATHS: { slug: string; lastMod: string }[] = [
 ];
 
 const BLOG_PATHS: { slug: string; lastMod: string }[] = [
+  { slug: "window-film-double-pane-windows-long-island",      lastMod: "2026-06-20" },
+  { slug: "window-film-cost-long-island",                     lastMod: "2026-06-18" },
+  { slug: "anti-graffiti-window-film-long-island",            lastMod: "2026-06-17" },
+  { slug: "window-film-nursery-baby-room-long-island",        lastMod: "2026-06-15" },
+  { slug: "window-film-car-dealerships-long-island",          lastMod: "2026-06-13" },
+  { slug: "does-window-film-make-house-dark-long-island",     lastMod: "2026-06-12" },
   { slug: "daytime-privacy-window-film-long-island",         lastMod: "2026-06-20" },
   { slug: "window-film-skylights-long-island",                    lastMod: "2026-06-11" },
   { slug: "window-film-vs-curtains-blinds-long-island",           lastMod: "2026-06-10" },
