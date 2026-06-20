@@ -3,6 +3,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+  {
+    title: "Can You Put Window Film on Double-Pane Windows? A Long Island Guide",
+    excerpt:
+      "Worried film will crack your double-pane windows or fog the glass? The honest answer: yes, you can film them — when the film is matched to your glass. CoolVu explains thermal stress in plain English and how a pro install keeps your windows safe across Nassau and Suffolk.",
+    date: "June 20, 2026",
+    slug: "window-film-double-pane-windows-long-island",
+    readTime: "6 min read",
+  },
+
     {
       title: "How Much Does Window Film Cost on Long Island? (2026 Price Guide)",
       excerpt:
