@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Daytime Privacy Window Film for Long Island: Enjoy Your Summer Without the Neighbors Watching",
+    excerpt:
+      "Keep the blinds open all summer. Daytime privacy film makes street-facing windows look like mirrors from outside while you keep your view, your light, and a cooler room. CoolVu explains one-way vs. frosted film and the best rooms to film across Nassau and Suffolk.",
+    date: "June 20, 2026",
+    slug: "daytime-privacy-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Can You Put Window Film on Double-Pane Windows? A Long Island Guide",
     excerpt:
       "Worried film will crack your double-pane windows or fog the glass? The honest answer: yes, you can film them — when the film is matched to your glass. CoolVu explains thermal stress in plain English and how a pro install keeps your windows safe across Nassau and Suffolk.",

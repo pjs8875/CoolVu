@@ -12,6 +12,7 @@ const GEO_PATHS: { slug: string; lastMod: string }[] = [
 ];
 
 const BLOG_PATHS: { slug: string; lastMod: string }[] = [
+  { slug: "daytime-privacy-window-film-long-island",         lastMod: "2026-06-20" },
   { slug: "window-film-skylights-long-island",                    lastMod: "2026-06-11" },
   { slug: "window-film-vs-curtains-blinds-long-island",           lastMod: "2026-06-10" },
   { slug: "window-film-garage-long-island",                       lastMod: "2026-06-09" },
