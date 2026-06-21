@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Does Window Film Help in Winter? Insulating Window Film for Long Island Homes",
+    excerpt:
+      "Window film is not just a summer upgrade. Insulating 'Low-E' film reflects your heat back inside so rooms stay warmer and your furnace works less — while still blocking 99% of UV and summer heat. CoolVu explains year-round comfort for Nassau and Suffolk homes.",
+    date: "June 21, 2026",
+    slug: "winter-insulating-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Daytime Privacy Window Film for Long Island: Enjoy Your Summer Without the Neighbors Watching",
     excerpt:
       "Keep the blinds open all summer. Daytime privacy film makes street-facing windows look like mirrors from outside while you keep your view, your light, and a cooler room. CoolVu explains one-way vs. frosted film and the best rooms to film across Nassau and Suffolk.",
