@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Bedrooms: Block the Early-Morning Sun and Sleep Better on Long Island",
+    excerpt:
+      "Long Island summer sun comes up before 5:30am — and east-facing bedrooms feel it first. Window film blocks up to 60% of heat and 99% of UV at the glass, cuts dawn glare, and adds daytime privacy so your bedroom stays cool, calm, and easy to sleep in. Free estimates across Nassau and Suffolk.",
+    date: "June 22, 2026",
+    slug: "window-film-bedrooms-better-sleep-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Does Window Film Help in Winter? Insulating Window Film for Long Island Homes",
     excerpt:
       "Window film is not just a summer upgrade. Insulating 'Low-E' film reflects your heat back inside so rooms stay warmer and your furnace works less — while still blocking 99% of UV and summer heat. CoolVu explains year-round comfort for Nassau and Suffolk homes.",
