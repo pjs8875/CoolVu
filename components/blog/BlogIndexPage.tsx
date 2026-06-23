@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Churches & Houses of Worship",
+    excerpt:
+      "All that beautiful glass fades stained glass, overheats the sanctuary, and creates an easy break-in point. Window film protects against UV, heat, glare, and shattering in one install — for churches, synagogues, and temples across Nassau and Suffolk. Free estimates.",
+    date: "June 23, 2026",
+    slug: "window-film-houses-of-worship-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Window Film for Bedrooms: Block the Early-Morning Sun and Sleep Better on Long Island",
     excerpt:
       "Long Island summer sun comes up before 5:30am — and east-facing bedrooms feel it first. Window film blocks up to 60% of heat and 99% of UV at the glass, cuts dawn glare, and adds daytime privacy so your bedroom stays cool, calm, and easy to sleep in. Free estimates across Nassau and Suffolk.",
