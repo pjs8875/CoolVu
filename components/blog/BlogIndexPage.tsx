@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Home Theaters and Media Rooms: Kill the Glare on Your Screen",
+    excerpt:
+      "Sun glare turning your TV or projector screen into a washed-out mirror? Window film cuts the light and glare at the glass so your media room works at 2pm, not just at night — plus it blocks 99% of UV to protect your gear. CoolVu serves Nassau & Suffolk. Free estimates.",
+    date: "June 24, 2026",
+    slug: "window-film-home-theaters-media-rooms-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Churches & Houses of Worship",
     excerpt:
       "All that beautiful glass fades stained glass, overheats the sanctuary, and creates an easy break-in point. Window film protects against UV, heat, glare, and shattering in one install — for churches, synagogues, and temples across Nassau and Suffolk. Free estimates.",
