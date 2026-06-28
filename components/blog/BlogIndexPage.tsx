@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Historic Homes: Protect Original Windows Without Replacing Them",
+    excerpt:
+      "Historic Long Island homes lose heat, let UV pour in, and risk fading original floors and furnishings — because single-pane glass is beautiful but provides almost no protection. Window film fixes all of this without touching the original windows. CoolVu serves Garden City, Great Neck, Oyster Bay, and all of Nassau and Suffolk County.",
+    date: "June 28, 2026",
+    slug: "window-film-historic-homes-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Home Theaters and Media Rooms: Kill the Glare on Your Screen",
     excerpt:
       "Sun glare turning your TV or projector screen into a washed-out mirror? Window film cuts the light and glare at the glass so your media room works at 2pm, not just at night — plus it blocks 99% of UV to protect your gear. CoolVu serves Nassau & Suffolk. Free estimates.",
