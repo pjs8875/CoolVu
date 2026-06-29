@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film Myths Debunked — What Long Island Homeowners Get Wrong",
+    excerpt:
+      "Most homeowners skip window film based on things that simply aren't true: that it makes rooms dark, cracks windows, or only works in summer. CoolVu of Long Island debunks the 6 most common myths with the real facts about professional window film installation.",
+    date: "June 29, 2026",
+    slug: "window-film-myths-debunked-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Historic Homes: Protect Original Windows Without Replacing Them",
     excerpt:
       "Historic Long Island homes lose heat, let UV pour in, and risk fading original floors and furnishings — because single-pane glass is beautiful but provides almost no protection. Window film fixes all of this without touching the original windows. CoolVu serves Garden City, Great Neck, Oyster Bay, and all of Nassau and Suffolk County.",
