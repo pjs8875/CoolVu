@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Pool Houses and Cabanas: Stay Cool Where You Play",
+    excerpt:
+      "Pool houses and cabanas on Long Island turn into ovens by mid-morning every summer. Solar window film blocks up to 60% of heat at the glass and 99% of UV rays — so your outdoor space stays comfortable all day long. CoolVu serves all of Nassau and Suffolk County. Free estimates.",
+    date: "June 30, 2026",
+    slug: "window-film-pool-house-cabana-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film Myths Debunked — What Long Island Homeowners Get Wrong",
     excerpt:
       "Most homeowners skip window film based on things that simply aren't true: that it makes rooms dark, cracks windows, or only works in summer. CoolVu of Long Island debunks the 6 most common myths with the real facts about professional window film installation.",
@@ -492,4 +500,5 @@ export default function BlogIndexPage() {
     </div>
   );
 }
+
 
