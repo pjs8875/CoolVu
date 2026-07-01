@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Seniors and Aging-in-Place Homes on Long Island",
+    excerpt:
+      "Window film helps Long Island seniors age in place more safely — reducing dangerous glare, blocking summer heat, protecting against UV damage, and making windows safer if they break. CoolVu serves Nassau and Suffolk Counties. Free estimates, lifetime warranty.",
+    date: "July 2026",
+    slug: "window-film-seniors-aging-in-place-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Pool Houses and Cabanas: Stay Cool Where You Play",
     excerpt:
       "Pool houses and cabanas on Long Island turn into ovens by mid-morning every summer. Solar window film blocks up to 60% of heat at the glass and 99% of UV rays — so your outdoor space stays comfortable all day long. CoolVu serves all of Nassau and Suffolk County. Free estimates.",
