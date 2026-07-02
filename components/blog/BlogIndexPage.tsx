@@ -3,6 +3,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+    {
+      title: "Does Window Film Void Your Window Warranty? What Long Island Homeowners Need to Know",
+      excerpt: "Worried about your Andersen or Pella warranty? Here\'s the honest answer — and what to check before you install.",
+      date: "July 2, 2026",
+      slug: "does-window-film-void-window-warranty-long-island",
+      readTime: "5 min read",
+    },
   {
     title: "Window Film for Seniors and Aging-in-Place Homes on Long Island",
     excerpt:
