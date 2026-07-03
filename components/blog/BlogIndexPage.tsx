@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "How to Clean and Care for Window Film: A Long Island Homeowner's Guide",
+      excerpt: "Cleaning window film is easy — wait 30 days, then use ammonia-free cleaner and a soft microfiber cloth. What to use, what to avoid, and how to keep film looking new for 25 years.",
+      date: "July 3, 2026",
+      slug: "how-to-clean-window-film-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "Does Window Film Void Your Window Warranty? What Long Island Homeowners Need to Know",
       excerpt: "Worried about your Andersen or Pella warranty? Here\'s the honest answer — and what to check before you install.",
       date: "July 2, 2026",
