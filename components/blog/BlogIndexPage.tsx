@@ -4,6 +4,13 @@ import Footer from "@/components/Footer";
 
 const posts = [
     {
+      title: "Window Film for Bay and Bow Windows: A Long Island Homeowner's Guide",
+      excerpt: "Bay and bow windows catch sun from 3 to 6 directions at once — that's why the living room bakes and the floors fade. Solar window film blocks 60% of heat and 99% of UV without losing the view or the light.",
+      date: "July 4, 2026",
+      slug: "window-film-bay-bow-windows-long-island",
+      readTime: "5 min read",
+    },
+    {
       title: "How to Clean and Care for Window Film: A Long Island Homeowner's Guide",
       excerpt: "Cleaning window film is easy — wait 30 days, then use ammonia-free cleaner and a soft microfiber cloth. What to use, what to avoid, and how to keep film looking new for 25 years.",
       date: "July 3, 2026",
