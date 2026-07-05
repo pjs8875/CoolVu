@@ -13,7 +13,7 @@ const ogImage = {
 
 export function buildHomeMetadata(): Metadata {
   const base = getSiteUrl();
-  const title = "Window Film Installer Long Island | CoolVu of Long Island";
+  const title = "Window Film & Window Tinting | CoolVu of Long Island";
 
   return {
     title: { absolute: title },
