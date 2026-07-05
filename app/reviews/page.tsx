@@ -4,9 +4,9 @@ import { Star, Phone, MapPin } from "lucide-react";
 import { REVIEWS, REVIEW_COUNT, AVERAGE_RATING } from "@/lib/data/reviews";
 import { getSiteUrl } from "@/lib/seo/site";
 
-const title = "CoolVu of Long Island Reviews | 31 Five-Star Google Reviews";
+const title = "CoolVu of Long Island Reviews — 31 Five-Star Ratings";
 const description =
-  "Read 31 five-star reviews for CoolVu of Long Island from homeowners and businesses across Nassau & Suffolk County. Solar, privacy, safety & decorative window film. Free in-home estimates.";
+  "Read 31 five-star Google reviews of CoolVu of Long Island — trusted by Nassau & Suffolk homeowners for window film & tinting. Free estimate: 516-535-9555.";
 
 export const metadata: Metadata = {
   title,
@@ -33,6 +33,29 @@ function Stars({ count }: { count: number }) {
 export default function ReviewsPage() {
   return (
     <main className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "CoolVu of Long Island",
+            telephone: "+1-516-535-9555",
+            url: `${getSiteUrl()}/reviews`,
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Westbury",
+              addressRegion: "NY",
+              addressCountry: "US",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: AVERAGE_RATING.toFixed(1),
+              reviewCount: String(REVIEW_COUNT),
+            },
+          }),
+        }}
+      />
       <section className="bg-coolvu-dark-blue text-white pt-28 pb-16 md:pt-36 md:pb-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="uppercase tracking-widest text-blue-200 text-sm font-bold mb-4">
