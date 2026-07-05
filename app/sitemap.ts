@@ -126,6 +126,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.85,
     })),
+    {
+      url: `${base}/locations/nassau-county`,
+      lastModified: new Date("2026-07-05"),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
+      url: `${base}/locations/suffolk-county`,
+      lastModified: new Date("2026-07-05"),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
     ...SERVICE_AREA_CITIES.map(({ slug }) => ({
       url: `${base}/locations/${slug}`,
       lastModified: new Date("2026-06-02"),
