@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 
 export const metadata = buildPageMetadata({
-  title: "Solar Window Film Long Island | Block Heat & UV | CoolVu",
-  description: "CoolVu of Long Island installs premium solar window film that blocks 99% of UV rays and up to 63% of solar heat. Free estimates. Lifetime warranty. Serving all of Nassau & Suffolk County.",
+  title: "Solar Window Film Long Island | Cut Heat & Glare | CoolVu",
+  description: "Solar window film from CoolVu blocks 99% UV & up to 63% of heat, lowering energy bills. Serving Nassau & Suffolk. Lifetime warranty. Free estimate: 516-535-9555.",
   path: "/solar-window-film-long-island",
 });
 
