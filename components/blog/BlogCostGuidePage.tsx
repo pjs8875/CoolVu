@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
@@ -39,6 +40,8 @@ export default function BlogCostGuidePage() {
         ctaBody="CoolVu of Long Island will come measure your windows and hand you a clear written quote — no charge, no pressure. Call 516-535-9555 or visit coolvulongisland.com to book your free estimate."
       >
         <p>It's the first question almost everyone asks us: "So… what's this going to cost me?" It's a fair question, and you deserve a straight answer instead of a runaround.</p>
+
+        <p>Once you know your budget, dig into the details on our <Link href="/solar-window-film-long-island" className="text-[#1F4E79] font-semibold underline">solar window film</Link> and <Link href="/privacy-window-film-long-island" className="text-[#1F4E79] font-semibold underline">privacy window film</Link> pages.</p>
 
         <p>Here's the honest truth up front: most Long Island homeowners pay between <strong>$12 and $25 per square foot of glass</strong> for professional window film. A single room is usually $400 to $1,200. A whole home usually runs $1,800 to $4,500. Commercial and storefront jobs are priced the same way — by the square foot — but the number moves with the film type.</p>
 
