@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
@@ -39,6 +40,8 @@ export default function BlogSafetyFilmPage() {
         ctaBody="CoolVu of Long Island installs safety film throughout Nassau and Suffolk County. Free estimate, no pressure, lifetime warranty. Get protected before hurricane season."
       >
         <p>If you've lived on Long Island for more than a few years, you know what a nor'easter feels like. You've probably sat through a few tropical storms too. And you know that the worst part isn't the rain — it's the windows.</p>
+
+        <p>Holding your glass together is exactly what our <Link href="/safety-security-window-film-long-island" className="text-[#1F4E79] font-semibold underline">safety and security window film</Link> is built for — see how it protects against storms and break-ins.</p>
 
         <p>When a window breaks in a high-wind storm, the glass doesn't just crack. It explodes inward. Flying glass shards are one of the most common causes of storm-related injuries inside homes. And once a window is open, wind pressure can damage your roof and interior in minutes.</p>
 
