@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
@@ -39,6 +40,8 @@ export default function BlogOneWayPrivacyPage() {
         ctaBody="CoolVu of Long Island offers free estimates across Nassau and Suffolk County. We'll show you exactly which film works for each window — no guessing, no pressure."
       >
         <p>If you live on a busy street in Nassau County, have a neighbor's house 20 feet from your living room window, or just hate feeling like you're in a fishbowl every time you walk through your own home — one-way window film might be exactly what you're looking for.</p>
+
+        <p>For a full rundown of your options, see our <Link href="/privacy-window-film-long-island" className="text-[#1F4E79] font-semibold underline">privacy window film on Long Island</Link> page — frosted, one-way, and decorative films with pricing and how each one works.</p>
 
         <p>The idea is simple: you keep your view, your natural light, and your open feeling — but from outside, your windows look like mirrors. No curtains. No blinds. No choosing between privacy and daylight.</p>
 
