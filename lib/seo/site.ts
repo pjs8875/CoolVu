@@ -10,4 +10,4 @@ export function getSiteUrl(): string {
 export const SITE_NAME = "CoolVu of Long Island";
 
 export const DEFAULT_DESCRIPTION =
-  "CoolVu of Long Island installs solar, privacy, safety & decorative window film for homes and businesses in Nassau & Suffolk County. Blocks 99% of UV rays. Lifetime warranty. Free estimates. Call 516-535-9555.";
+  "CoolVu installs solar, privacy, safety & decorative window film & tinting across Long Island. 99% UV blocked, lifetime warranty, free estimates. Call 516-535-9555.";
