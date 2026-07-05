@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
@@ -41,6 +42,8 @@ export default function BlogCommercialFilmPage() {
         <p>If your office feels like a greenhouse by 2pm, or your retail staff is constantly closing blinds to stop the glare from washing out product displays, window film is probably the fastest fix you haven't tried yet.</p>
 
         <p>Commercial window film is exactly what it sounds like — a thin, optically clear layer bonded to your existing glass. It doesn't replace your windows. It upgrades them. And for Long Island businesses dealing with brutal summers, low winter sun, and PSEG bills that never seem to go down, the upgrade pays for itself faster than most building improvements.</p>
+
+        <p>New to window film? Start with our guide to <Link href="/solar-window-film-long-island" className="text-[#1F4E79] font-semibold underline">solar window film for Long Island businesses</Link> — it covers the heat, glare, and energy-bill savings most offices care about most.</p>
 
         <h2>The Three Problems Commercial Film Solves</h2>
 
