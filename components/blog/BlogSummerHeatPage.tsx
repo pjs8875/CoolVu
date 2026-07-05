@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
@@ -39,6 +40,8 @@ export default function BlogSummerHeatPage() {
         ctaBody="Get a free estimate from CoolVu of Long Island. We'll tell you exactly which windows to film and how much you can expect to save — no pressure, no sales tricks."
       >
         <p>Every summer on Long Island, the same thing happens. June arrives, temperatures climb, and PSEG bills start looking like a car payment. You crank the AC. The house cools down. You turn it off. It gets hot again. Repeat.</p>
+
+        <p>The fix is <Link href="/solar-window-film-long-island" className="text-[#1F4E79] font-semibold underline">solar window film for your Long Island home</Link> — it blocks up to 63% of the heat before it ever gets inside.</p>
 
         <p>Here's what most people don't realize: a huge chunk of that heat isn't sneaking in under your doors or through your walls. It's coming straight through your windows — and your AC is fighting a losing battle against the sun.</p>
 
