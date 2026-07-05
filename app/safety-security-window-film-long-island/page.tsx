@@ -5,7 +5,7 @@ import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 
 export const metadata = buildPageMetadata({
   title: "Safety & Security Window Film Long Island | CoolVu",
-  description: "CoolVu of Long Island installs safety and security window film for storm and break-in protection. Serving Nassau & Suffolk County. Free estimates.",
+  description: "Safety & security window film from CoolVu holds glass together in storms & break-ins. Nassau & Suffolk homes & businesses. Free estimate: 516-535-9555.",
   path: "/safety-security-window-film-long-island",
 });
 
