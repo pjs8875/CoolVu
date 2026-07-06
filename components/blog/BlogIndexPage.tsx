@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const posts = [
+  {
+    title: "Window Film for New-Construction Homes on Long Island: The Smart First Upgrade",
+    excerpt:
+      "Brand-new windows still let heat, glare, and UV rays pour in — a fresh double-pane window only blocks about 25-30% of solar heat. Solar window film is the cheapest high-value upgrade a new Long Island homeowner can make: up to 60% heat blocked, 99% UV blocked, and your floors protected from day one. CoolVu serves all of Nassau and Suffolk County.",
+    date: "July 6, 2026",
+    slug: "window-film-new-construction-homes-long-island",
+    readTime: "5 min read",
+  },
     {
       title: "Window Film for Bay and Bow Windows: A Long Island Homeowner's Guide",
       excerpt: "Bay and bow windows catch sun from 3 to 6 directions at once — that's why the living room bakes and the floors fade. Solar window film blocks 60% of heat and 99% of UV without losing the view or the light.",
