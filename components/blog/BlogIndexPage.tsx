@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "DIY vs. Professional Window Film: Why Long Island Homeowners Should Hire a Pro",
+    excerpt:
+      "DIY window film kits look cheaper, but they bubble, peel, and carry no warranty. Professional installation from CoolVu is done right the first time, lasts 15-25 years, blocks 99% of UV rays, and comes with a lifetime warranty. Here's why hiring a pro saves Long Island homeowners money in the long run.",
+    date: "July 7, 2026",
+    slug: "diy-vs-professional-window-film-installation-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for New-Construction Homes on Long Island: The Smart First Upgrade",
     excerpt:
       "Brand-new windows still let heat, glare, and UV rays pour in — a fresh double-pane window only blocks about 25-30% of solar heat. Solar window film is the cheapest high-value upgrade a new Long Island homeowner can make: up to 60% heat blocked, 99% UV blocked, and your floors protected from day one. CoolVu serves all of Nassau and Suffolk County.",
