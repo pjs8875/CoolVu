@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Front Doors and Glass Entryways on Long Island",
+    excerpt:
+      "Clear glass on your front door lets the whole street see into your foyer. Window film fixes it in an afternoon \u2014 frosted privacy film blocks the view, security film holds the glass together against break-ins, and solar film stops the sun from fading your entryway. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 8, 2026",
+    slug: "window-film-front-doors-entryways-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "DIY vs. Professional Window Film: Why Long Island Homeowners Should Hire a Pro",
     excerpt:
       "DIY window film kits look cheaper, but they bubble, peel, and carry no warranty. Professional installation from CoolVu is done right the first time, lasts 15-25 years, blocks 99% of UV rays, and comes with a lifetime warranty. Here's why hiring a pro saves Long Island homeowners money in the long run.",
