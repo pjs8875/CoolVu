@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film for Long Island Kitchens: Beat Glare, Heat, and Fading",
+    excerpt:
+      "The kitchen is one of the hottest, sunniest rooms in a Long Island home \u2014 big sink and eat-in windows, plus heat from the oven. Window film blocks up to 60% of heat and glare, stops UV from fading your cabinets and floors, and adds daytime privacy over the sink. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 9, 2026",
+    slug: "window-film-kitchens-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Front Doors and Glass Entryways on Long Island",
     excerpt:
       "Clear glass on your front door lets the whole street see into your foyer. Window film fixes it in an afternoon \u2014 frosted privacy film blocks the view, security film holds the glass together against break-ins, and solar film stops the sun from fading your entryway. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
