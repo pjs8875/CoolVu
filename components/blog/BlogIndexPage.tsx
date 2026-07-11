@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Do West-Facing Windows Need Window Film? Beating Long Island's Afternoon Sun",
+    excerpt:
+      "West-facing windows take the full force of the low afternoon sun from 2pm to 7pm \u2014 the hottest, glariest part of a Long Island day. Solar window film blocks up to 60% of that heat and 99% of UV at the glass, so your west-side rooms stop baking, your AC gets a break, and your floors stop fading. CoolVu serves Nassau and Suffolk with a lifetime warranty.",
+    date: "July 11, 2026",
+    slug: "west-facing-windows-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Kitchens: Beat Glare, Heat, and Fading",
     excerpt:
       "The kitchen is one of the hottest, sunniest rooms in a Long Island home \u2014 big sink and eat-in windows, plus heat from the oven. Window film blocks up to 60% of heat and glare, stops UV from fading your cabinets and floors, and adds daytime privacy over the sink. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
