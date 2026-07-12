@@ -4,6 +4,15 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Window Film vs. Solar Screens: Which Is Better for Long Island Homes?",
+    excerpt:
+      "Both block summer heat, but window film wins for most Long Island homes: it's nearly invisible, keeps your view and curb appeal, blocks 99% of UV, works all year with no seasonal takedown, and lasts 15\u201325 years with a lifetime warranty. Solar screens darken your windows and wear out in the salt air. See the full head-to-head.",
+    date: "July 12, 2026",
+    slug: "window-film-vs-solar-screens-long-island",
+    readTime: "5 min read",
+  },
+
+  {
     title: "Do West-Facing Windows Need Window Film? Beating Long Island's Afternoon Sun",
     excerpt:
       "West-facing windows take the full force of the low afternoon sun from 2pm to 7pm \u2014 the hottest, glariest part of a Long Island day. Solar window film blocks up to 60% of that heat and 99% of UV at the glass, so your west-side rooms stop baking, your AC gets a break, and your floors stop fading. CoolVu serves Nassau and Suffolk with a lifetime warranty.",
