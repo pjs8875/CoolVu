@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Why Your Long Island Second Floor Is So Hot \u2014 And How Window Film Fixes It",
+    excerpt:
+      "Upstairs bedrooms bake every summer because heat rises AND your second-floor windows soak up direct sun all day, while one central AC struggles to keep up. Solar window film blocks up to 60% of that heat and 99% of UV at the glass, so upstairs rooms stop overheating \u2014 a one-time install with a lifetime warranty. CoolVu serves Nassau and Suffolk County.",
+    date: "July 14, 2026",
+    slug: "second-floor-heat-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film vs. Solar Screens: Which Is Better for Long Island Homes?",
     excerpt:
       "Both block summer heat, but window film wins for most Long Island homes: it's nearly invisible, keeps your view and curb appeal, blocks 99% of UV, works all year with no seasonal takedown, and lasts 15\u201325 years with a lifetime warranty. Solar screens darken your windows and wear out in the salt air. See the full head-to-head.",
