@@ -122,6 +122,7 @@ export default function BlogKitchensPage() {
             })),
           }) }}
         />
+        <p className="mt-4">Ready to fix your kitchen? CoolVu is the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link>, serving every town in Nassau and Suffolk County.</p>
       </BlogArticleLayout>
       <Footer />
     </div>
