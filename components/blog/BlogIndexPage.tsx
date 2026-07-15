@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Best Time of Year to Install Window Film on Long Island",
+    excerpt:
+      "Wondering when to book? Spring is the sweet spot \u2014 your film is on before summer heat and glare peak. But window film is applied indoors and cures fine year-round, so any season works, and it starts saving you money the day it goes up. CoolVu installs across Nassau and Suffolk with a lifetime warranty.",
+    date: "July 15, 2026",
+    slug: "best-time-to-install-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Why Your Long Island Second Floor Is So Hot \u2014 And How Window Film Fixes It",
     excerpt:
       "Upstairs bedrooms bake every summer because heat rises AND your second-floor windows soak up direct sun all day, while one central AC struggles to keep up. Solar window film blocks up to 60% of that heat and 99% of UV at the glass, so upstairs rooms stop overheating \u2014 a one-time install with a lifetime warranty. CoolVu serves Nassau and Suffolk County.",
