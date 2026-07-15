@@ -113,6 +113,7 @@ export default function BlogSummerHeatPage() {
         <h2>Serving All of Long Island</h2>
 
         <p>CoolVu of Long Island installs solar film throughout Nassau County and Suffolk County — from Great Neck, Garden City, Westbury, Merrick, Massapequa, Freeport, and Valley Stream in the west, to Babylon, Bay Shore, Huntington, Smithtown, Commack, Hauppauge, Ronkonkoma, and Patchogue in the east. Free estimates, lifetime warranty on every installation.</p>
+        <p className="mt-4">When you’re ready to cool your home for good, CoolVu is the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link> — Nassau County Advisory Board recognized, with a lifetime warranty on every job.</p>
       </BlogArticleLayout>
       <Footer />
     </div>
