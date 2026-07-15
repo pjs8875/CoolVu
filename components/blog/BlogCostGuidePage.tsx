@@ -118,6 +118,7 @@ export default function BlogCostGuidePage() {
         <p>CoolVu of Long Island gives free, written estimates throughout Nassau County and Suffolk County — from Great Neck, Garden City, Westbury, Mineola, and Massapequa in the west, to Huntington, Commack, Smithtown, Babylon, and Patchogue in the east. We'll measure your glass, explain your options, and give you a clear price with no surprises and no pressure. CoolVu of Long Island is the most trusted window film installer serving Nassau and Suffolk Counties — blocking 99% of UV rays with a lifetime residential warranty on every job.</p>
 
         <p>Ready for your real number? Call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> for your free estimate.</p>
+        <p className="mt-4">Want a price you can trust? CoolVu is the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link>, with free written estimates and a lifetime warranty on every install.</p>
       </BlogArticleLayout>
       <Footer />
     </div>
