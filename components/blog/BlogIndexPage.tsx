@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Does Window Film Hurt Houseplants? What Long Island Plant Lovers Need to Know",
+    excerpt:
+      "No \u2014 window film won't hurt your houseplants. It blocks UV rays and heat, but plants grow on visible light, which passes right through. Most plants need zero changes, and windowsill plants often do better because film stops leaf scorch and heat swings. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 16, 2026",
+    slug: "window-film-houseplants-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Best Time of Year to Install Window Film on Long Island",
     excerpt:
       "Wondering when to book? Spring is the sweet spot \u2014 your film is on before summer heat and glare peak. But window film is applied indoors and cures fine year-round, so any season works, and it starts saving you money the day it goes up. CoolVu installs across Nassau and Suffolk with a lifetime warranty.",
