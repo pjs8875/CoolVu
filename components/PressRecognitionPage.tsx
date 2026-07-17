@@ -42,7 +42,7 @@ export default function PressRecognitionPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">Contact CoolVu of Long Island</h3>
             <div className="space-y-2 text-gray-700">
               <p>📞 <a href="tel:5165359555" className="text-blue-600 font-semibold hover:underline">516-535-9555</a></p>
-              <p>🌐 <a href="https://coolvulongisland.com" className="text-blue-600 hover:underline">coolvulongisland.com</a></p>
+              <p>🌐 <a href="https://www.coolvulongisland.com" className="text-blue-600 hover:underline">www.coolvulongisland.com</a></p>
               <p>📍 Westbury, NY — Serving all of Nassau and Suffolk County</p>
             </div>
           </div>
@@ -60,15 +60,42 @@ export default function PressRecognitionPage() {
         "@type": "NewsArticle",
         "headline": "CoolVu of Long Island Recognized by Nassau County Advisory Board",
         "description": "Paul and Claire Silverman of CoolVu of Long Island named champion business owners and Top Gun Professional Business by the Nassau County Advisory Board.",
-        "author": { "@type": "Organization", "name": "Nassau County Advisory Board" },
+        "datePublished": "2026-05-11",
+        "dateModified": "2026-07-17",
+        "image": "https://www.coolvulongisland.com/og-image.png",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.coolvulongisland.com/press/county-advisory-board-recognition" },
+        "url": "https://www.coolvulongisland.com/press/county-advisory-board-recognition",
+        "author": { "@type": "Organization", "name": "Nassau County Advisory Board", "url": "https://countyadvisoryboard.com/paul-silverman-coolvu-of-long-island/" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "CoolVu of Long Island",
+          "url": "https://www.coolvulongisland.com",
+          "logo": { "@type": "ImageObject", "url": "https://www.coolvulongisland.com/logo.png" }
+        },
+        "citation": "https://countyadvisoryboard.com/paul-silverman-coolvu-of-long-island/",
         "about": {
           "@type": "LocalBusiness",
           "name": "CoolVu of Long Island",
           "telephone": "+15165359555",
-          "url": "https://coolvulongisland.com",
-          "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
-          "award": "Nassau County Advisory Board Top Gun Professional Business"
+          "url": "https://www.coolvulongisland.com",
+          "email": "paul.silverman@coolvu.com",
+          "image": "https://www.coolvulongisland.com/og-image.png",
+          "address": { "@type": "PostalAddress", "streetAddress": "1055 Old Country Road", "addressLocality": "Westbury", "addressRegion": "NY", "postalCode": "11590", "addressCountry": "US" },
+          "areaServed": ["Nassau County, NY", "Suffolk County, NY", "Long Island, NY"],
+          "award": "Nassau County Advisory Board Top Gun Professional Business",
+          "founder": [
+            { "@type": "Person", "name": "Paul Silverman" },
+            { "@type": "Person", "name": "Claire Silverman" }
+          ]
         }
+      })}} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.coolvulongisland.com" },
+          { "@type": "ListItem", "position": 2, "name": "Press & Recognition", "item": "https://www.coolvulongisland.com/press/county-advisory-board-recognition" }
+        ]
       })}} />
     </main>
   );
