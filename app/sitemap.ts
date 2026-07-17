@@ -104,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     {
       url: `${base}/press/county-advisory-board-recognition`,
-      lastModified: new Date("2026-06-02"),
+      lastModified: new Date("2026-07-17"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
