@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Can Window Film Crack Your Windows? Thermal Stress Explained for Long Island Homeowners",
+    excerpt:
+      "Window film doesn't crack windows when the right film is matched to the right glass by a pro. Thermal stress cracks almost always come from cheap DIY film on glass it was never made for. CoolVu of Long Island checks your glass type, size, and sun exposure at every free estimate \u2014 backed by a lifetime warranty.",
+    date: "July 17, 2026",
+    slug: "can-window-film-crack-windows-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Does Window Film Hurt Houseplants? What Long Island Plant Lovers Need to Know",
     excerpt:
       "No \u2014 window film won't hurt your houseplants. It blocks UV rays and heat, but plants grow on visible light, which passes right through. Most plants need zero changes, and windowsill plants often do better because film stops leaf scorch and heat swings. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
