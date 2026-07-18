@@ -17,10 +17,10 @@ export function getSchemaGraph() {
         telephone: "+15165359555",
         email: "paul.silverman@coolvu.com",
         sameAs: [
-          "https://www.facebook.com/coolvusolutions/",
-          "https://www.instagram.com/coolvusolutions",
-          "https://x.com/CoolVuSolutions",
-          "https://www.youtube.com/@coolvuglasssurfacesolution/videos",
+          "https://www.facebook.com/783344724864582",
+          "https://www.instagram.com/coolvunassaucounty",
+          "https://x.com/CoolVuLI",
+          "https://www.youtube.com/@coolvuoflongisland",
           "https://www.linkedin.com/company/coolvu-solutions",
         ],
         areaServed: [

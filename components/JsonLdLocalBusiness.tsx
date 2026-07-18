@@ -13,7 +13,7 @@ export default function JsonLdLocalBusiness() {
     "areaServed": [ { "@type": "AdministrativeArea", "name": "Nassau County, NY" }, { "@type": "AdministrativeArea", "name": "Suffolk County, NY" } ],
     "knowsAbout": ["solar window film","privacy window film","safety and security window film","decorative window film","commercial window film"],
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31" },
-    "sameAs": ["https://www.facebook.com/coolvusolutions/","https://www.instagram.com/coolvusolutions","https://x.com/CoolVuSolutions"]
+    "sameAs": ["https://www.facebook.com/783344724864582","https://www.instagram.com/coolvunassaucounty","https://x.com/CoolVuLI","https://www.youtube.com/@coolvuoflongisland"]
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
