@@ -275,8 +275,8 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
             isLocationsOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"
           )}>
             <div className="px-6 pb-2 mb-2 border-b border-gray-100">
-              <h3 className="text-sm font-bold text-coolvu-dark-blue uppercase tracking-wider">National Reach</h3>
-              <p className="text-xs text-gray-500 font-normal normal-case mt-1">Select a state to view our service areas</p>
+              <h3 className="text-sm font-bold text-coolvu-dark-blue uppercase tracking-wider">Nassau &amp; Suffolk County</h3>
+              <p className="text-xs text-gray-500 font-normal normal-case mt-1">Select a county to view our service areas</p>
             </div>
             
             <div className="grid grid-cols-2 gap-x-4 px-4 max-h-[400px] overflow-y-auto custom-scrollbar">
@@ -414,7 +414,7 @@ export default function Navbar({ isTransparent = false }: NavbarProps) {
               isLocationsOpen ? "max-h-[300px] opacity-100 overflow-y-auto custom-scrollbar" : "max-h-0 opacity-0"
             )}>
               <div className="flex flex-col gap-2 pl-2 border-l-2 border-coolvu-medium-blue mt-2 mb-2">
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">National Reach</p>
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Nassau &amp; Suffolk County</p>
                 {locationsData.map((data, index) => (
                   <div key={index} className="flex flex-col">
                     <button 
