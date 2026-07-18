@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Can Window Film Reduce Noise? What Long Island Homeowners Near Trains and Airports Should Know",
+    excerpt:
+      "Window film gives real, but modest, noise reduction \u2014 it adds mass to your glass and helps seal small gaps, softening LIRR train rumble, traffic hum, and airplane noise near MacArthur, Republic, JFK, and LaGuardia flight paths. It's not full soundproofing, but it's an honest, affordable step in the right direction. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 18, 2026",
+    slug: "window-film-noise-reduction-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Can Window Film Crack Your Windows? Thermal Stress Explained for Long Island Homeowners",
     excerpt:
       "Window film doesn't crack windows when the right film is matched to the right glass by a pro. Thermal stress cracks almost always come from cheap DIY film on glass it was never made for. CoolVu of Long Island checks your glass type, size, and sun exposure at every free estimate \u2014 backed by a lifetime warranty.",
