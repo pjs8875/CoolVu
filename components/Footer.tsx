@@ -95,7 +95,7 @@ export default function Footer() {
               © {currentYear} CoolVu of Long Island. All Rights Reserved.
             </p>
             <div className="flex items-center gap-6 text-sm font-sans text-gray-500">
-              <Link href="#" className="hover:text-coolvu-medium-blue transition-colors">Privacy Policy</Link>
+              <Link href="/privacy-policy" className="hover:text-coolvu-medium-blue transition-colors">Privacy Policy</Link>
               <Link href="#" className="hover:text-coolvu-medium-blue transition-colors">Terms of Service</Link>
             </div>
           </div>
