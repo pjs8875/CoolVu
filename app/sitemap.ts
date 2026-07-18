@@ -109,6 +109,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${base}/privacy-policy`,
+      lastModified: new Date("2026-07-18"),
+      changeFrequency: "yearly" as const,
+      priority: 0.3,
+    },
+    {
       url: `${base}/reviews`,
       lastModified: new Date("2026-06-08"),
       changeFrequency: "weekly" as const,
