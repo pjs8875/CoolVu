@@ -1,6 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Force a unique build ID on every deploy so Vercel/Next.js never reuses a
+  // stale cached page from a previous build. Without this, some routes were
+  // intermittently served with old content after a fix had already shipped
+  // (e.g. old footer/nav content persisting after the component was fixed).
+  generateBuildId: async () => {
+    return `build-${Date.now()}`;
+  },
   async redirects() {
     return [
       {
@@ -28,4 +35,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
