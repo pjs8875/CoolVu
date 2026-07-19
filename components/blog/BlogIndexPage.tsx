@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const posts = [
   {
+    title: "Do You Need HOA Approval for Window Film on Long Island?",
+    excerpt:
+      "Most Long Island HOAs, co-ops, and condo boards don't require approval for window film since it's applied to the inside of the glass and doesn't change your building's exterior. Some associations do regulate reflectivity or tint darkness, so a quick check of your bylaws is the smart move first. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 19, 2026",
+    slug: "hoa-approval-window-film-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Can Window Film Reduce Noise? What Long Island Homeowners Near Trains and Airports Should Know",
     excerpt:
       "Window film gives real, but modest, noise reduction \u2014 it adds mass to your glass and helps seal small gaps, softening LIRR train rumble, traffic hum, and airplane noise near MacArthur, Republic, JFK, and LaGuardia flight paths. It's not full soundproofing, but it's an honest, affordable step in the right direction. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
