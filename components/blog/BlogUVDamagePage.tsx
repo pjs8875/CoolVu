@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -123,7 +122,6 @@ export default function BlogUVDamagePage() {
         <p>CoolVu of Long Island installs solar and UV-blocking film throughout Nassau County and Suffolk County — from Great Neck, Garden City, Westbury, Merrick, Massapequa, Freeport, and Valley Stream in the west, to Babylon, Bay Shore, Huntington, Smithtown, Commack, Hauppauge, Ronkonkoma, and Patchogue in the east. Free estimates, lifetime warranty on every installation.</p>
         <p className="mt-4">Protect everything inside your home with the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link> — CoolVu of Long Island.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

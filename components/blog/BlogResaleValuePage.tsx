@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -143,7 +142,6 @@ export default function BlogResaleValuePage() {
 
         <p>Whether you're prepping a home to sell, settling into a new purchase, or just trying to cut your energy bill, we offer free estimates with no pressure and no sales tricks. Call 516-535-9555 or visit coolvulongisland.com to get started.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

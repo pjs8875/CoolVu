@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -108,7 +107,6 @@ export default function BlogSunroomFilmPage() {
         <p>CoolVu of Long Island installs window film on sunrooms, four-season rooms, and enclosed patios throughout Nassau County and Suffolk County. We serve Garden City, Westbury, Merrick, Massapequa, Great Neck, Manhasset, Port Washington, Roslyn, Syosset, Plainview, Bethpage, Hicksville, Levittown, Wantagh, Seaford, Bellmore, Freeport, Rockville Centre, Valley Stream, and across the Island into Babylon, Bay Shore, Islip, Brentwood, Commack, Hauppauge, Smithtown, Huntington, Cold Spring Harbor, Northport, Ronkonkoma, Bohemia, Patchogue, Sayville, East Islip, and Mastic.</p>
         <p>One call gets you a free estimate, exact measurements, and an honest recommendation. No pressure. No guesswork. Just a cooler sunroom.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

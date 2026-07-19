@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -141,7 +140,6 @@ export default function BlogRestaurantsPage() {
 
         <p>CoolVu of Long Island works with restaurants, cafes, diners, and food service businesses across Nassau County and Suffolk County. We serve Westbury, Mineola, Garden City, Hempstead, Valley Stream, Freeport, Rockville Centre, Massapequa, Babylon, Bay Shore, Islip, Huntington, Smithtown, Commack, Port Jefferson, Ronkonkoma, Patchogue, and all surrounding communities. Free estimates, professional installation, lifetime residential warranty and commercial options available.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

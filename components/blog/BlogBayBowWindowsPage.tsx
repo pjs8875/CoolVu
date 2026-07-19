@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -124,7 +123,6 @@ export default function BlogBayBowWindowsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-      <Footer />
     </div>
   );
 }

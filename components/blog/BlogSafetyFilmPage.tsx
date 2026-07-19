@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -112,7 +111,6 @@ export default function BlogSafetyFilmPage() {
 
         <p>CoolVu of Long Island installs safety and security window film throughout Nassau County and Suffolk County — from the South Shore communities of Freeport, Massapequa, Amityville, Babylon, and Bay Shore, to the North Shore communities of Manhasset, Great Neck, and Huntington, all the way out to Smithtown, Hauppauge, Patchogue, and beyond. Free estimates with no pressure.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

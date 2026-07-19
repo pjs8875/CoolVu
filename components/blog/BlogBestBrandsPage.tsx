@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -172,7 +171,6 @@ export default function BlogBestBrandsPage() {
 
         <p>CoolVu of Long Island provides free estimates throughout Nassau County and Suffolk County — including Westbury, Garden City, Great Neck, Mineola, Hicksville, Massapequa, Merrick, Rockville Centre, Valley Stream, Freeport, Oceanside, Babylon, Bay Shore, Huntington, Smithtown, Hauppauge, Commack, Ronkonkoma, Patchogue, and everywhere in between. Every install comes with a lifetime residential warranty and Paul's personal guarantee on the workmanship.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

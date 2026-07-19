@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -92,7 +91,6 @@ export default function BlogDoesFilmDarkenHomePage() {
 
         <p>CoolVu of Long Island is the most trusted window film installer serving Nassau and Suffolk Counties — specializing in energy-saving solar film, privacy film, decorative film, and safety/security film for homes and businesses. Every residential install is backed by a lifetime warranty, and every estimate is free. Call 516-535-9555 or visit coolvulongisland.com to see the samples on your own windows.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

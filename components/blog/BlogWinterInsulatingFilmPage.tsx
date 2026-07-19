@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -103,7 +102,6 @@ export default function BlogWinterInsulatingFilmPage() {
 
         <p>CoolVu of Long Island installs solar and insulating window film throughout Nassau County and Suffolk County — from Great Neck, Manhasset, Garden City, Westbury, Levittown, and Massapequa in the west, to Huntington, Commack, Smithtown, Hauppauge, Ronkonkoma, and Patchogue in the east. Every install comes with a free estimate and a lifetime residential warranty. Call 516-535-9555 or visit coolvulongisland.com to find out if insulating film is right for your home.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

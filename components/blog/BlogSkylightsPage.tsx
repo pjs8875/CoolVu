@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -103,7 +102,6 @@ export default function BlogSkylightsPage() {
 
         <p>Free estimates. Lifetime residential warranty. One clean installation that makes the sunniest spot in your house comfortable again.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

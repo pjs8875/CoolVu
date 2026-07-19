@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -121,7 +120,6 @@ export default function BlogHomeGymPage() {
 
         <p>Free estimates. Lifetime residential warranty. One installation that pays for itself in comfort, UV protection, and equipment longevity.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

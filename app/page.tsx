@@ -9,7 +9,6 @@ import VideoSection from "@/components/VideoSection";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/ContactForm";
-import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata = buildHomeMetadata();
@@ -28,7 +27,6 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <ContactForm />
-      <Footer />
     </>
   );
 }

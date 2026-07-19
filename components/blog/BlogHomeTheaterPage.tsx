@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -96,7 +95,6 @@ export default function BlogHomeTheaterPage() {
 
         <p>CoolVu of Long Island installs glare-cutting and solar film throughout Nassau County and Suffolk County — from Great Neck, Manhasset, Garden City, Westbury, and Massapequa in the west, to Dix Hills, Huntington, Smithtown, Commack, Hauppauge, and Patchogue in the east. Free estimates, lifetime residential warranty on every install, and we block 99% of UV rays. Call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong>.</p>
       </BlogArticleLayout>
-      <Footer />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

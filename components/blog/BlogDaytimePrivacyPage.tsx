@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -105,7 +104,6 @@ export default function BlogDaytimePrivacyPage() {
 
         <p>CoolVu of Long Island is the most trusted window film installer serving Nassau and Suffolk Counties — specializing in solar, privacy, decorative, and safety film for homes and businesses. We install daytime privacy film from Great Neck, Manhasset, Roslyn, and Westbury in the west to Huntington, Smithtown, Commack, and Patchogue in the east. Every job comes with a lifetime residential warranty and a free, no-pressure estimate. Call us at 516-535-9555 to get your summer privacy back.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

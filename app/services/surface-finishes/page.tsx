@@ -1,6 +1,5 @@
 import SurfaceFinishesPage from "@/components/SurfaceFinishesPage";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 
 export const metadata = buildPageMetadata({
@@ -15,7 +14,6 @@ export default function Page() {
     <div className="min-h-screen bg-white flex flex-col">
       <Navbar isTransparent={false} />
       <SurfaceFinishesPage />
-      <Footer />
     </div>
   );
 }

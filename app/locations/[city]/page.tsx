@@ -3,7 +3,6 @@ import LocationPageLayout from "@/components/LocationPageLayout";
 import { SERVICE_AREA_CITIES } from "@/lib/data/locations";
 import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 const LONG_ISLAND_TOWNS = new Set([
@@ -61,7 +60,6 @@ export default async function LocationPage({
       <div className="min-h-screen bg-white flex flex-col">
         <Navbar isTransparent={false} />
         <TownWindowFilmLayout city={cityName} />
-        <Footer />
       </div>
     );
   }

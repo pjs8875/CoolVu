@@ -1,6 +1,5 @@
 import MarketPageLayout from "@/components/MarketPageLayout";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 
 export const metadata = buildPageMetadata({
@@ -36,7 +35,6 @@ export default function ResidentialMarketPage() {
           }
         ]}
       />
-      <Footer />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -108,7 +107,6 @@ export default function BlogAntiGraffitiPage() {
 
         <p>CoolVu of Long Island installs anti-graffiti and security film for businesses throughout Nassau County and Suffolk County — from Hempstead, Westbury, Garden City, Freeport, Valley Stream, and Hicksville in the west, to Huntington, Smithtown, Bay Shore, Hauppauge, and Patchogue in the east. Every job comes with a free estimate and workmanship you can count on. Protect your glass before the next tag — call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong>.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

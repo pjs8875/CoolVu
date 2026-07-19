@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -149,7 +148,6 @@ export default function BlogSchoolsDaycaresPage() {
 
         <p>Professional installation means the film is applied correctly, trimmed perfectly, and bonded to the glass the way it's designed to work. For a safety application especially, a DIY job that peels at the corner or has air bubbles won't perform the same way in an actual impact. CoolVu uses commercial-grade film from Window Film Depot and a professional installation process — and we back it with a warranty.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -112,7 +111,6 @@ export default function BlogNurseryBabyRoomPage() {
 
         <p>Call 516-535-9555 or visit coolvulongisland.com for a free estimate. We'll look at your nursery windows, recommend the right film for your specific needs, and give you an honest price — no pressure, no upsell.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

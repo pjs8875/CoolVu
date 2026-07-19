@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -103,7 +102,6 @@ export default function BlogFrostedBathroomPage() {
 
         <p>CoolVu of Long Island installs frosted window film throughout Nassau County and Suffolk County — from Hempstead, Rockville Centre, Lynbrook, and Freeport in the south, to Manhasset, Great Neck, and Garden City in the north, all the way out to Huntington, Babylon, Patchogue, and beyond. Free estimates with no pressure.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

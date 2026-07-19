@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -128,7 +127,6 @@ export default function BlogGaragePage() {
 
         <p>If your garage is too hot to use this summer, the fix is one phone call away.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

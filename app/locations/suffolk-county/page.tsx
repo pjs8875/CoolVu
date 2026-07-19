@@ -1,6 +1,5 @@
 import CountyWindowFilmLayout from "@/components/CountyWindowFilmLayout";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 
 export const metadata = buildPageMetadata({
@@ -51,7 +50,6 @@ export default function Page() {
         towns={TOWNS}
         faq={FAQ}
       />
-      <Footer />
     </div>
   );
 }

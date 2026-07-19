@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -145,7 +144,6 @@ export default function BlogCondosApartmentsPage() {
 
         <p>Call CoolVu of Long Island at 516-535-9555 or visit coolvulongisland.com for a free estimate.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

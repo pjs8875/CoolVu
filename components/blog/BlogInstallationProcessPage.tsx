@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -106,7 +105,6 @@ export default function BlogInstallationProcessPage() {
 
         <p>CoolVu of Long Island serves all of Nassau County and Suffolk County — from Manhasset and Great Neck on the North Shore to Oceanside and Babylon on the South Shore, and everywhere in between: Hicksville, Plainview, Farmingdale, Smithtown, Hauppauge, East Islip, Patchogue, and beyond. Call 516-535-9555 or visit coolvulongisland.com for a free estimate.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

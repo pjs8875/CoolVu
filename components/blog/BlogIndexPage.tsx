@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const posts = [
   {
@@ -622,7 +621,6 @@ export default function BlogIndexPage() {
         </div>
       </main>
 
-      <Footer />
     </div>
   );
 }

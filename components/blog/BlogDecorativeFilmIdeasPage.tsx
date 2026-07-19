@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -200,7 +199,6 @@ export default function BlogDecorativeFilmIdeasPage() {
 
         <p>Every installation comes with CoolVu's lifetime residential warranty. If the film ever peels, bubbles, or fades under normal conditions, we fix it. That's the CoolVu guarantee — and it applies to decorative film the same as any other type we install.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

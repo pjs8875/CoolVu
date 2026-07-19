@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -211,7 +210,6 @@ export default function BlogPSEGEnergySavingsPage() {
         <p>Call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> to get a real estimate for your home — including a projected PSEG savings range based on your windows and your current bills.</p>
         <p className="mt-4">Cut your PSEG bill for good with the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link> — CoolVu of Long Island.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

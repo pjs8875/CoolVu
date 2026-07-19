@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -115,7 +114,6 @@ export default function BlogHurricaneSeasonPage() {
 
         <p>CoolVu of Long Island installs safety window film throughout Nassau County and Suffolk County. We serve Great Neck, Manhasset, Garden City, Westbury, Hempstead, Valley Stream, Freeport, Merrick, Bellmore, Massapequa, Wantagh, Seaford, Amityville, Babylon, Bay Shore, Islip, Patchogue, Huntington, Northport, Smithtown, Hauppauge, Commack, Ronkonkoma, and every community in between. Free estimates — no pressure, no obligation.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

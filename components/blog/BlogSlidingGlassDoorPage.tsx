@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -175,7 +174,6 @@ export default function BlogSlidingGlassDoorPage() {
 
         <p>Free estimates. Lifetime warranty. Call CoolVu of Long Island at 516-535-9555 or visit <a href="https://coolvulongisland.com">coolvulongisland.com</a>.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

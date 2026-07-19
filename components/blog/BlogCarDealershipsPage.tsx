@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -137,7 +136,6 @@ export default function BlogCarDealershipsPage() {
 
         <p>Free estimates, no obligation, and we work around your hours so your showroom stays open. Call 516-535-9555 or visit coolvulongisland.com to schedule.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

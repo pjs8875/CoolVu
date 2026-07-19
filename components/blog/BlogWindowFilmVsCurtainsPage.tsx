@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -170,7 +169,6 @@ export default function BlogWindowFilmVsCurtainsPage() {
 
         <p>Call us at <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> to schedule your free estimate. We\'ll walk through your home, tell you exactly which windows would benefit from film, and show you samples so you know what to expect before we install a single square foot.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

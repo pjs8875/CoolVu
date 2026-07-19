@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -118,7 +117,6 @@ export default function BlogWaterfrontHomesPage() {
 
         <p>We serve the North Shore too — Great Neck, Port Washington, Manhasset, Oyster Bay, Glen Cove, Lloyd Neck, and the North Fork. If you can see the water from your windows, we can help.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

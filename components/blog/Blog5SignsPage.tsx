@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -99,7 +98,6 @@ export default function Blog5SignsPage() {
 
         <p>CoolVu of Long Island installs solar, privacy, safety, and decorative window film throughout Nassau and Suffolk Counties — including Westbury, Garden City, Merrick, Massapequa, Great Neck, Rockville Centre, Levittown, Hicksville, Syosset, Huntington, Commack, Bay Shore, Patchogue, and all surrounding communities. Free in-home estimates. Lifetime residential warranty. Call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong>.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -147,7 +146,6 @@ export default function BlogGlareReductionPage() {
         <p>CoolVu of Long Island installs glare-reduction window film throughout Nassau County and Suffolk County. We serve homeowners in Garden City, Great Neck, Manhasset, Rockville Centre, Westbury, Merrick, Massapequa, Levittown, Valley Stream, Hempstead, Freeport, East Meadow, Plainview, Syosset, Commack, Huntington, Smithtown, Babylon, Bay Shore, Hauppauge, Ronkonkoma, Patchogue, and communities across all of Long Island. Free estimates, lifetime residential warranty, and no-pressure consultations.</p>
         <p className="mt-4">Stop the squint for good with the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link> — CoolVu, lifetime warranty on every job.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

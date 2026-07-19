@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -127,7 +126,6 @@ export default function BlogWestFacingWindowsPage() {
           })),
         }) }}
       />
-      <Footer />
     </div>
   );
 }

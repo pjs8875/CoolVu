@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -120,7 +119,6 @@ export default function BlogCostGuidePage() {
         <p>Ready for your real number? Call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> for your free estimate.</p>
         <p className="mt-4">Want a price you can trust? CoolVu is the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link>, with free written estimates and a lifetime warranty on every install.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

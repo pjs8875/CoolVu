@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -167,7 +166,6 @@ export default function BlogPetOwnersPage() {
 
         <p>Call us at <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> to schedule your free estimate.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

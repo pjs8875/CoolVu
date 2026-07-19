@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -128,7 +127,6 @@ export default function BlogWindowFilmLifespanPage() {
 
         <p>If you have old film you're not sure about — or you've moved into a house with mystery film on the windows — we'll take a look and give you an honest assessment at no charge. Sometimes the film is fine. Sometimes it needs to go. Either way, you'll know exactly what you're dealing with.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

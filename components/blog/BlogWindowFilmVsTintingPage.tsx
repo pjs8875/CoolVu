@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -77,7 +76,6 @@ export default function BlogWindowFilmVsTintingPage() {
 
         <p>CoolVu of Long Island serves homeowners and businesses throughout Nassau County and Suffolk County — from Garden City, Great Neck, Manhasset, Rockville Centre, and Westbury to Commack, Huntington, Smithtown, Massapequa, Syosset, and everywhere in between. Free estimates, lifetime warranty, no pressure.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

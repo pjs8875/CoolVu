@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -141,7 +140,6 @@ export default function BlogTintLevelGuidePage() {
 
         <p>CoolVu of Long Island installs window film across Nassau County and Suffolk County — Garden City, Westbury, Mineola, Valley Stream, Rockville Centre, Freeport, Merrick, Bellmore, Wantagh, Massapequa, Amityville, Babylon, Bay Shore, Islip, Sayville, Patchogue, Ronkonkoma, Hauppauge, Commack, Smithtown, Huntington, Northport, Syosset, Great Neck, Manhasset, Port Washington, and everywhere in between. Free estimates, lifetime residential warranty, 99% UV blocking on every installation.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

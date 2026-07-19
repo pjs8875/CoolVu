@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -155,7 +154,6 @@ export default function BlogCommercialFilmPage() {
 
         <p>Lifetime commercial warranty. Free estimates. No subcontractors — Paul and his team do the work themselves.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -115,7 +114,6 @@ export default function BlogOneWayPrivacyPage() {
 
         <p>CoolVu of Long Island installs one-way privacy film throughout Nassau County and Suffolk County — from Great Neck, Manhasset, Roslyn, and Westbury in the west, to Huntington, Smithtown, Medford, and Patchogue in the east. Every installation comes with a lifetime residential warranty and a free estimate with no pressure.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

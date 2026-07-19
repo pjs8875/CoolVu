@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -103,7 +102,6 @@ export default function BlogSouthShoreNorthShorePage() {
 
         <p>Call 516-535-9555 or visit <a href="https://coolvulongisland.com" className="text-blue-600 hover:underline">coolvulongisland.com</a> to schedule your free estimate. Serving all of Long Island — South Shore, North Shore, and everywhere in between.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

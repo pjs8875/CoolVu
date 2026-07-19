@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -150,7 +149,6 @@ export default function BlogStorefrontSecurityPage() {
 
         <p>We install on storefronts, restaurants, pharmacies, medical offices, schools, gyms, salons, banks, and any commercial space with glass that needs protecting. Free estimates, professional installation, and a warranty on every job.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }

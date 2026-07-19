@@ -1,7 +1,6 @@
 
 import { Metadata } from "next";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import "./page.css";
 
 export const metadata: Metadata = {
@@ -605,7 +604,6 @@ export default function CompleteGuidePage() {
 </div>{/* /.page-wrap */}
 </div>
 
-      <Footer />
     </>
   );
 }

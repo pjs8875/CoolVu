@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
 const faq = [
@@ -111,7 +110,6 @@ export default function BlogBeachHousesPage() {
 
         <p>Free estimates for all beach house consultations. Lifetime residential warranty on every installation.</p>
       </BlogArticleLayout>
-      <Footer />
     </div>
   );
 }
