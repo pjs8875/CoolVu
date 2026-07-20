@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Does Window Film Lower Your Homeowners Insurance on Long Island?",
+    excerpt:
+      "Some insurance carriers offer credits for storm-resistant safety window film, especially on Long Island's storm-exposed South Shore — but there's no universal discount, so ask your agent directly. Either way, film still saves money through lower energy bills, less UV damage, and smaller storm claims. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 20, 2026",
+    slug: "window-film-insurance-discounts-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Do You Need HOA Approval for Window Film on Long Island?",
     excerpt:
       "Most Long Island HOAs, co-ops, and condo boards don't require approval for window film since it's applied to the inside of the glass and doesn't change your building's exterior. Some associations do regulate reflectivity or tint darkness, so a quick check of your bylaws is the smart move first. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
@@ -624,5 +632,6 @@ export default function BlogIndexPage() {
     </div>
   );
 }
+
 
 
