@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Film for Basements and Walkout Windows on Long Island",
+    excerpt:
+      "Basement and walkout windows sit at ground level, which creates privacy and security concerns most upstairs windows don't have. Privacy film blocks the view into window wells and finished basements, while safety and security film reinforces ground-level glass that's an easy target for break-ins. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 21, 2026",
+    slug: "window-film-basement-walkout-windows-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Does Window Film Lower Your Homeowners Insurance on Long Island?",
     excerpt:
       "Some insurance carriers offer credits for storm-resistant safety window film, especially on Long Island's storm-exposed South Shore — but there's no universal discount, so ask your agent directly. Either way, film still saves money through lower energy bills, less UV damage, and smaller storm claims. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
