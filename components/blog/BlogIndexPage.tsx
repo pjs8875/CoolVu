@@ -3,6 +3,22 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Tinting Long Island: The Latest Innovations Homeowners Should Know About",
+    excerpt:
+      "Window tinting technology has changed a lot \u2014 nano-ceramic film now blocks more heat and UV than old dyed or metallic tint, without interfering with cell signal or Wi-Fi, and looks nearly invisible. See what's changed and how to tell if your old tinting needs replacing. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 22, 2026",
+    slug: "window-tinting-innovations-long-island",
+    readTime: "6 min read",
+  },
+  {
+    title: "Warehouse and Industrial Window Tinting on Long Island: Cut Heat, Glare, and Energy Costs",
+    excerpt:
+      "Warehouse office glass, skylights, and loading dock windows turn into greenhouses without protection. Commercial window tinting blocks up to 60% of heat and 99% of UV rays, easing HVAC strain and protecting stored inventory from fading. CoolVu installs across Long Island's industrial corridor \u2014 Hauppauge, Bohemia, Melville, and beyond.",
+    date: "July 22, 2026",
+    slug: "warehouse-window-tinting-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Residential Window Tinting on Long Island: What Homeowners Need to Know",
     excerpt:
       "Searching \"window tinting\" for your home? You're in the right place \u2014 Long Island homeowners use \"window tinting\" and \"window film\" to mean the same thing. This guide covers costs ($8\u2013$25/sq ft), the 4 types of tinting, and what to ask before hiring an installer. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
