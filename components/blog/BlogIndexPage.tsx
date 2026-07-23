@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Residential Window Tinting on Long Island: What Homeowners Need to Know",
+    excerpt:
+      "Searching \"window tinting\" for your home? You're in the right place \u2014 Long Island homeowners use \"window tinting\" and \"window film\" to mean the same thing. This guide covers costs ($8\u2013$25/sq ft), the 4 types of tinting, and what to ask before hiring an installer. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
+    date: "July 22, 2026",
+    slug: "residential-window-tinting-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Window Film for Long Island Wineries and Tasting Rooms: Protecting Wine, Views, and Guests",
     excerpt:
       "Sunlight causes \"light-struck\" wine, fades merchandise, and drives guests away from the best window-side tables. Window film blocks 99% of UV rays and up to 60% of heat, protecting wine and comfort without blocking the vineyard view. CoolVu installs commercial film at wineries and tasting rooms across the North Fork and all of Long Island.",
