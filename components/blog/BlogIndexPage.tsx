@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Film for Long Island Wineries and Tasting Rooms: Protecting Wine, Views, and Guests",
+    excerpt:
+      "Sunlight causes \"light-struck\" wine, fades merchandise, and drives guests away from the best window-side tables. Window film blocks 99% of UV rays and up to 60% of heat, protecting wine and comfort without blocking the vineyard view. CoolVu installs commercial film at wineries and tasting rooms across the North Fork and all of Long Island.",
+    date: "July 22, 2026",
+    slug: "window-film-long-island-wineries-tasting-rooms",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Basements and Walkout Windows on Long Island",
     excerpt:
       "Basement and walkout windows sit at ground level, which creates privacy and security concerns most upstairs windows don't have. Privacy film blocks the view into window wells and finished basements, while safety and security film reinforces ground-level glass that's an easy target for break-ins. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
