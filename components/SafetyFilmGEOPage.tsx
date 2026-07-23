@@ -3,6 +3,15 @@ import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
 import RelatedContent from "@/components/RelatedContent";
 
+const ARTICLES = [
+  { href: "/blog/safety-window-film-storms-long-island", label: "Safety Window Film for Long Island Storms" },
+  { href: "/blog/hurricane-season-window-film-long-island", label: "Hurricane Season Window Film: What You Need to Know" },
+  { href: "/blog/security-window-film-long-island-storefronts", label: "Security Window Film for Long Island Storefronts" },
+  { href: "/blog/window-film-schools-daycares-long-island", label: "Window Film for Long Island Schools and Daycares" },
+  { href: "/blog/window-film-houses-of-worship-long-island", label: "Window Film for Long Island Churches & Houses of Worship" },
+  { href: "/blog/how-long-does-window-film-last-long-island", label: "How Long Does Window Film Last?" },
+];
+
 export default function SafetyFilmGEOPage() {
   return (
     <main className="flex-1">
@@ -47,9 +56,12 @@ export default function SafetyFilmGEOPage() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Serving All of Long Island</h2>
-          <p className="text-gray-600 mb-6 text-lg">CoolVu installs safety and security window film throughout Nassau and Suffolk County — storm prep season or anytime.</p>
+          <p className="text-gray-600 mb-4 text-lg">CoolVu installs safety and security window film throughout Nassau and Suffolk County — storm prep season or anytime.</p>
+          <p className="text-gray-600 mb-6 text-base">
+            From storm-exposed South Shore communities like Long Beach and Freeport to inland neighborhoods across Nassau and Suffolk, CoolVu installs safety and security film wherever Long Island homeowners want extra protection before the next nor&apos;easter or break-in attempt.
+          </p>
           <p className="text-sm text-gray-500 leading-relaxed">
-            Westbury · Garden City · Mineola · Hempstead · Valley Stream · Lynbrook · Rockville Centre · Long Beach · Oceanside · Freeport · Merrick · Bellmore · Wantagh · Seaford · Massapequa · Hicksville · Syosset · Plainview · Woodbury · Huntington · Commack · Smithtown · Hauppauge · Ronkonkoma · Patchogue · Bay Shore · Islip · Amityville · Babylon · Farmingdale · Great Neck · Manhasset · Port Washington · Roslyn · Glen Cove · Oyster Bay · Cold Spring Harbor · Northport · Dix Hills · Melville · East Meadow · Levittown · Bethpage · Jericho · Centerport
+            Bay Shore · Islip · Patchogue · Ronkonkoma · Hauppauge · Smithtown · Commack · Huntington · Amityville · Babylon · Farmingdale · Dix Hills · Melville · Northport · Cold Spring Harbor · Oyster Bay · Glen Cove · Roslyn · Port Washington · Manhasset · Great Neck · Woodbury · Plainview · Syosset · Hicksville · Massapequa · Seaford · Wantagh · Bellmore · Merrick · Freeport · Oceanside · Long Beach · Rockville Centre · Lynbrook · Valley Stream · Hempstead · Mineola · Garden City · Westbury · East Meadow · Levittown · Bethpage · Jericho · Centerport
           </p>
         </div>
       </section>
@@ -107,7 +119,7 @@ export default function SafetyFilmGEOPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
         "areaServed": "Nassau County, Suffolk County, Long Island, NY"
       })}} />
-      <RelatedContent showArticles={true} />
+      <RelatedContent showArticles={true} articles={ARTICLES} />
     </main>
   );
 }
