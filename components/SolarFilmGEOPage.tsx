@@ -3,6 +3,15 @@ import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
 import RelatedContent from "@/components/RelatedContent";
 
+const ARTICLES = [
+  { href: "/blog/summer-heat-solar-window-film-long-island", label: "Summer Heat & Solar Film on Long Island" },
+  { href: "/blog/pseg-long-island-window-film-energy-savings", label: "How Much Can Window Film Save on Your PSEG Bill?" },
+  { href: "/blog/energy-savings-window-film-long-island", label: "Real Energy Savings: A Long Island Case Study" },
+  { href: "/blog/how-long-does-window-film-last-long-island", label: "How Long Does Window Film Last?" },
+  { href: "/blog/window-film-tax-credits-energy-rebates-long-island", label: "Window Film Tax Credits and Energy Rebates" },
+  { href: "/blog/window-film-vs-new-windows-long-island", label: "Window Film vs. New Windows: Which Is Worth It?" },
+];
+
 export default function SolarFilmGEOPage() {
   return (
     <main className="flex-1">
@@ -96,8 +105,11 @@ export default function SolarFilmGEOPage() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Serving All of Long Island</h2>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-600 mb-4 text-lg">
             CoolVu of Long Island installs solar window film throughout Nassau and Suffolk County — from Great Neck to Montauk, from the North Shore to the South Shore.
+          </p>
+          <p className="text-gray-600 mb-8 text-base">
+            Whether your biggest concern is a west-facing living room in Massapequa or a sunroom that turns into a greenhouse in Huntington, solar film solves the same problem everywhere on Long Island: too much sun, not enough relief.
           </p>
           <p className="text-sm text-gray-500 leading-relaxed">
             Westbury · Garden City · Mineola · Hempstead · Valley Stream · Lynbrook · Rockville Centre · Long Beach · Oceanside · Freeport · Merrick · Bellmore · Wantagh · Seaford · Massapequa · Hicksville · Syosset · Plainview · Woodbury w Huntington · Commack · Smithtown · Hauppauge · Ronkonkoma · Patchogue · Bay Shore · Islip · Amityville · Babylon · Farmingdale · Great Neck · Manhasset · Port Washington · Roslyn · Glen Cove · Oyster Bay · Cold Spring Harbor · Northport · East Northport · Dix Hills · Melville · East Meadow · Levittown · Bethpage · Old Bethpage · Jericho · Brookville · Locust Valley · Sea Cliff · Centerport
@@ -194,7 +206,7 @@ export default function SolarFilmGEOPage() {
           }),
         }}
       />
-      <RelatedContent showArticles={true} />
+      <RelatedContent showArticles={true} articles={ARTICLES} />
     </main>
   );
 }
