@@ -9,7 +9,7 @@ const SERVICES = [
   { href: "/complete-guide-window-film-long-island", label: "📖 Complete Window Film Guide" },
 ];
 
-const FEATURED_ARTICLES = [
+const DEFAULT_ARTICLES = [
   { href: "/blog/summer-heat-solar-window-film-long-island", label: "Summer Heat & Solar Film on Long Island" },
   { href: "/blog/window-film-vs-new-windows-long-island", label: "Window Film vs. New Windows: Is It Worth It?" },
   { href: "/blog/how-long-does-window-film-last-long-island", label: "How Long Does Window Film Last?" },
@@ -18,11 +18,19 @@ const FEATURED_ARTICLES = [
   { href: "/blog/one-way-privacy-window-film-long-island", label: "One-Way Privacy Film: See Out, Not In" },
 ];
 
-interface RelatedContentProps {
-  showArticles?: boolean;
+interface RelatedArticle {
+  href: string;
+  label: string;
 }
 
-export default function RelatedContent({ showArticles = true }: RelatedContentProps) {
+interface RelatedContentProps {
+  showArticles?: boolean;
+  articles?: RelatedArticle[];
+}
+
+export default function RelatedContent({ showArticles = true, articles }: RelatedContentProps) {
+  const featuredArticles = articles && articles.length > 0 ? articles : DEFAULT_ARTICLES;
+
   return (
     <div className="bg-[#EBF3FB] border-t-4 border-[#2E75B6] py-12 px-6">
       <div className="max-w-4xl mx-auto">
@@ -55,7 +63,7 @@ export default function RelatedContent({ showArticles = true }: RelatedContentPr
               Learn more about window film for Long Island homes and businesses.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
-              {FEATURED_ARTICLES.map(({ href, label }) => (
+              {featuredArticles.map(({ href, label }) => (
                 <Link
                   key={href}
                   href={href}
