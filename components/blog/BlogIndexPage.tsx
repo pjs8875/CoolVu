@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Film and Salt Air: Does Long Island's Coastal Climate Affect How Long It Lasts?",
+    excerpt:
+      "Salt air rusts railings and dulls car finishes on waterfront Long Island \u2014 but window film is installed on the inside of your glass, fully protected from sea spray and humidity. See why coastal homes from Long Beach to Northport actually benefit most from film. CoolVu backs every job with a lifetime warranty.",
+    date: "July 23, 2026",
+    slug: "salt-air-coastal-climate-window-film-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Window Tinting for South-Facing Rooms and Home Offices on Long Island",
     excerpt:
       "South-facing rooms take the most direct sun of any exposure, all day, nearly year-round \u2014 rough on a home office. Window tinting blocks up to 60% of that heat and cuts glare 70\u201390%, so your monitor is readable and the room stays comfortable without losing the natural light. CoolVu serves Nassau and Suffolk County.",
