@@ -54,7 +54,7 @@ export default function BlogSaltAirCoastalPage() {
             { num: "99%", label: "of UV rays blocked, same as anywhere on LI" },
             { num: "60%", label: "of solar heat blocked at the glass" },
             { num: "Lifetime", label: "residential warranty, coastal or inland" },
-          ]}.map((s) => (
+          ].map((s) => (
             <div key={s.num} className="bg-[#EBF3FB] rounded-xl p-4 text-center">
               <div className="text-3xl font-black text-[#1F4E79]">{s.num}</div>
               <div className="text-xs text-gray-500 mt-1">{s.label}</div>
