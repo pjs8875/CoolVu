@@ -3,6 +3,15 @@ import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
 import RelatedContent from "@/components/RelatedContent";
 
+const ARTICLES = [
+  { href: "/blog/decorative-window-film-ideas-long-island", label: "Decorative Window Film Ideas for Long Island Homes" },
+  { href: "/blog/frosted-bathroom-window-film-long-island", label: "Frosted Window Film for Bathrooms" },
+  { href: "/blog/anti-graffiti-window-film-long-island", label: "Anti-Graffiti Window Film for Storefronts & Businesses" },
+  { href: "/blog/best-window-film-brands-long-island", label: "Best Window Film for Long Island's Climate" },
+  { href: "/blog/window-film-historic-homes-long-island", label: "Window Film for Long Island Historic Homes" },
+  { href: "/blog/privacy-window-film-home-office-long-island", label: "Privacy Window Film for Long Island Home Offices" },
+];
+
 export default function DecorativeFilmGEOPage() {
   return (
     <main className="flex-1">
@@ -47,9 +56,12 @@ export default function DecorativeFilmGEOPage() {
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Serving All of Long Island</h2>
-          <p className="text-gray-600 mb-6 text-lg">CoolVu installs decorative window film for homes and businesses throughout Nassau and Suffolk County.</p>
+          <p className="text-gray-600 mb-4 text-lg">CoolVu installs decorative window film for homes and businesses throughout Nassau and Suffolk County.</p>
+          <p className="text-gray-600 mb-6 text-base">
+            Whether it&apos;s a frosted bathroom window in Garden City, a branded storefront in Huntington, or a conference room upgrade in Melville, CoolVu&apos;s decorative film work spans every kind of Long Island space — homes, offices, and storefronts alike.
+          </p>
           <p className="text-sm text-gray-500 leading-relaxed">
-            Westbury · Garden City · Mineola · Hempstead · Valley Stream · Lynbrook · Rockville Centre · Long Beach · Oceanside · Freeport · Merrick · Bellmore · Wantagh · Seaford · Massapequa · Hicksville · Syosset · Plainview · Woodbury · Huntington · Commack · Smithtown · Hauppauge · Ronkonkoma · Patchogue · Bay Shore · Islip · Amityville · Babylon · Farmingdale · Great Neck · Manhasset · Port Washington · Roslyn · Glen Cove · Oyster Bay · Cold Spring Harbor · Northport · Dix Hills · Melville · East Meadow · Levittown · Bethpage · Jericho · Centerport
+            Great Neck · Manhasset · Port Washington · Roslyn · Glen Cove · Oyster Bay · Cold Spring Harbor · Northport · Dix Hills · Melville · Huntington · Commack · Smithtown · Hauppauge · Ronkonkoma · Patchogue · Bay Shore · Islip · Amityville · Babylon · Farmingdale · Westbury · Garden City · Mineola · Hempstead · Valley Stream · Lynbrook · Rockville Centre · Long Beach · Oceanside · Freeport · Merrick · Bellmore · Wantagh · Seaford · Massapequa · Hicksville · Syosset · Plainview · Woodbury · East Meadow · Levittown · Bethpage · Jericho · Centerport
           </p>
         </div>
       </section>
@@ -107,7 +119,7 @@ export default function DecorativeFilmGEOPage() {
         "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
         "areaServed": "Nassau County, Suffolk County, Long Island, NY"
       })}} />
-      <RelatedContent showArticles={true} />
+      <RelatedContent showArticles={true} articles={ARTICLES} />
     </main>
   );
 }
