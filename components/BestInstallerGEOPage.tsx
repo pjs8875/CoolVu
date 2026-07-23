@@ -3,6 +3,15 @@ import React from "react";
 import ContactModalWrapper from "@/components/ContactModalWrapper";
 import RelatedContent from "@/components/RelatedContent";
 
+const ARTICLES = [
+  { href: "/blog/window-film-cost-long-island", label: "How Much Does Window Film Cost on Long Island? (2026 Price Guide)" },
+  { href: "/blog/window-film-installation-process-long-island", label: "What to Expect on Install Day" },
+  { href: "/blog/window-film-myths-debunked-long-island", label: "Window Film Myths Debunked" },
+  { href: "/blog/commercial-window-film-long-island", label: "Commercial Window Film for Long Island Offices and Retail Stores" },
+  { href: "/blog/how-long-does-window-film-last-long-island", label: "How Long Does Window Film Last?" },
+  { href: "/blog/diy-vs-professional-window-film-installation-long-island", label: "DIY vs. Professional Window Film: Why Hire a Pro" },
+];
+
 export default function BestInstallerGEOPage() {
   return (
     <main className="flex-1">
@@ -105,6 +114,9 @@ export default function BestInstallerGEOPage() {
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Serving Every Town on Long Island</h2>
+          <p className="text-gray-600 mb-4 text-base">
+            From the Nassau County border towns closest to Queens all the way out to Montauk Point, CoolVu is the one call that covers every mile of Long Island — no subcontracting, no handoffs, just our own certified crew.
+          </p>
           <p className="text-sm text-gray-500 leading-relaxed">
             Westbury · Garden City · Mineola · Hempstead · Valley Stream · Lynbrook · Rockville Centre · Long Beach · Oceanside · Freeport · Merrick · Bellmore · Wantagh · Seaford · Massapequa · Hicksville · Syosset · Plainview · Woodbury · Huntington · Commack · Smithtown · Hauppauge · Ronkonkoma · Patchogue · Bay Shore · Islip · Amityville · Babylon · Farmingdale · Great Neck · Manhasset · Port Washington · Roslyn · Glen Cove · Oyster Bay · Cold Spring Harbor · Northport · Dix Hills · Melville · East Meadow · Levittown · Bethpage · Jericho · Centerport · Montauk · East Hampton · Southampton · Hampton Bays · Riverhead · Greenport · Orient · Mattituck · Cutchogue · Southold
           </p>
@@ -150,7 +162,7 @@ export default function BestInstallerGEOPage() {
         "areaServed": "Nassau County, Suffolk County, Long Island, NY",
         "award": "Nassau County Advisory Board Top Gun Professional Business"
       })}} />
-      <RelatedContent showArticles={true} />
+      <RelatedContent showArticles={true} articles={ARTICLES} />
     </main>
   );
 }
