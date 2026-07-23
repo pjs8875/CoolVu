@@ -3,6 +3,22 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Tinting for South-Facing Rooms and Home Offices on Long Island",
+    excerpt:
+      "South-facing rooms take the most direct sun of any exposure, all day, nearly year-round \u2014 rough on a home office. Window tinting blocks up to 60% of that heat and cuts glare 70\u201390%, so your monitor is readable and the room stays comfortable without losing the natural light. CoolVu serves Nassau and Suffolk County.",
+    date: "July 22, 2026",
+    slug: "window-tinting-south-facing-rooms-home-office-long-island",
+    readTime: "6 min read",
+  },
+  {
+    title: "Window Tinting Buying Guide for Long Island Homeowners",
+    excerpt:
+      "Buying window tinting comes down to four decisions: the right tint type for your problem, a residential specialist (not an auto shop), the warranty offered, and a free in-home estimate. This guide walks Long Island homeowners through each step before they hire anyone. CoolVu backs every job with a lifetime warranty.",
+    date: "July 22, 2026",
+    slug: "window-tinting-buying-guide-long-island",
+    readTime: "7 min read",
+  },
+  {
     title: "Window Tinting Long Island: The Latest Innovations Homeowners Should Know About",
     excerpt:
       "Window tinting technology has changed a lot \u2014 nano-ceramic film now blocks more heat and UV than old dyed or metallic tint, without interfering with cell signal or Wi-Fi, and looks nearly invisible. See what's changed and how to tell if your old tinting needs replacing. CoolVu serves Nassau and Suffolk County with a lifetime warranty.",
