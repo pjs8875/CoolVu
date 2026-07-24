@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Film for Long Island Marinas, Yacht Clubs, and Waterfront Clubhouses",
+    excerpt:
+      "Marina clubhouses and yacht club lounges are built with huge water-facing windows to show off the harbor view \u2014 which also means glare, heat, and sun-faded furniture. Window film blocks up to 60% of heat and 90% of glare while keeping the view fully intact. CoolVu installs at marinas and clubhouses across Nassau and Suffolk County.",
+    date: "July 24, 2026",
+    slug: "marina-yacht-club-window-film-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Window Film and Salt Air: Does Long Island's Coastal Climate Affect How Long It Lasts?",
     excerpt:
       "Salt air rusts railings and dulls car finishes on waterfront Long Island \u2014 but window film is installed on the inside of your glass, fully protected from sea spray and humidity. See why coastal homes from Long Beach to Northport actually benefit most from film. CoolVu backs every job with a lifetime warranty.",
