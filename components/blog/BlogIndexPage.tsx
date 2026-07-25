@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Does Window Film Block Wi-Fi or Cell Signal? What Long Island Homeowners Need to Know",
+    excerpt:
+      "Worried window film will mess with your Wi-Fi or cell signal? Ceramic window film \u2014 what CoolVu installs on Long Island homes \u2014 has no metal layer, so your router, smart devices, and phone signal work exactly the same after installation. Here\u2019s the real story behind the myth.",
+    date: "July 25, 2026",
+    slug: "does-window-film-block-wifi-cell-signal-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Window Film for Long Island Marinas, Yacht Clubs, and Waterfront Clubhouses",
     excerpt:
       "Marina clubhouses and yacht club lounges are built with huge water-facing windows to show off the harbor view \u2014 which also means glare, heat, and sun-faded furniture. Window film blocks up to 60% of heat and 90% of glare while keeping the view fully intact. CoolVu installs at marinas and clubhouses across Nassau and Suffolk County.",
