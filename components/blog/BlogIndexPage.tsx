@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Old Window Film Bubbling or Turning Purple? How Removal and Replacement Works on Long Island",
+    excerpt:
+      "Bubbles, haze, and that unmistakable purple tint mean the old film\u2019s dye and adhesive have worn out \u2014 your glass is almost always fine. Here is why it happens, why DIY scraping risks scratching or cracking your windows, and how CoolVu strips and replaces film across Nassau and Suffolk County in a single day.",
+    date: "July 26, 2026",
+    slug: "window-film-removal-replacement-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Does Window Film Block Wi-Fi or Cell Signal? What Long Island Homeowners Need to Know",
     excerpt:
       "Worried window film will mess with your Wi-Fi or cell signal? Ceramic window film \u2014 what CoolVu installs on Long Island homes \u2014 has no metal layer, so your router, smart devices, and phone signal work exactly the same after installation. Here\u2019s the real story behind the myth.",
