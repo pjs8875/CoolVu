@@ -3,20 +3,36 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
-    title: "Window Film for Long Island Hotels, Inns, and Bed & Breakfasts",
+    title: "Window Film vs. Window Tinting: What's the Difference?",
     excerpt:
-      "Hot west-facing guest rooms, blinding glare off the harbor, and carpets that fade years early all trace back to one thing \u2014 the glass. Window film blocks up to 60% of heat and 99% of UV rays, adds ground-floor privacy without blackout curtains, and installs room by room without ever closing the property. CoolVu serves hospitality across Nassau and Suffolk County.",
+      "\"Film\" and \"tinting\" get used interchangeably, but they are not the same trade. Residential window film and automotive window tinting use different products, different techniques, and different installers \u2014 and hiring the wrong one is how Long Island homeowners end up with bubbling glass. Here is how to tell them apart.",
+    date: "July 27, 2026",
+    slug: "window-film-vs-window-tinting-long-island",
+    readTime: "5 min read",
+  },
+  {
+    title: "Window Film for Long Island Garages: Beat the Heat",
+    excerpt:
+      "Long Island garages can hit 110\u00b0F in summer, which is why the workshop, home gym, or man cave goes unused from June to September. Solar window film drops garage temperatures by 10\u201320\u00b0F and blocks 99% of UV rays \u2014 making the space usable year-round. Free estimates from CoolVu.",
+    date: "July 27, 2026",
+    slug: "window-film-garage-long-island",
+    readTime: "5 min read",
+  },
+  {
+    title: "Window Film for Long Island Hotels, Inns, and B&Bs",
+    excerpt:
+      "Hot west-facing guest rooms, glare off the water, and faded carpets all come from the same place \u2014 the glass. Window film blocks up to 60% of heat and 99% of UV, and it installs room by room without ever closing your property. CoolVu of Long Island serves Nassau and Suffolk hospitality.",
     date: "July 27, 2026",
     slug: "window-film-hotels-inns-long-island",
     readTime: "6 min read",
   },
   {
-    title: "Old Window Film Bubbling or Turning Purple? How Removal and Replacement Works on Long Island",
+    title: "Window Film Removal and Replacement on Long Island: Bubbling or Purple Film",
     excerpt:
-      "Bubbles, haze, and that unmistakable purple tint mean the old film\u2019s dye and adhesive have worn out \u2014 your glass is almost always fine. Here is why it happens, why DIY scraping risks scratching or cracking your windows, and how CoolVu strips and replaces film across Nassau and Suffolk County in a single day.",
-    date: "July 26, 2026",
+      "Old window film bubbling, hazy, or turning purple? Here is why it happens, why DIY scraping risks cracking your glass or wrecking the seal, and how CoolVu removes and replaces failed film across Nassau and Suffolk County in a single day.",
+    date: "July 27, 2026",
     slug: "window-film-removal-replacement-long-island",
-    readTime: "6 min read",
+    readTime: "5 min read",
   },
   {
     title: "Does Window Film Block Wi-Fi or Cell Signal? What Long Island Homeowners Need to Know",
