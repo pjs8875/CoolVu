@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Window Film for Long Island Hotels, Inns, and Bed & Breakfasts",
+    excerpt:
+      "Hot west-facing guest rooms, blinding glare off the harbor, and carpets that fade years early all trace back to one thing \u2014 the glass. Window film blocks up to 60% of heat and 99% of UV rays, adds ground-floor privacy without blackout curtains, and installs room by room without ever closing the property. CoolVu serves hospitality across Nassau and Suffolk County.",
+    date: "July 27, 2026",
+    slug: "window-film-hotels-inns-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Old Window Film Bubbling or Turning Purple? How Removal and Replacement Works on Long Island",
     excerpt:
       "Bubbles, haze, and that unmistakable purple tint mean the old film\u2019s dye and adhesive have worn out \u2014 your glass is almost always fine. Here is why it happens, why DIY scraping risks scratching or cracking your windows, and how CoolVu strips and replaces film across Nassau and Suffolk County in a single day.",
