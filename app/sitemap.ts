@@ -126,7 +126,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.9,
     },
-    ...blogSlugs.map((slug) => ({
+
+    {
+      url: `${base}/partners`,
+      lastModified: new Date("2026-07-28"),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },...blogSlugs.map((slug) => ({
       url: `${base}/blog/${slug}`,
       lastModified: BLOG_DATES[slug] ? new Date(BLOG_DATES[slug]) : buildDate,
       changeFrequency: "monthly" as const,
