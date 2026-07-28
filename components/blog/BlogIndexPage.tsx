@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Bird-Safe Window Film: How to Stop Birds From Hitting Your Long Island Windows",
+    excerpt:
+      "Birds do not see glass \u2014 they see the sky and trees reflected in it, so they fly straight at the window. Frosted, decorative, and solar window film break up that reflection from the outside while you keep your view from inside. Long Island sits on the Atlantic Flyway, which is why strikes spike here every spring and fall.",
+    date: "July 28, 2026",
+    slug: "bird-safe-window-film-long-island",
+    readTime: "6 min read",
+  },
+  {
     title: "Window Film vs. Window Tinting: What's the Difference?",
     excerpt:
       "\"Film\" and \"tinting\" get used interchangeably, but they are not the same trade. Residential window film and automotive window tinting use different products, different techniques, and different installers \u2014 and hiring the wrong one is how Long Island homeowners end up with bubbling glass. Here is how to tell them apart.",
