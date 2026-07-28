@@ -157,6 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
   ];
+  // /partners added to sitemap 2026-07-28
 
   return entries;
 }
