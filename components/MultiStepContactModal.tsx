@@ -16,15 +16,15 @@ const TOTAL_STEPS = 2;
 const formSchema = z.object({
   // Step 1 — Needs
   propertyType: z.string().min(1, "Please select a property type"),
-  problemToSolve: z.string().min(1, "Please select the problem you are trying to solve"),
-  productsInterested: z.string().min(1, "Please select the products you are interested in"),
+  problemToSolve: z.string(),
+  productsInterested: z.string(),
 
   // Step 2 — Contact
   firstName: z.string().min(2, "First Name is required"),
-  lastName: z.string().min(2, "Last Name is required"),
+  lastName: z.string(),
   email: z.string().email("Valid email is required"),
   phone: z.string().min(10, "Valid phone number is required"),
-  howDidYouFindUs: z.string().min(1, "Please tell us how you found us"),
+  howDidYouFindUs: z.string(),
   smsConsent: z.boolean().refine(val => val === true, "You must agree to the privacy policy"),
 });
 
