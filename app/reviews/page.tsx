@@ -4,9 +4,9 @@ import { Star, Phone, MapPin } from "lucide-react";
 import { REVIEWS, REVIEW_COUNT, AVERAGE_RATING } from "@/lib/data/reviews";
 import { getSiteUrl } from "@/lib/seo/site";
 
-const title = "CoolVu of Long Island Reviews — 31 Five-Star Ratings";
+const title = `CoolVu of Long Island Reviews — ${REVIEW_COUNT} Five-Star Ratings`;
 const description =
-  "Read 31 five-star Google reviews of CoolVu of Long Island — trusted by Nassau & Suffolk homeowners for window film & tinting. Free estimate: 516-535-9555.";
+  `Read ${REVIEW_COUNT} five-star Google reviews of CoolVu of Long Island — trusted by Nassau & Suffolk homeowners for window film & tinting. Free estimate: 516-535-9555.`;
 
 export const metadata: Metadata = {
   title,
