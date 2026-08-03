@@ -10,6 +10,8 @@ export interface CustomerReview {
 }
 
 export const REVIEWS: CustomerReview[] = [
+  { name: "Cecilia Sutich", town: "Garden City", rating: 5, text: "Great experience from beginning to end. Paul came to the house and gave us all of our options, never once trying to push one design over another. Manny and Josh did an excellent job on the install. Very respectful and nice people too. Highly recommend!" },
+  { name: "Donna Cosel-Pieper", town: "East Hampton", rating: 5, text: "Our house in East Hampton faces west and has no shade on that side. I called Paul after seeing his reviews online. He answered the phone and gave me information on the solar film product they use on windows." },
   { name: "Roger Koopmann", town: "Hicksville", rating: 5, text: "We immediately felt a difference the first night that the CoolVu film was installed. The sunlight was reduced and so was the heat." },
   { name: "Andrea Attanasio", town: "New Hyde Park", rating: 5, text: "The installation of my glass tint went very smoothly. The technicians were very careful to keep the working area clean. The results came out beautiful. I highly recommend this company." },
   { name: "Bobby Seck", town: "Salisbury", rating: 5, text: "Paul and his team are honestly exceptional. This was a new thing to me, and Paul is a pioneer in this field!" },
@@ -43,5 +45,16 @@ export const REVIEWS: CustomerReview[] = [
   { name: "Nick Baker", town: "Long Island", rating: 5, text: "Paul recently attended an advanced film course. I found him to be intelligent and capable. He will be an installer that you can trust." },
 ];
 
-export const REVIEW_COUNT = REVIEWS.length;
+// Total 5-star reviews on the Google Business Profile — verified 2026-08-03.
+// This is the number Google, Bing and the AI assistants read, so it must match the
+// live GBP total, not just how many review texts we happen to feature below.
+// UPDATE THIS whenever the Google review count changes.
+export const GOOGLE_REVIEW_COUNT = 35;
+
+// Kept as the public-facing count so existing imports keep working.
+export const REVIEW_COUNT = GOOGLE_REVIEW_COUNT;
+
+// How many full review texts we actually show on the page.
+export const FEATURED_REVIEW_COUNT = REVIEWS.length;
+
 export const AVERAGE_RATING = 5.0;
