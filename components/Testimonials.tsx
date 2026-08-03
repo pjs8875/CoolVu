@@ -4,6 +4,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Star, Phone } from "lucide-react";
 import { BlurText } from "@/components/ui/blur-text";
 import React, { useRef } from "react";
+import { REVIEW_COUNT } from "@/lib/data/reviews";
 
 const testimonials = [
   {
@@ -253,7 +254,7 @@ export default function Testimonials() {
               href="/reviews"
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white px-6 py-3 rounded-xl font-bold uppercase tracking-wider text-sm transition-colors"
             >
-              Read all 31 reviews &rarr;
+              Read all {REVIEW_COUNT} reviews &rarr;
             </a>
           </div>
         </div>
