@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>CoolVu Crew Check-In</title>
+<link rel="apple-touch-icon" href="/logo.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b3d62">
+<style>
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+       background:#0b3d62;color:#fff;min-height:100vh;padding:20px 18px 40px}
+  h1{font-size:22px;margin:8px 0 2px;font-weight:700}
+  .sub{font-size:14px;opacity:.75;margin:0 0 22px}
+  label{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.06em;
+        opacity:.75;margin:18px 0 7px}
+  select,input{width:100%;padding:16px;font-size:18px;border-radius:12px;border:none;
+        background:#fff;color:#111;-webkit-appearance:none}
+  button{width:100%;padding:26px;font-size:26px;font-weight:800;border:none;border-radius:16px;
+        margin-top:16px;color:#fff;letter-spacing:.02em}
+  #arrive{background:#1a9c4c}
+  #finish{background:#c8501e}
+  button:active{transform:scale(.98)}
+  button:disabled{opacity:.45}
+  #msg{margin-top:22px;padding:16px;border-radius:12px;font-size:16px;line-height:1.45;display:none}
+  .ok{background:#12603a;display:block!important}
+  .err{background:#7a2020;display:block!important}
+  a.textlink{color:#9fd8ff;font-weight:700}
+  .foot{margin-top:30px;font-size:13px;opacity:.6;line-height:1.5}
+</style>
+</head>
+<body>
+
+<h1>CoolVu Crew Check-In</h1>
+<p class="sub">Tap when you get there. Tap when you leave. That's it.</p>
+
+<label for="who">Your name</label>
+<select id="who">
+  <option value="">— choose —</option>
+  <option>Manny</option>
+  <option>Manny's son</option>
+  <option>Casey</option>
+  <option>Matt</option>
+  <option>Paul</option>
+  <option value="__other">Someone else…</option>
+</select>
+<input id="whoOther" placeholder="Type your name" style="display:none;margin-top:10px">
+
+<label for="job">Customer / job</label>
+<input id="job" placeholder="e.g. Kern – Woodbury" autocapitalize="words">
+
+<button id="arrive">I'M HERE</button>
+<button id="finish">I'M DONE</button>
+
+<div id="msg"></div>
+
+<p class="foot">
+  Not working? <a class="textlink" id="smsfall" href="#">Text Paul instead</a><br>
+  Paul — 516-535-9555
+</p>
+
+<script>
+(function(){
+  var who=document.getElementById('who'),whoOther=document.getElementById('whoOther'),
+      job=document.getElementById('job'),msg=document.getElementById('msg'),
+      arrive=document.getElementById('arrive'),finish=document.getElementById('finish');
+
+  // remember the person and the job so they only pick once per day
+  try{
+    var s=localStorage.getItem('cv_who'); if(s){ who.value=s;
+      if(!who.value){ who.value='__other'; whoOther.style.display='block'; whoOther.value=s; } }
+    var j=localStorage.getItem('cv_job'); if(j) job.value=j;
+  }catch(e){}
+
+  who.addEventListener('change',function(){
+    whoOther.style.display = who.value==='__other' ? 'block' : 'none';
+  });
+
+  function name(){ return who.value==='__other' ? whoOther.value.trim() : who.value; }
+
+  function show(text,cls){ msg.textContent=text; msg.className=cls; }
+
+  function smsHref(evt){
+    var t=(evt==='ARRIVED'?'ARRIVED at ':'FINISHED at ')+(job.value||'the job')+
+          ' — '+(name()||'crew')+' — '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
+    var sep = /iPhone|iPad|Mac/i.test(navigator.userAgent) ? '&' : '?';
+    return 'sms:+15165359555'+sep+'body='+encodeURIComponent(t);
+  }
+  document.getElementById('smsfall').addEventListener('click',function(e){
+    e.preventDefault(); location.href=smsHref('ARRIVED');
+  });
+
+  function send(evt){
+    if(!name()){ show('Pick your name first.','err'); return; }
+    if(!job.value.trim()){ show('Type which customer you are at.','err'); return; }
+    try{ localStorage.setItem('cv_who',name()); localStorage.setItem('cv_job',job.value.trim()); }catch(e){}
+
+    arrive.disabled=finish.disabled=true;
+    show('Sending…','ok');
+
+    var payload={sub:name(),job:job.value.trim(),event:evt,
+                 localTime:new Date().toLocaleString('en-US',{timeZone:'America/New_York'})};
+
+    fetch('/api/checkin',{method:'POST',headers:{'Content-Type':'application/json'},
+                          body:JSON.stringify(payload)})
+      .then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
+      .then(function(){
+        show((evt==='ARRIVED'?'✅ Paul knows you are on site.':'✅ Paul knows you finished.')+
+             ' You can close this.','ok');
+        arrive.disabled=finish.disabled=false;
+      })
+      .catch(function(){
+        show('Could not reach Paul automatically. Opening a text message instead — just hit send.','err');
+        arrive.disabled=finish.disabled=false;
+        setTimeout(function(){ location.href=smsHref(evt); },900);
+      });
+  }
+
+  arrive.addEventListener('click',function(){ send('ARRIVED'); });
+  finish.addEventListener('click',function(){ send('FINISHED'); });
+})();
+</script>
+</body>
+</html>
