@@ -1,3 +1,5 @@
+import { REVIEW_COUNT, AVERAGE_RATING } from "@/lib/data/reviews";
+
 export default function JsonLdLocalBusiness() {
   const data = {
     "@context": "https://schema.org",
@@ -12,7 +14,7 @@ export default function JsonLdLocalBusiness() {
     "address": { "@type": "PostalAddress", "streetAddress": "1055 Old Country Rd", "addressLocality": "Westbury", "addressRegion": "NY", "postalCode": "11590", "addressCountry": "US" },
     "areaServed": [ { "@type": "AdministrativeArea", "name": "Nassau County, NY" }, { "@type": "AdministrativeArea", "name": "Suffolk County, NY" } ],
     "knowsAbout": ["solar window film","privacy window film","safety and security window film","decorative window film","commercial window film"],
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "31" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": AVERAGE_RATING.toFixed(1), "reviewCount": String(REVIEW_COUNT) },
     "sameAs": ["https://www.facebook.com/783344724864582","https://www.instagram.com/coolvunassaucounty","https://x.com/CoolVuLI","https://www.youtube.com/@coolvuoflongisland"]
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
