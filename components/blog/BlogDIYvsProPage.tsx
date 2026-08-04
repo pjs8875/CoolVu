@@ -113,6 +113,10 @@ export default function BlogDIYvsProPage() {
 
         <p>To be fair — if you're filming one small, cheap window in a garage or shed and you don't care how it looks, a DIY kit can be fine. But for the windows you actually see and live with every day — living rooms, bedrooms, sliding doors, offices — the finish matters, and so does the warranty. That's the professional's territory.</p>
 
+        <p>There is one more cost to DIY that most people never think about: paperwork. A film kit with no
+        published specs gives you nothing to show a window manufacturer if a seal fails years later. We explain
+        exactly how that plays out in our guide to <Link href="/blog/does-window-film-void-window-warranty-long-island" className="text-[#1F4E79] hover:underline">does window film void your window warranty</Link>.</p>
+
         <h2>Serving All of Long Island</h2>
 
         <p>CoolVu of Long Island installs window film professionally throughout Nassau County and Suffolk County — from Great Neck, Manhasset, Garden City, Westbury, Levittown, and Massapequa in the west, to Commack, Smithtown, Huntington, Hauppauge, and Patchogue in the east. Free estimates, lifetime warranty, and a bubble-free finish every time.</p>
