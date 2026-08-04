@@ -37,15 +37,15 @@ export default function BlogSlidingGlassDoorPage() {
         ctaHeadline="Turn Your Sunroom Into a Year-Round Room"
         ctaBody="Get a free estimate from CoolVu of Long Island. We\'ll measure every panel, show you your film options, and give you an exact price — no pressure, no surprises."
       >
-        <p>If you have a sunroom or a wall of sliding glass doors, you already know the feeling. It\'s a beautiful room on paper. But on a Long Island afternoon in July, it\'s a greenhouse. You walk in, immediately turn around, and close the door behind you.</p>
+        <p>If you have a sunroom or a wall of sliding glass doors, you already know the feeling. It's a beautiful room on paper. But on a Long Island afternoon in July, it's a greenhouse. You walk in, immediately turn around, and close the door behind you.</p>
 
-        <p>The good news: this is one of the most solvable problems in home comfort — and window film is the fix most Long Island homeowners don\'t know about until they see what it did for their neighbor\'s house.</p>
+        <p>The good news: this is one of the most solvable problems in home comfort — and window film is the fix most Long Island homeowners don't know about until they see what it did for their neighbor's house.</p>
 
         <h2>Why Sliding Glass Doors and Sunrooms Are the Worst Heat Offenders</h2>
 
-        <p>Regular windows let in some heat and UV. But sliding glass doors and sunrooms are a different situation entirely — they\'re essentially walls made of glass. There\'s no insulation, no shade, no barrier between you and the sun\'s full energy.</p>
+        <p>Regular windows let in some heat and UV. But sliding glass doors and sunrooms are a different situation entirely — they're essentially walls made of glass. There's no insulation, no shade, no barrier between you and the sun's full energy.</p>
 
-        <p>Here\'s the math: a standard 8-foot sliding glass door has roughly 48 square feet of glass. A modest 12x16 sunroom with glass on three sides has over 200 square feet. Every square foot of unfilmed glass is pumping heat into your home from sunrise to sunset.</p>
+        <p>Here's the math: a standard 8-foot sliding glass door has roughly 48 square feet of glass. A modest 12x16 sunroom with glass on three sides has over 200 square feet. Every square foot of unfilmed glass is pumping heat into your home from sunrise to sunset.</p>
 
         <p>Your AC responds by running constantly. Your electric bill climbs. And the room you built or bought to enjoy the outdoors becomes the room nobody uses.</p>
 
@@ -65,11 +65,11 @@ export default function BlogSlidingGlassDoorPage() {
 
         <h2>What Window Film Actually Does to a Sliding Glass Door</h2>
 
-        <p>Think of window film like sunscreen for your glass. Sunscreen doesn\'t block the light — you can still see clearly and the room stays bright. But it stops the damaging, heat-generating energy from passing through.</p>
+        <p>Think of window film like sunscreen for your glass. Sunscreen doesn't block the light — you can still see clearly and the room stays bright. But it stops the damaging, heat-generating energy from passing through.</p>
 
-        <p>Window film works the same way. It\'s a thin layer applied to the inside surface of the glass. From inside, you barely notice it\'s there. From outside, it may have a subtle reflective look — similar to modern office building windows — which most homeowners actually like because it adds privacy during daylight hours.</p>
+        <p>Window film works the same way. It's a thin layer applied to the inside surface of the glass. From inside, you barely notice it's there. From outside, it may have a subtle reflective look — similar to modern office building windows — which most homeowners actually like because it adds privacy during daylight hours.</p>
 
-        <p>Once it\'s on, here\'s what changes:</p>
+        <p>Once it's on, here's what changes:</p>
 
         <ul>
           <li>The room temperature near the glass drops — sometimes by 15°F or more</li>
@@ -119,7 +119,7 @@ export default function BlogSlidingGlassDoorPage() {
           </tbody>
         </table>
 
-        <p>For most Long Island sunrooms and sliding glass doors, CoolVu recommends solar or dual reflective film. We\'ll help you pick the right shade level during your free estimate — no guessing required.</p>
+        <p>For most Long Island sunrooms and sliding glass doors, CoolVu recommends solar or dual reflective film. We'll help you pick the right shade level during your free estimate — no guessing required.</p>
 
         <div className="not-prose my-6 bg-amber-50 border border-amber-300 rounded-xl p-5">
           <p className="text-sm text-gray-800"><strong className="text-orange-700">Real Long Island example:</strong> A homeowner in Babylon had a sunroom addition on the south side of the house. By mid-June the room was hitting 95°F by noon — completely unusable. We installed dual reflective 35 film on all four glass panels. The room now stays below 78°F on the same days. The family uses it all summer.</p>
@@ -127,25 +127,25 @@ export default function BlogSlidingGlassDoorPage() {
 
         <h2>Privacy Film for Sliding Glass Doors: The Bonus Benefit</h2>
 
-        <p>Many Long Island homes have sliding glass doors that face backyards, patios, or — in denser neighborhoods like Levittown, Uniondale, or Elmont — directly toward a neighbor\'s house or a shared fence line.</p>
+        <p>Many Long Island homes have sliding glass doors that face backyards, patios, or — in denser neighborhoods like Levittown, Uniondale, or Elmont — directly toward a neighbor's house or a shared fence line.</p>
 
         <p>Dual reflective solar film works like a one-way mirror during the day. From the outside, your neighbor sees a reflective surface — just like an office building window. From the inside, you have a clear view of your yard. You get privacy without blocking your sightlines.</p>
 
-        <p>One caveat: this only works when it\'s brighter outside than inside. At night, with your interior lights on, the effect reverses. If you need nighttime privacy too, frosted or tinted privacy film is a better fit — CoolVu can show you both options.</p>
+        <p>One caveat: this only works when it's brighter outside than inside. At night, with your interior lights on, the effect reverses. If you need nighttime privacy too, frosted or tinted privacy film is a better fit — CoolVu can show you both options.</p>
 
         <h2>The UV Problem: Your Furniture Is Fading Right Now</h2>
 
-        <p>UV rays are invisible, but they\'re constantly working on everything in your sunroom and near your sliding glass doors. Hardwood floors bleach out. Area rugs fade. Upholstered furniture loses its color. Artwork yellows. Curtains deteriorate.</p>
+        <p>UV rays are invisible, but they're constantly working on everything in your sunroom and near your sliding glass doors. Hardwood floors bleach out. Area rugs fade. Upholstered furniture loses its color. Artwork yellows. Curtains deteriorate.</p>
 
         <p>Standard glass blocks almost no UV — less than 25%. Film blocks 99%. For Long Island homeowners who have invested in quality flooring, furniture, or interior finishes, this protection alone often justifies the installation cost.</p>
 
         <h2>Long Island-Specific Considerations</h2>
 
-        <p>Long Island\'s climate creates a few specific challenges that make sunroom film particularly valuable here:</p>
+        <p>Long Island's climate creates a few specific challenges that make sunroom film particularly valuable here:</p>
 
         <ul>
           <li><strong>South Shore homes</strong> near the water often have large glass doors and porches facing the bay or ocean — beautiful views, but intense afternoon sun reflects off the water and straight into the house.</li>
-          <li><strong>North Shore homes</strong> with wooded lots can have year-round humidity issues in enclosed sunrooms — film won\'t fix humidity, but controlling heat buildup helps reduce the greenhouse effect that makes humidity worse.</li>
+          <li><strong>North Shore homes</strong> with wooded lots can have year-round humidity issues in enclosed sunrooms — film won't fix humidity, but controlling heat buildup helps reduce the greenhouse effect that makes humidity worse.</li>
           <li><strong>Summer humidity</strong> makes the heat-plus-humidity combination in an unfilmed sunroom genuinely oppressive. Reducing heat gain is the first step in making the space livable.</li>
         </ul>
 
@@ -153,7 +153,7 @@ export default function BlogSlidingGlassDoorPage() {
 
         <h2>What the Installation Looks Like</h2>
 
-        <p>CoolVu\'s installation process on sliding glass doors and sunrooms is clean and quick. Most sunrooms are done in a single morning visit. Here\'s what to expect:</p>
+        <p>CoolVu's installation process on sliding glass doors and sunrooms is clean and quick. Most sunrooms are done in a single morning visit. Here's what to expect:</p>
 
         <ul>
           <li>We measure every glass panel during the estimate — no surprises on install day</li>
@@ -161,16 +161,16 @@ export default function BlogSlidingGlassDoorPage() {
           <li>Film is cut precisely to fit each panel — no overhangs, no gaps</li>
           <li>Application uses a water solution — the room stays livable throughout the process</li>
           <li>Film needs 24–48 hours to fully cure (a few small water bubbles are normal and disappear on their own)</li>
-          <li>You\'re free to clean the glass after the cure period with standard window cleaner</li>
+          <li>You're free to clean the glass after the cure period with standard window cleaner</li>
         </ul>
 
         <p>All CoolVu residential installations carry a lifetime warranty. If anything goes wrong — peeling, bubbling, discoloration under normal conditions — we come back and fix it free of charge.</p>
 
         <h2>Is It Worth It for Your Long Island Home?</h2>
 
-        <p>For sliding glass doors: almost always yes. It\'s one of the highest-impact, lowest-disruption upgrades you can make to a room that faces south or west on Long Island.</p>
+        <p>For sliding glass doors: almost always yes. It's one of the highest-impact, lowest-disruption upgrades you can make to a room that faces south or west on Long Island.</p>
 
-        <p>For sunrooms: if you\'re not using your sunroom in summer, window film is almost certainly the reason why — and the fix. A properly filmed sunroom becomes a four-season room. You get your investment in that addition back, and then some.</p>
+        <p>For sunrooms: if you're not using your sunroom in summer, window film is almost certainly the reason why — and the fix. A properly filmed sunroom becomes a four-season room. You get your investment in that addition back, and then some.</p>
 
         <p>Free estimates. Lifetime warranty. Call CoolVu of Long Island at 516-535-9555 or visit <a href="https://coolvulongisland.com">coolvulongisland.com</a>.</p>
       </BlogArticleLayout>
