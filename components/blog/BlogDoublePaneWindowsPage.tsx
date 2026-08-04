@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
@@ -96,6 +97,9 @@ export default function BlogDoublePaneWindowsPage() {
         <p>This is a fair question, and here is the honest answer. Some window makers do limit their warranty if film is added — but many of the big manufacturers approve film as long as it is on their compatible list and professionally installed. The reckless move is slapping random film from Amazon onto your windows. The safe move is having a pro match an approved film to your glass.</p>
 
         <p>On top of that, CoolVu backs every residential job with a lifetime warranty, and our professional-grade films carry their own manufacturer warranty that can cover seal failure and thermal breakage when the correct film is used. In plain terms: when it is done right, you are protected from more than one direction.</p>
+
+        <p>We go brand by brand — Andersen, Pella, Marvin, Harvey, Simonton — and cover what actually
+        happens if you file a claim years later in our full guide to <Link href="/blog/does-window-film-void-window-warranty-long-island" className="text-[#1F4E79] hover:underline">does window film void your window warranty</Link>.</p>
 
         <h2>Double-Pane, Done Right, All Over Long Island</h2>
 
