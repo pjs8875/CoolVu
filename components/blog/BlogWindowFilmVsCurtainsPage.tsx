@@ -39,19 +39,19 @@ export default function BlogWindowFilmVsCurtainsPage() {
       >
         <p>Every Long Island homeowner has done the dance: open the blinds for natural light, the room heats up and you squint from glare, close the blinds, now the room feels like a cave. You crack them just right. The sun moves. You adjust again.</p>
 
-        <p>There\'s a better way.</p>
+        <p>There's a better way.</p>
 
-        <p>Window film has been solving this problem for decades — and most Long Island homeowners don\'t realize it can completely replace curtains and blinds in most rooms while doing a far better job. Let\'s compare them honestly, side by side.</p>
+        <p>Window film has been solving this problem for decades — and most Long Island homeowners don't realize it can completely replace curtains and blinds in most rooms while doing a far better job. Let's compare them honestly, side by side.</p>
 
         <h2>The Curtains & Blinds Problem Most People Accept</h2>
 
         <p>Curtains and blinds were designed to give you control over light and privacy. But they have some serious drawbacks that people just put up with:</p>
 
         <ul>
-          <li><strong>They don\'t actually stop heat.</strong> Closing blinds traps hot air between the glass and the slats. The window is still cooking. You\'re just hiding the problem.</li>
+          <li><strong>They don't actually stop heat.</strong> Closing blinds traps hot air between the glass and the slats. The window is still cooking. You're just hiding the problem.</li>
           <li><strong>They block your view.</strong> You bought a home on Long Island — maybe with a backyard, a water view, or a nicely landscaped yard. Curtains make you choose between the view and comfort.</li>
           <li><strong>They collect dust and allergens.</strong> Fabric curtains are basically dust magnets. Blinds require regular cleaning of every individual slat. Both are a chore.</li>
-          <li><strong>They don\'t protect your furniture.</strong> UV rays still come through curtains unless they\'re specifically UV-blocking — and most aren\'t. Your floors and furniture fade either way.</li>
+          <li><strong>They don't protect your furniture.</strong> UV rays still come through curtains unless they're specifically UV-blocking — and most aren't. Your floors and furniture fade either way.</li>
         </ul>
 
         <div className="not-prose my-6 grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -137,7 +137,7 @@ export default function BlogWindowFilmVsCurtainsPage() {
 
         <p><strong>Solar / Energy Film</strong> is the best curtain replacement for south- and west-facing rooms. It cuts heat and glare while keeping the room bright. Perfect for living rooms, kitchens, and home offices where you want the light but not the heat.</p>
 
-        <p><strong>Privacy Film</strong> gives you one-way visibility — you see out, neighbors can\'t see in — without ever closing a thing. Great for street-facing bedrooms, bathrooms, and ground-floor rooms that need privacy without darkness.</p>
+        <p><strong>Privacy Film</strong> gives you one-way visibility — you see out, neighbors can't see in — without ever closing a thing. Great for street-facing bedrooms, bathrooms, and ground-floor rooms that need privacy without darkness.</p>
 
         <p><strong>Decorative Film</strong> can replace frosted glass panels or create an elegant etched-glass look. Many Long Island homeowners use it on bathroom windows, front door sidelights, and interior glass for a polished appearance that requires no curtain rods, valances, or hardware.</p>
 
@@ -152,22 +152,22 @@ export default function BlogWindowFilmVsCurtainsPage() {
         <p>Honesty matters — curtains and blinds are still the right call in a few situations:</p>
 
         <ul>
-          <li><strong>Bedrooms that need complete blackout.</strong> If you\'re a shift worker or have kids who sleep late, blackout curtains are hard to beat for pure darkness. Film can reduce light but won\'t make a room pitch black.</li>
-          <li><strong>Night privacy.</strong> One-way privacy film works when it\'s brighter outside than inside. At night with lights on, the effect reverses. If nighttime privacy is critical, a sheer curtain paired with daytime film is a good combo.</li>
+          <li><strong>Bedrooms that need complete blackout.</strong> If you're a shift worker or have kids who sleep late, blackout curtains are hard to beat for pure darkness. Film can reduce light but won't make a room pitch black.</li>
+          <li><strong>Night privacy.</strong> One-way privacy film works when it's brighter outside than inside. At night with lights on, the effect reverses. If nighttime privacy is critical, a sheer curtain paired with daytime film is a good combo.</li>
           <li><strong>Purely decorative rooms.</strong> If a room has no direct sun, no heat or privacy issue, and you just love the look of drapes — keep them. Film is a functional upgrade, not a style statement.</li>
         </ul>
 
         <h2>The Cost Comparison — Honestly</h2>
 
-        <p>Decent curtain panels run $40–$150 per window. Add curtain rods ($20–$80 each), installation, and dry cleaning every few years. A whole-house curtain upgrade can easily hit $4,000–$8,000 or more — and you\'ll do it again in 8–10 years.</p>
+        <p>Decent curtain panels run $40–$150 per window. Add curtain rods ($20–$80 each), installation, and dry cleaning every few years. A whole-house curtain upgrade can easily hit $4,000–$8,000 or more — and you'll do it again in 8–10 years.</p>
 
-        <p>Window film is a one-time installation. CoolVu\'s lifetime residential warranty means you\'re covered as long as you own the home. Energy savings from solar film often recover the cost within a few Long Island summers through reduced PSEG bills. Curtains never pay you back.</p>
+        <p>Window film is a one-time installation. CoolVu's lifetime residential warranty means you're covered as long as you own the home. Energy savings from solar film often recover the cost within a few Long Island summers through reduced PSEG bills. Curtains never pay you back.</p>
 
         <h2>Serving All of Long Island</h2>
 
         <p>CoolVu of Long Island installs all four types of window film throughout Nassau County and Suffolk County — including Westbury, Garden City, Great Neck, Manhasset, Rockville Centre, Massapequa, Merrick, Freeport, Lynbrook, Valley Stream, Babylon, Bay Shore, Huntington, Smithtown, Commack, Hauppauge, Ronkonkoma, Patchogue, Islip, and Riverhead. We offer free estimates and a lifetime residential warranty on every job.</p>
 
-        <p>Call us at <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> to schedule your free estimate. We\'ll walk through your home, tell you exactly which windows would benefit from film, and show you samples so you know what to expect before we install a single square foot.</p>
+        <p>Call us at <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> to schedule your free estimate. We'll walk through your home, tell you exactly which windows would benefit from film, and show you samples so you know what to expect before we install a single square foot.</p>
       </BlogArticleLayout>
     </div>
   );
