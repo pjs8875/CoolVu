@@ -43,9 +43,9 @@ export default function BlogSouthShoreNorthShorePage() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">The Real Factor: Window Direction</h2>
 
-        <p>Think of the sun like a spotlight moving across the sky. In the morning, it shines from the east. By noon it\'s overhead. By afternoon — from about 2pm to 7pm — it\'s blazing in from the west. That\'s when Long Island gets its hottest afternoon heat every summer.</p>
+        <p>Think of the sun like a spotlight moving across the sky. In the morning, it shines from the east. By noon it's overhead. By afternoon — from about 2pm to 7pm — it's blazing in from the west. That's when Long Island gets its hottest afternoon heat every summer.</p>
 
-        <p>Here\'s how each window direction plays out on Long Island:</p>
+        <p>Here's how each window direction plays out on Long Island:</p>
 
         <ul className="list-disc pl-6 space-y-3 my-4">
           <li><strong>West-facing windows</strong> — The toughest. They catch full afternoon sun when temperatures peak. A west-facing living room in Massapequa, Babylon, or Huntington can feel like an oven from 3pm onward even with the AC running.</li>
@@ -66,39 +66,39 @@ export default function BlogSouthShoreNorthShorePage() {
 
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">What Window Film Actually Does</h2>
 
-        <p>Here\'s a simple way to think about it. Glass is like a one-way door for heat. Sunlight passes right through it and converts to heat inside your home. Your AC then has to push that heat back out — burning electricity the whole time.</p>
+        <p>Here's a simple way to think about it. Glass is like a one-way door for heat. Sunlight passes right through it and converts to heat inside your home. Your AC then has to push that heat back out — burning electricity the whole time.</p>
 
-        <p>Window film is like a bouncer at that door. It reflects a large percentage of solar energy back outside before it ever enters. CoolVu\'s solar films can block up to 60% of heat at the glass and filter out 99% of UV rays. Your rooms stay cooler, your AC works less, and your floors and furniture don\'t fade.</p>
+        <p>Window film is like a bouncer at that door. It reflects a large percentage of solar energy back outside before it ever enters. CoolVu's solar films can block up to 60% of heat at the glass and filter out 99% of UV rays. Your rooms stay cooler, your AC works less, and your floors and furniture don't fade.</p>
 
         <p>One installation. No monthly cost. Lifetime residential warranty.</p>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">A Practical Walk-Through by Home Type</h2>
 
-        <p><strong>Ranch home in Wantagh or Massapequa (South Shore):</strong> Lots are often open, few trees. If the back of the house faces west or south toward the yard, that\'s the high-priority zone. Sliding glass doors and large picture windows are the biggest heat sources.</p>
+        <p><strong>Ranch home in Wantagh or Massapequa (South Shore):</strong> Lots are often open, few trees. If the back of the house faces west or south toward the yard, that's the high-priority zone. Sliding glass doors and large picture windows are the biggest heat sources.</p>
 
         <p><strong>Split-level in Syosset or Jericho (mid-island):</strong> Mid-island gets full summer heat without the water breeze. West-facing bedrooms and living areas are the usual problem spots. A lot of these homes have large family room windows facing the backyard.</p>
 
         <p><strong>Colonial in Huntington or Cold Spring Harbor (North Shore):</strong> More trees help, but west-facing rooms still bake. Many North Shore homes have beautiful views that come with large windows — and large windows mean more glass for the sun to work with.</p>
 
-        <p><strong>Waterfront home in Long Beach, Fire Island, or the Hamptons:</strong> These homes are often designed around the view, which means big windows facing the water. The sea breeze is nice, but it doesn\'t stop solar heat from pouring through glass. Film is especially valuable here.</p>
+        <p><strong>Waterfront home in Long Beach, Fire Island, or the Hamptons:</strong> These homes are often designed around the view, which means big windows facing the water. The sea breeze is nice, but it doesn't stop solar heat from pouring through glass. Film is especially valuable here.</p>
 
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Which Towns Does CoolVu Serve?</h2>
 
-        <p>CoolVu of Long Island installs window film across all of Nassau and Suffolk Counties. Whether you\'re in:</p>
+        <p>CoolVu of Long Island installs window film across all of Nassau and Suffolk Counties. Whether you're in:</p>
 
         <p><strong>Nassau County:</strong> Great Neck, Manhasset, Garden City, Hempstead, Valley Stream, Lynbrook, Rockville Centre, Oceanside, Long Beach, Atlantic Beach, Lido Beach, Freeport, Merrick, Bellmore, Wantagh, Seaford, Massapequa, Massapequa Park, Baldwin, Uniondale, Hicksville, Levittown, Bethpage, Syosset, Jericho, Woodbury, Old Westbury, Westbury, New Hyde Park, Mineola, Floral Park, Elmont, Franklin Square, or anywhere in between —</p>
 
         <p><strong>Suffolk County:</strong> Babylon, Bay Shore, Islip, West Islip, East Islip, Brentwood, Central Islip, Deer Park, North Babylon, West Babylon, Amityville, Copiague, Lindenhurst, Patchogue, Sayville, Bohemia, Hauppauge, Commack, Smithtown, St. James, Nesconset, Lake Grove, Centereach, Selden, Coram, Medford, Farmingville, Ronkonkoma, Holbrook, Shirley, Mastic, Moriches, Riverhead, Hampton Bays, Southampton, East Hampton, Montauk, Bridgehampton, Shelter Island, Greenport, Mattituck, Cutchogue, Southold, Northport, Huntington, Cold Spring Harbor, Centerport, Greenlawn, Amityville, Wyandanch, Huntington Station, or anywhere else on the East End —</p>
 
-        <p>We\'ll come to you. Free estimate, no pressure.</p>
+        <p>We'll come to you. Free estimate, no pressure.</p>
 
-        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">How CoolVu\'s Free Estimate Works</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">How CoolVu's Free Estimate Works</h2>
 
         <p>When Paul comes out for a free estimate, he walks every room and checks which windows face which direction. He can tell you right on the spot which windows are high priority, which ones are lower priority, and what kind of film makes sense for each situation.</p>
 
         <p>No guessing. No upselling. Just a clear answer.</p>
 
-        <p>Every installation comes with CoolVu\'s lifetime residential warranty — meaning if the film ever peels, bubbles, or fails, it\'s covered. That\'s peace of mind no other solution offers.</p>
+        <p>Every installation comes with CoolVu's lifetime residential warranty — meaning if the film ever peels, bubbles, or fails, it's covered. That's peace of mind no other solution offers.</p>
 
         <p>Call 516-535-9555 or visit <a href="https://coolvulongisland.com" className="text-blue-600 hover:underline">coolvulongisland.com</a> to schedule your free estimate. Serving all of Long Island — South Shore, North Shore, and everywhere in between.</p>
       </BlogArticleLayout>
