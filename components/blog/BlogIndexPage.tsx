@@ -243,10 +243,10 @@ const posts = [
     },
     {
       title: "Does Window Film Void Your Window Warranty? What Long Island Homeowners Need to Know",
-      excerpt: "Worried about your Andersen or Pella warranty? Here\'s the honest answer — and what to check before you install.",
-      date: "July 2, 2026",
+      excerpt: "Almost never — professionally installed interior film is allowed under the standard Andersen, Pella, Marvin, Harvey and Simonton warranties. Only two things create real risk: exterior film on a sealed double-pane unit, and a very dark, heat-absorbing film on low-e glass. Here is what to check, what to ask the manufacturer, and what actually happens if you file a claim.",
+      date: "August 4, 2026",
       slug: "does-window-film-void-window-warranty-long-island",
-      readTime: "5 min read",
+      readTime: "9 min read",
     },
   {
     title: "Window Film for Seniors and Aging-in-Place Homes on Long Island",
