@@ -37,9 +37,9 @@ export default function BlogMedicalOfficesPage() {
         ctaHeadline="Get a Free Estimate for Your Medical Office"
         ctaBody="CoolVu of Long Island works with medical practices, dental offices, physical therapy clinics, and urgent care centers throughout Nassau and Suffolk Counties. Call 516-535-9555 or visit coolvulongisland.com for a free, no-pressure estimate."
       >
-        <p>Running a medical practice on Long Island comes with a long list of things to manage — patient flow, staffing, compliance, billing. The windows in your office probably aren\'t at the top of that list. But they should be — because untreated windows are quietly creating problems you deal with every day.</p>
+        <p>Running a medical practice on Long Island comes with a long list of things to manage — patient flow, staffing, compliance, billing. The windows in your office probably aren't at the top of that list. But they should be — because untreated windows are quietly creating problems you deal with every day.</p>
 
-        <p>Glare on computer screens during afternoon appointments. Exam rooms that feel like saunas in July. Waiting rooms where patients can see in from the parking lot. Reception desks where anyone walking by can see a patient\'s name on a monitor.</p>
+        <p>Glare on computer screens during afternoon appointments. Exam rooms that feel like saunas in July. Waiting rooms where patients can see in from the parking lot. Reception desks where anyone walking by can see a patient's name on a monitor.</p>
 
         <p>Window film solves all of these — with a single installation that takes a few hours and causes zero disruption to your practice.</p>
 
@@ -48,7 +48,7 @@ export default function BlogMedicalOfficesPage() {
         <h3>1. Heat and Glare</h3>
         <p>Long Island summers are brutal on offices with west-facing or south-facing windows. By mid-afternoon, rooms that face the sun can feel 15 to 20 degrees hotter than the rest of the building — even with the AC running. Staff get uncomfortable. Patients notice. And your HVAC system burns energy fighting a losing battle against the sun.</p>
 
-        <p>Solar window film blocks up to 60% of the heat that tries to push through your glass. It also cuts glare sharply — so your staff can see their screens at 3pm without squinting or tilting their monitors, and patients in waiting areas aren\'t sitting in a spotlight.</p>
+        <p>Solar window film blocks up to 60% of the heat that tries to push through your glass. It also cuts glare sharply — so your staff can see their screens at 3pm without squinting or tilting their monitors, and patients in waiting areas aren't sitting in a spotlight.</p>
 
         <div className="not-prose my-6 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
@@ -65,9 +65,9 @@ export default function BlogMedicalOfficesPage() {
         </div>
 
         <h3>2. Patient Privacy</h3>
-        <p>Privacy in a medical setting isn\'t just about good manners — it\'s a legal obligation. HIPAA requires reasonable safeguards for patient privacy, and that includes what people can see through your windows. If someone walking through your waiting room can see a patient in an exam room, or if a passerby on the street can see patient names on a reception monitor, that\'s a gap in your physical privacy policy.</p>
+        <p>Privacy in a medical setting isn't just about good manners — it's a legal obligation. HIPAA requires reasonable safeguards for patient privacy, and that includes what people can see through your windows. If someone walking through your waiting room can see a patient in an exam room, or if a passerby on the street can see patient names on a reception monitor, that's a gap in your physical privacy policy.</p>
 
-        <p>Frosted window film on exam room glass panels, corridor windows, and reception windows solves this completely. It creates an opaque surface that blocks the view without darkening the room — natural light still comes through, but people outside can\'t see in.</p>
+        <p>Frosted window film on exam room glass panels, corridor windows, and reception windows solves this completely. It creates an opaque surface that blocks the view without darkening the room — natural light still comes through, but people outside can't see in.</p>
 
         <div className="not-prose my-6 bg-blue-50 border border-blue-200 rounded-xl p-5">
           <p className="text-sm text-gray-800"><strong className="text-blue-700">Where privacy film matters most in a medical office:</strong></p>
@@ -83,7 +83,7 @@ export default function BlogMedicalOfficesPage() {
         <h3>3. UV Damage to Furniture and Flooring</h3>
         <p>Medical offices invest in quality furniture, flooring, and equipment. UV rays fade all of it — chairs, exam table upholstery, hardwood or vinyl plank flooring, artwork, signage. On Long Island, where offices can face direct sun for six or more hours a day during summer, fading happens faster than most people expect.</p>
 
-        <p>Solar and privacy films from CoolVu block 99% of UV rays. Your waiting room chairs, your reception desk finish, your floors — all protected from the invisible damage that\'s been happening since day one.</p>
+        <p>Solar and privacy films from CoolVu block 99% of UV rays. Your waiting room chairs, your reception desk finish, your floors — all protected from the invisible damage that's been happening since day one.</p>
 
         <h2>Types of Window Film for Medical Offices</h2>
 
@@ -125,9 +125,9 @@ export default function BlogMedicalOfficesPage() {
         </table>
 
         <h2>Installation: No Downtime, No Disruption</h2>
-        <p>One of the biggest hesitations we hear from medical practice managers is: "We can\'t close for an installation." You don\'t have to. CoolVu installations are quiet, odorless, and mess-free. A typical medical office suite — 5 to 10 windows — takes one to two hours. We can work early morning before your first patient, during lunch, or after hours. Patients can be in adjacent rooms during the entire process.</p>
+        <p>One of the biggest hesitations we hear from medical practice managers is: "We can't close for an installation." You don't have to. CoolVu installations are quiet, odorless, and mess-free. A typical medical office suite — 5 to 10 windows — takes one to two hours. We can work early morning before your first patient, during lunch, or after hours. Patients can be in adjacent rooms during the entire process.</p>
 
-        <p>There\'s a short curing period after installation (typically 24–48 hours) during which the film may look slightly hazy — that\'s normal, and it clears completely as the adhesive sets. No special care is needed during or after.</p>
+        <p>There's a short curing period after installation (typically 24–48 hours) during which the film may look slightly hazy — that's normal, and it clears completely as the adhesive sets. No special care is needed during or after.</p>
 
         <h2>What Long Island Medical Practices We Serve</h2>
         <p>CoolVu of Long Island works with a wide range of healthcare facilities across Nassau County and Suffolk County:</p>
@@ -144,7 +144,7 @@ export default function BlogMedicalOfficesPage() {
         <p>CoolVu of Long Island installs window film in medical offices and clinics across all of Long Island — including Great Neck, Manhasset, Garden City, Mineola, Westbury, Hempstead, Valley Stream, Rockville Centre, Merrick, Massapequa, Babylon, Amityville, Bay Shore, Islip, Huntington, Northport, Smithtown, Commack, Hauppauge, Ronkonkoma, Patchogue, and beyond. Free estimates — we come to you.</p>
 
         <div className="not-prose my-6 bg-green-50 border border-green-200 rounded-xl p-5">
-          <p className="text-sm text-gray-800"><strong className="text-green-700">What\'s included with every CoolVu commercial installation:</strong></p>
+          <p className="text-sm text-gray-800"><strong className="text-green-700">What's included with every CoolVu commercial installation:</strong></p>
           <ul className="text-sm text-gray-700 mt-2 space-y-1 list-disc list-inside">
             <li>Free on-site estimate and film recommendation for your specific space</li>
             <li>Professional installation by a trained CoolVu technician</li>
