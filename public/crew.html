@@ -112,9 +112,18 @@
         arrive.disabled=finish.disabled=false;
       })
       .catch(function(){
-        show('Could not reach Paul automatically. Opening a text message instead — just hit send.','err');
-        arrive.disabled=finish.disabled=false;
-        setTimeout(function(){ location.href=smsHref(evt); },900);
+        // one silent retry before falling back
+        fetch('/api/checkin',{method:'POST',headers:{'Content-Type':'application/json'},
+                              body:JSON.stringify(payload)})
+          .then(function(r){ if(!r.ok) throw 0;
+            show((evt==='ARRIVED'?'✅ Paul knows you are on site.':'✅ Paul knows you finished.')+
+                 ' You can close this.','ok');
+            arrive.disabled=finish.disabled=false; })
+          .catch(function(){
+            show('Opening a text to Paul — just hit send. (One tap only, once Paul finishes setup.)','err');
+            arrive.disabled=finish.disabled=false;
+            setTimeout(function(){ location.href=smsHref(evt); },700);
+          });
       });
   }
 
