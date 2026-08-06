@@ -3,6 +3,11 @@ import { NextResponse } from "next/server";
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
+// Push notifications go through ntfy.sh, which needs NO account and NO API key.
+// The topic name is the address, so it is long and random. Paul subscribes to it
+// once in the free ntfy app and every crew tap becomes an instant phone push.
+const NTFY_TOPIC = "coolvu-crew-e05c7bd5d9576713";
+
 type Body = {
   sub?: string;
   job?: string;
@@ -29,51 +34,65 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "missing sub or job" }, { status: 400 });
   }
 
-  const token = process.env.MAILTRAP_TOKEN;
-  if (!token) {
-    // Not configured yet — tell the page so it falls back to a text message.
-    return NextResponse.json({ error: "not configured" }, { status: 503 });
-  }
-
   const verb = event === "ARRIVED" ? "arrived at" : "finished at";
+  const title = event === "ARRIVED" ? `${sub} is on site` : `${sub} finished`;
   const line = `${sub} ${verb} ${job}`;
 
+  let pushed = false;
+  let emailed = false;
+
+  // ---- 1. Push notification (no credentials required) ----
   try {
-    const res = await fetch("https://send.api.mailtrap.io/api/send", {
+    const res = await fetch(`https://ntfy.sh/${NTFY_TOPIC}`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "Api-Token": token,
+        Title: title,
+        Priority: event === "ARRIVED" ? "high" : "default",
+        Tags: event === "ARRIVED" ? "round_pushpin" : "white_check_mark",
       },
-      body: JSON.stringify({
-        from: { email: "outreach@coolvulongisland.com", name: "CoolVu Crew Check-In" },
-        to: [{ email: "paul.silverman@coolvu.com" }],
-        subject: `CREW ${event} — ${sub} — ${job}`,
-        text:
-          `${line}\n\n` +
-          `Time: ${when}\n` +
-          `Event: ${event}\n` +
-          `Crew: ${sub}\n` +
-          `Job: ${job}\n\n` +
-          `— sent automatically from the CoolVu crew check-in page`,
-        category: "crew-checkin",
-      }),
+      body: `${job}\n${when}`,
     });
-
-    if (!res.ok) {
-      return NextResponse.json({ error: "send failed" }, { status: 502 });
-    }
+    pushed = res.ok;
   } catch {
-    return NextResponse.json({ error: "send error" }, { status: 502 });
+    pushed = false;
   }
 
-  return NextResponse.json({ ok: true, event, sub, job, when });
+  // ---- 2. Email as well, only if a token happens to be configured ----
+  const token = process.env.MAILTRAP_TOKEN;
+  if (token) {
+    try {
+      const res = await fetch("https://send.api.mailtrap.io/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Api-Token": token },
+        body: JSON.stringify({
+          from: {
+            email: "outreach@coolvulongisland.com",
+            name: "CoolVu Crew Check-In",
+          },
+          to: [{ email: "paul.silverman@coolvu.com" }],
+          subject: `CREW ${event} — ${sub} — ${job}`,
+          text: `${line}\n\nTime: ${when}\nEvent: ${event}\nCrew: ${sub}\nJob: ${job}\n\n— sent automatically from the CoolVu crew check-in page`,
+          category: "crew-checkin",
+        }),
+      });
+      emailed = res.ok;
+    } catch {
+      emailed = false;
+    }
+  }
+
+  if (!pushed && !emailed) {
+    return NextResponse.json({ error: "no channel available" }, { status: 502 });
+  }
+
+  return NextResponse.json({ ok: true, event, sub, job, when, pushed, emailed });
 }
 
 export async function GET() {
   return NextResponse.json({
     ok: true,
     note: "CoolVu crew check-in endpoint. POST {sub, job, event}.",
-    configured: Boolean(process.env.MAILTRAP_TOKEN),
+    pushTopic: NTFY_TOPIC,
+    emailConfigured: Boolean(process.env.MAILTRAP_TOKEN),
   });
 }
