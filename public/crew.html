@@ -58,7 +58,7 @@
 
 <p class="foot">
   Not working? <a class="textlink" id="smsfall" href="#">Text Paul instead</a><br>
-  Paul — 516-535-9555
+  Paul — 516-713-2315
 </p>
 
 <script>
@@ -86,7 +86,7 @@
     var t=(evt==='ARRIVED'?'ARRIVED at ':'FINISHED at ')+(job.value||'the job')+
           ' — '+(name()||'crew')+' — '+new Date().toLocaleTimeString([],{hour:'numeric',minute:'2-digit'});
     var sep = /iPhone|iPad|Mac/i.test(navigator.userAgent) ? '&' : '?';
-    return 'sms:+15165359555'+sep+'body='+encodeURIComponent(t);
+    return 'sms:+15167132315'+sep+'body='+encodeURIComponent(t);
   }
   document.getElementById('smsfall').addEventListener('click',function(e){
     e.preventDefault(); location.href=smsHref('ARRIVED');
