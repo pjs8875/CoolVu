@@ -35,7 +35,7 @@ export default function BlogSlidingGlassDoorPage() {
         answerText="Sliding glass doors and sunrooms are the biggest heat and UV problem in most Long Island homes — and window film is the easiest, most affordable fix. One installation blocks up to 60% of solar heat, eliminates 99% of UV rays, and keeps your sunroom usable all summer long."
         faqItems={faq}
         ctaHeadline="Turn Your Sunroom Into a Year-Round Room"
-        ctaBody="Get a free estimate from CoolVu of Long Island. We\'ll measure every panel, show you your film options, and give you an exact price — no pressure, no surprises."
+        ctaBody="Get a free estimate from CoolVu of Long Island. We’ll measure every panel, show you your film options, and give you an exact price — no pressure, no surprises."
       >
         <p>If you have a sunroom or a wall of sliding glass doors, you already know the feeling. It's a beautiful room on paper. But on a Long Island afternoon in July, it's a greenhouse. You walk in, immediately turn around, and close the door behind you.</p>
 

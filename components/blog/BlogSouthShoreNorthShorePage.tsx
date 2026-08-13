@@ -32,10 +32,10 @@ export default function BlogSouthShoreNorthShorePage() {
         tag="Solar Film · Local Guide"
         title="South Shore vs. North Shore Long Island: Which Windows Need Film Most?"
         metaLine="By Paul Silverman · CoolVu of Long Island · May 2026 · 5 min read"
-        answerText="It\'s less about which shore you live on and more about which direction your windows face. West-facing windows on any Long Island home get the most brutal afternoon heat. South-facing windows bake all day. Window film stops that heat before it enters — cutting cooling costs and protecting your furniture no matter which shore you call home."
+        answerText="It’s less about which shore you live on and more about which direction your windows face. West-facing windows on any Long Island home get the most brutal afternoon heat. South-facing windows bake all day. Window film stops that heat before it enters — cutting cooling costs and protecting your furniture no matter which shore you call home."
         faqItems={faq}
         ctaHeadline="Not Sure Which Windows to Film First?"
-        ctaBody="CoolVu of Long Island offers free estimates for homeowners across Nassau and Suffolk Counties. Paul will walk your property, check each window\'s sun exposure, and tell you exactly where film will make the biggest difference — no pressure, no guesswork."
+        ctaBody="CoolVu of Long Island offers free estimates for homeowners across Nassau and Suffolk Counties. Paul will walk your property, check each window’s sun exposure, and tell you exactly where film will make the biggest difference — no pressure, no guesswork."
       >
         <p>One of the most common questions Long Island homeowners ask before getting window film is: does it matter where on the Island I live? South Shore or North Shore?</p>
 

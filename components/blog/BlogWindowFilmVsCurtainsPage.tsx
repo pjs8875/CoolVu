@@ -35,7 +35,7 @@ export default function BlogWindowFilmVsCurtainsPage() {
         answerText="Window film outperforms curtains and blinds in almost every way — it blocks heat, glare, and UV rays without blocking your view, requires zero daily maintenance, and lasts 15–25 years with a lifetime warranty. For Long Island homeowners who want comfort and a clear view, film wins."
         faqItems={faq}
         ctaHeadline="Ready to Ditch the Curtains for Good?"
-        ctaBody="CoolVu of Long Island offers free estimates throughout Nassau and Suffolk Counties. We\'ll walk you through which film is right for each room and give you an honest comparison for your specific situation."
+        ctaBody="CoolVu of Long Island offers free estimates throughout Nassau and Suffolk Counties. We’ll walk you through which film is right for each room and give you an honest comparison for your specific situation."
       >
         <p>Every Long Island homeowner has done the dance: open the blinds for natural light, the room heats up and you squint from glare, close the blinds, now the room feels like a cave. You crack them just right. The sun moves. You adjust again.</p>
 
