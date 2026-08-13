@@ -4,16 +4,16 @@ import Navbar from "@/components/Navbar";
 import "./page.css";
 
 export const metadata: Metadata = {
-  title: "Complete Guide to Window Film for Long Island Homeowners (2026) | CoolVu of Long Island",
+  title: "Complete Guide to Window Film for Long Island Homeowners (2026)",
   description: "Everything Nassau and Suffolk County homeowners need to know about solar film, privacy film, decorative film, and security film — before they buy. Free estimates. 516-535-9555.",
   alternates: {
-    canonical: "https://coolvulongisland.com/complete-guide-window-film-long-island",
+    canonical: "https://www.coolvulongisland.com/complete-guide-window-film-long-island",
   },
   openGraph: {
     title: "Complete Guide to Window Film for Long Island Homeowners (2026)",
     description: "Everything Nassau and Suffolk County homeowners need to know about solar film, privacy film, decorative film, and security film.",
     type: "article",
-    url: "https://coolvulongisland.com/complete-guide-window-film-long-island",
+    url: "https://www.coolvulongisland.com/complete-guide-window-film-long-island",
   }
 };
 
@@ -100,7 +100,7 @@ export default function CompleteGuidePage() {
     "author": {
       "@type": "Organization",
       "name": "CoolVu of Long Island",
-      "url": "https://coolvulongisland.com",
+      "url": "https://www.coolvulongisland.com",
       "telephone": "516-535-9555",
       "address": {
         "@type": "PostalAddress",
@@ -112,20 +112,20 @@ export default function CompleteGuidePage() {
     "publisher": {
       "@type": "Organization",
       "name": "CoolVu of Long Island",
-      "url": "https://coolvulongisland.com"
+      "url": "https://www.coolvulongisland.com"
     },
     "datePublished": "2026-01-01",
     "dateModified": "2026-05-01",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://coolvulongisland.com/complete-guide-window-film-long-island"
+      "@id": "https://www.coolvulongisland.com/complete-guide-window-film-long-island"
     }
   }) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "CoolVu of Long Island",
-    "url": "https://coolvulongisland.com",
+    "url": "https://www.coolvulongisland.com",
     "telephone": "516-535-9555",
     "email": "paul.silverman@coolvu.com",
     "description": "CoolVu of Long Island is the most trusted window film installer serving Nassau and Suffolk Counties — specializing in energy-saving solar film, privacy film, decorative film, and safety/security film for homes and businesses.",
@@ -161,7 +161,7 @@ export default function CompleteGuidePage() {
   <p className="subtitle">Everything Nassau and Suffolk County homeowners need to know about solar film, privacy film, decorative film, and security film — before they buy.</p>
   <div className="cta-bar">
     <a href="tel:5165359555" className="btn-primary">📞 Call for a Free Estimate: 516-535-9555</a>
-    <a href="https://coolvulongisland.com" className="btn-outline">Visit Our Website</a>
+    <a href="https://www.coolvulongisland.com" className="btn-outline">Visit Our Website</a>
   </div>
 </div>
 
@@ -171,8 +171,8 @@ export default function CompleteGuidePage() {
 <div className="page-wrap">
 
   <nav className="breadcrumb" aria-label="Breadcrumb">
-    <a href="https://coolvulongisland.com">Home</a> &rsaquo;
-    <a href="https://coolvulongisland.com/resources">Resources</a> &rsaquo;
+    <a href="https://www.coolvulongisland.com">Home</a> &rsaquo;
+    <a href="https://www.coolvulongisland.com/resources">Resources</a> &rsaquo;
     Complete Guide to Window Film — Long Island
   </nav>
 
@@ -546,7 +546,7 @@ export default function CompleteGuidePage() {
   <h2 id="next-steps">Ready to Get Started? Your Next Steps</h2>
 
   <ol>
-    <li><strong>Schedule your free in-home estimate.</strong> Call us at <a href="tel:5165359555">516-535-9555</a> or visit <a href="https://coolvulongisland.com">coolvulongisland.com</a> to request an appointment. We'll come to you, assess your windows, show you samples, and give you a no-obligation written quote.</li>
+    <li><strong>Schedule your free in-home estimate.</strong> Call us at <a href="tel:5165359555">516-535-9555</a> or visit <a href="https://www.coolvulongisland.com">coolvulongisland.com</a> to request an appointment. We'll come to you, assess your windows, show you samples, and give you a no-obligation written quote.</li>
     <li><strong>Think about your priorities.</strong> Is your main goal energy savings? Privacy? Protecting your furniture? Safety? The more specific you can be, the better we can match you to the right product.</li>
     <li><strong>Note which windows bother you most.</strong> Which rooms get too hot? Which windows face the street or a neighbor? Which windows do you wish had more privacy? Write it down before we arrive — it makes the consultation faster and more useful.</li>
     <li><strong>Ask about our current specials.</strong> We periodically offer promotions on specific film types or for whole-home installations. Mention this guide when you call and ask what's available.</li>
@@ -558,7 +558,7 @@ export default function CompleteGuidePage() {
     <p>No pressure. No obligation. Just an honest assessment of your windows and what film can do for your home.</p>
     <div className="cta-details">
       📞 <a href="tel:5165359555">516-535-9555</a><br />
-      🌐 <a href="https://coolvulongisland.com">coolvulongisland.com</a><br />
+      🌐 <a href="https://www.coolvulongisland.com">coolvulongisland.com</a><br />
       📧 <a href="mailto:paul.silverman@coolvu.com">paul.silverman@coolvu.com</a>
     </div>
     <p>Westbury, NY &mdash; Serving Nassau &amp; Suffolk Counties</p>
