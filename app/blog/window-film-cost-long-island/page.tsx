@@ -2,8 +2,8 @@ import BlogCostGuidePage from "@/components/blog/BlogCostGuidePage";
 import { buildPageMetadata } from "@/lib/seo/metadata-builders";
 
 export const metadata = buildPageMetadata({
-  title: "How Much Does Window Film Cost on Long Island? 2026 Price Guide | CoolVu",
-  description: "What does window film really cost on Long Island? Solar, privacy, decorative, and safety film price ranges per square foot, by room, and whole-home. CoolVu of Long Island breaks down real 2026 pricing — free estimates in Nassau and Suffolk.",
+  title: "Window Film Cost on Long Island: Real 2026 Prices Per Window | CoolVu",
+  description: "What window film actually costs on Long Island in 2026: $12–$25 per sq ft, about $90–$200 per window, $1,800–$4,500 whole home. See a real Massapequa quote line by line, what changes your price, and what should never be on the bill. Free estimates in Nassau & Suffolk.",
   path: "/blog/window-film-cost-long-island",
 });
 
