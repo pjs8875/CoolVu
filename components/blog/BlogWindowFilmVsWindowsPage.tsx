@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
 
@@ -117,6 +118,8 @@ export default function BlogWindowFilmVsWindowsPage() {
         <h2>The Bottom Line for Long Island Homeowners</h2>
 
         <p>If your windows are structurally sound and your problem is heat, glare, or UV damage — window film is your answer. It costs a fraction of replacement, installs in one day, and comes with a lifetime warranty. If your frames are rotting or you're losing heat in winter through broken seals, replace the windows — and consider adding film when you do.</p>
+
+        <p className="mt-4">Want the actual dollar figures side by side? Our <Link href="/blog/window-film-cost-long-island" className="text-[#1F4E79] font-semibold underline">2026 Long Island window film cost guide</Link> breaks down price per window, per room, and whole-home — plus a real quote line by line.</p>
 
         <p>CoolVu of Long Island provides free estimates across all of Nassau County and Suffolk County. We serve Westbury, Garden City, Mineola, Hempstead, Great Neck, Roslyn, Manhasset, Port Washington, Long Beach, Valley Stream, Massapequa, Hicksville, Levittown, Wantagh, Seaford, Farmingdale, Bethpage, and every community in between — as well as all of western Suffolk including Babylon, Bay Shore, Islip, Brentwood, Central Islip, Huntington, Northport, Smithtown, Commack, Hauppauge, and Ronkonkoma.</p>
 

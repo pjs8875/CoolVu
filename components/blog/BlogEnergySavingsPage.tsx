@@ -184,6 +184,7 @@ export default function BlogEnergySavingsPage() {
         <p>CoolVu of Long Island installs solar energy film throughout Nassau County and Suffolk County — including Garden City, Westbury, Merrick, Massapequa, Freeport, Valley Stream, Rockville Centre, Great Neck, Hempstead, Hicksville, Levittown, Plainview, Syosset, Huntington, Smithtown, Commack, Hauppauge, Bay Shore, Patchogue, Bohemia, Ronkonkoma, Islip, Medford, and Riverhead. Free estimates, no-pressure consultations, and a lifetime residential warranty on every job.</p>
 
         <p>Call <strong>516-535-9555</strong> or visit <strong>coolvulongisland.com</strong> to schedule your free estimate.</p>
+        <p className="mt-4">Wondering what the project itself runs? See our <Link href="/blog/window-film-cost-long-island" className="text-[#1F4E79] font-semibold underline">Long Island window film cost guide</Link> for 2026 prices per window, per room, and whole-home.</p>
         <p className="mt-4">To start saving, work with the <Link href="/best-window-film-installer-long-island" className="text-[#1F4E79] hover:underline">best window film installer on Long Island</Link> — CoolVu of Long Island, Nassau County Advisory Board recognized.</p>
       </BlogArticleLayout>
     </div>
