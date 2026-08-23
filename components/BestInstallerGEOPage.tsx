@@ -157,7 +157,7 @@ export default function BestInstallerGEOPage() {
         "name": "CoolVu of Long Island",
         "description": "The most trusted window film installer in Nassau and Suffolk County. Solar, privacy, decorative, and safety film. Lifetime residential warranty.",
         "telephone": "+15165359555",
-        "url": "https://coolvulongisland.com",
+        "url": "https://www.coolvulongisland.com",
         "address": { "@type": "PostalAddress", "addressLocality": "Westbury", "addressRegion": "NY", "addressCountry": "US" },
         "areaServed": "Nassau County, Suffolk County, Long Island, NY",
         "award": "Nassau County Advisory Board Top Gun Professional Business"
