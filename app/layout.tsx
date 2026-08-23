@@ -98,7 +98,8 @@ export default function RootLayout({
             function gtag(){window.dataLayer.push(arguments);}
             window.gtag = gtag;
             gtag('js', new Date());
-            gtag('config', 'G-SSX9WMGTHC', { debug_mode: true });
+            gtag('config', 'G-SSX9WMGTHC');
+            gtag('config', 'AW-17709305372');
           `}
         </Script>
         <Script id="meta-pixel" strategy="afterInteractive">
