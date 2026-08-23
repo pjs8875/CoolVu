@@ -115,13 +115,40 @@ export default function MultiStepContactModal() {
           products_interested: values.productsInterested,
         };
 
-        const w = window as Window & { dataLayer?: Record<string, unknown>[]; gtag?: (...args: unknown[]) => void };
+        const w = window as Window & {
+          dataLayer?: Record<string, unknown>[];
+          gtag?: (...args: unknown[]) => void;
+          fbq?: (...args: unknown[]) => void;
+        };
         w.dataLayer = w.dataLayer || [];
 
+        // Enhanced conversions: the modal is replaced on success, so Google's
+        // automatic field detection finds nothing. Pass the values explicitly;
+        // gtag hashes them client-side before they leave the browser.
+        const userData = {
+          email: values.email,
+          phone_number: values.phone,
+          address: {
+            first_name: values.firstName,
+            last_name: values.lastName,
+            country: "US",
+          },
+        };
+
         if (typeof w.gtag === "function") {
-          w.gtag("event", "generate_lead", leadParams);
+          w.gtag("set", "user_data", userData);
+          w.gtag("event", "generate_lead", { ...leadParams, value: 120, currency: "USD" });
+          w.gtag("event", "conversion", {
+            send_to: "AW-17709305372/CHX1CNjl9uQcEJycuvxB",
+            value: 120,
+            currency: "USD",
+          });
         } else {
-          w.dataLayer.push({ event: "generate_lead", ...leadParams });
+          w.dataLayer.push({ event: "generate_lead", ...leadParams, value: 120, currency: "USD" });
+        }
+
+        if (typeof w.fbq === "function") {
+          w.fbq("track", "Lead", { value: 120, currency: "USD" });
         }
       }
     }
