@@ -100,7 +100,7 @@ export default function BlogSouthShoreNorthShorePage() {
 
         <p>Every installation comes with CoolVu's lifetime residential warranty — meaning if the film ever peels, bubbles, or fails, it's covered. That's peace of mind no other solution offers.</p>
 
-        <p>Call 516-535-9555 or visit <a href="https://coolvulongisland.com" className="text-blue-600 hover:underline">coolvulongisland.com</a> to schedule your free estimate. Serving all of Long Island — South Shore, North Shore, and everywhere in between.</p>
+        <p>Call 516-535-9555 or visit <a href="https://www.coolvulongisland.com" className="text-blue-600 hover:underline">coolvulongisland.com</a> to schedule your free estimate. Serving all of Long Island — South Shore, North Shore, and everywhere in between.</p>
       </BlogArticleLayout>
     </div>
   );
