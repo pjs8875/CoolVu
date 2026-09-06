@@ -45,11 +45,11 @@ export const REVIEWS: CustomerReview[] = [
   { name: "Nick Baker", town: "Long Island", rating: 5, text: "Paul recently attended an advanced film course. I found him to be intelligent and capable. He will be an installer that you can trust." },
 ];
 
-// Total 5-star reviews on the Google Business Profile — verified 2026-08-03.
+// Total 5-star reviews on the Google Business Profile — verified 2026-09-06.
 // This is the number Google, Bing and the AI assistants read, so it must match the
 // live GBP total, not just how many review texts we happen to feature below.
 // UPDATE THIS whenever the Google review count changes.
-export const GOOGLE_REVIEW_COUNT = 35;
+export const GOOGLE_REVIEW_COUNT = 37;
 
 // Kept as the public-facing count so existing imports keep working.
 export const REVIEW_COUNT = GOOGLE_REVIEW_COUNT;
