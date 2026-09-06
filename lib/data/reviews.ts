@@ -44,6 +44,7 @@ export const REVIEWS: CustomerReview[] = [
   { name: "Matt Stevens", town: "Long Island", rating: 5, text: "Paul and CoolVu have been excellent in communicating with me, in expectation setting, and with follow up. Love their product offering and will use them again." },
   { name: "Nick Baker", town: "Long Island", rating: 5, text: "Paul recently attended an advanced film course. I found him to be intelligent and capable. He will be an installer that you can trust." },
   { name: "David Costa", town: "Long Island", rating: 5, text: "Super professional job. Looks and works great. Love the mirror tint — great for privacy and preventing heat gain." },
+  { name: "Louis Bauso", town: "Long Island", rating: 5, text: "Quick and polite service. Reasonably priced. Installation was efficient, professional and prompt. Overall a very good experience. I would recommend CoolVu to others. Thank you." },
 ];
 
 // Total 5-star reviews on the Google Business Profile — verified 2026-09-06.
