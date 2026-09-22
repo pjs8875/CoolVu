@@ -130,7 +130,17 @@ export default function PrivacyFilmGEOPage() {
           { "@type": "Question", name: "How much does privacy window film cost?", acceptedAnswer: { "@type": "Answer", text: "Privacy film typically ranges from $8–$18 per square foot installed. CoolVu offers free in-home estimates." } },
         ]
       })}} />
-      <RelatedContent showArticles={true} />
+      <RelatedContent
+        showArticles={true}
+        articles={[
+          { href: "/blog/daytime-privacy-window-film-long-island", label: "Daytime Privacy Film: Keep Your View, Lose the Neighbors" },
+          { href: "/blog/privacy-window-film-bedrooms-night-long-island", label: "Bedroom Privacy: What Actually Works at Night" },
+          { href: "/blog/frosted-vs-one-way-privacy-film-long-island", label: "Frosted vs. One-Way: Which Film for Which Room" },
+          { href: "/blog/privacy-window-film-nassau-vs-suffolk-long-island", label: "Privacy Film in Nassau vs. Suffolk County" },
+          { href: "/blog/street-facing-window-privacy-film-long-island", label: "Street-Facing Windows: Stop the Sidewalk View" },
+          { href: "/blog/one-way-privacy-window-film-long-island", label: "One-Way Privacy Film: See Out, Nobody Sees In" },
+        ]}
+      />
     </main>
   );
 }
