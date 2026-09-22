@@ -11,6 +11,7 @@ interface BlogArticleLayoutProps {
   faqItems: { q: string; a: string }[];
   ctaHeadline: string;
   ctaBody: string;
+  relatedArticles?: { href: string; label: string }[];
 }
 
 export default function BlogArticleLayout({
@@ -23,6 +24,7 @@ export default function BlogArticleLayout({
   faqItems,
   ctaHeadline,
   ctaBody,
+  relatedArticles,
 }: BlogArticleLayoutProps) {
   return (
     <div className="bg-white">
@@ -78,7 +80,7 @@ export default function BlogArticleLayout({
       </article>
 
       {/* Internal Link Hub — signals Google to crawl related pages */}
-      <RelatedContent />
+      <RelatedContent articles={relatedArticles} />
 
       {/* FAQ */}
       <div className="bg-gray-50 border-t-2 border-[#EBF3FB] mt-4">

@@ -3,6 +3,38 @@ import Navbar from "@/components/Navbar";
 
 const posts = [
   {
+    title: "Street-Facing Windows on Long Island: Stop the Sidewalk View Without Going Dark",
+    excerpt:
+      "Your front windows look straight out at the sidewalk, the mail carrier, and the neighbors across the street. Daytime privacy film keeps the light and the view while making it very hard for anyone outside to see in — no blinds required.",
+    date: "September 22, 2026",
+    slug: "street-facing-window-privacy-film-long-island",
+    readTime: "5 min read",
+  },
+  {
+    title: "Frosted vs. One-Way Privacy Film: Which One for Which Room",
+    excerpt:
+      "One-way film keeps your daytime view. Frosted film gives 24-hour privacy but blocks the view both ways. Here’s the room-by-room cheat sheet for choosing the right privacy film for every window in a Long Island home.",
+    date: "September 22, 2026",
+    slug: "frosted-vs-one-way-privacy-film-long-island",
+    readTime: "5 min read",
+  },
+  {
+    title: "Privacy Window Film in Nassau vs. Suffolk County: What's Actually Different",
+    excerpt:
+      "The film performs identically everywhere — what changes is the house. Nassau's tighter lots make side-window privacy the top request; Suffolk's bigger windows and open views make daytime one-way film popular. Plus: do you need a permit?",
+    date: "September 22, 2026",
+    slug: "privacy-window-film-nassau-vs-suffolk-long-island",
+    readTime: "5 min read",
+  },
+  {
+    title: "Privacy Window Film for Bedrooms: What Actually Works at Night on Long Island",
+    excerpt:
+      "Standard one-way privacy film fails the moment the sun goes down. Bedrooms need a film that blocks the view in both directions, day and night — here's the honest, physics-based guide to real 24-hour bedroom privacy.",
+    date: "September 22, 2026",
+    slug: "privacy-window-film-bedrooms-night-long-island",
+    readTime: "5 min read",
+  },
+  {
     title: "Bird-Safe Window Film: How to Stop Birds From Hitting Your Long Island Windows",
     excerpt:
       "Birds do not see glass \u2014 they see the sky and trees reflected in it, so they fly straight at the window. Frosted, decorative, and solar window film break up that reflection from the outside while you keep your view from inside. Long Island sits on the Atlantic Flyway, which is why strikes spike here every spring and fall.",
